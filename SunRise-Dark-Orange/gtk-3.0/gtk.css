@@ -2638,8 +2638,10 @@ tooltip {
   border-radius: 2px;
   box-shadow: none; }
   tooltip.background {
-    background-color: rgba(52, 57, 59, 0.95);
-    background-clip: padding-box; }
+    background-clip: padding-box;
+    background-color: rgba(28, 31, 32, 0.95);
+    color: #DC8E00;
+    border-bottom: 1px solid #DC8E00; }
     tooltip.background label {
       padding: 4px; }
   tooltip decoration {
@@ -4029,10 +4031,17 @@ filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #1c1f20; }
 
+.nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
+  background-color: rgba(49, 55, 57, 0.97); }
+.nemo-window .nemo-window-pane .view:selected, .nemo-window .nemo-window-pane iconview:selected {
+  background-color: #DC8E00;
+  color: #ffffff; }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  background-color: #282c2e; }
+  background-color: #1C1F20;
+  color: rgba(245, 245, 245, 0.34); }
 .nemo-window .nemo-inactive-pane .iconview {
-  background-color: #282c2e; }
+  background-color: #1C1F20;
+  color: rgba(245, 245, 245, 0.34); }
 .nemo-window .sidebar {
   color: #f5f5f5;
   background-color: rgba(28, 31, 32, 0.95); }

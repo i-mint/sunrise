@@ -2292,6 +2292,20 @@ frame > border.flat,
 
 scrolledwindow viewport.frame {
   border-style: none; }
+scrolledwindow viewport label:backdrop {
+  color: rgba(72, 76, 85, 0.45); }
+scrolledwindow viewport combobox cellview:backdrop {
+  color: rgba(72, 76, 85, 0.45); }
+scrolledwindow viewport combobox cellview:hover:backdrop {
+  color: rgba(72, 76, 85, 0.78); }
+scrolledwindow viewport combobox image:backdrop, scrolledwindow viewport combobox arrow:backdrop {
+  color: rgba(72, 76, 85, 0.45); }
+scrolledwindow viewport .text-button {
+  background-color: #FAA100;
+  color: #ffffff; }
+  scrolledwindow viewport .text-button:hover {
+    background-color: #ffb52e;
+    color: #ffffff; }
 scrolledwindow overshoot.top {
   background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(250, 161, 0, 0.2)), to(rgba(250, 161, 0, 0)));
   background-size: 100% 60%;
@@ -2383,6 +2397,8 @@ row:not(:hover) {
 row.activatable.has-open-popup, row.activatable:hover {
   background-image: linear-gradient(to right, transparent 40%, #FAA100, #ffac15);
   color: #945f00; }
+  row.activatable.has-open-popup:backdrop, row.activatable:hover:backdrop {
+    background-image: linear-gradient(to right, transparent 40%, rgba(250, 161, 0, 0.34), #ffa605); }
 row.activatable:active {
   color: #484C55; }
 row.activatable:disabled {
@@ -3329,6 +3345,11 @@ button.documents-favorite:active:hover {
 .tweak-category:not(:selected):not(:hover) {
   background-image: linear-gradient(to right, rgba(247, 247, 247, 0.95) 70%, rgba(237, 237, 237, 0.95));
   color: #484C55; }
+
+.tweak-categories .tweak-category:not(:selected):not(:hover):backdrop label {
+  color: rgba(72, 76, 85, 0.45); }
+.tweak-categories .tweak-category:hover:backdrop label {
+  color: rgba(250, 161, 0, 0.67); }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {

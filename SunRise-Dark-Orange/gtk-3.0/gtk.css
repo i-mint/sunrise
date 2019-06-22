@@ -3347,6 +3347,8 @@ button.documents-favorite:active:hover {
   color: rgba(245, 245, 245, 0.45); }
 .tweak-categories .tweak-category:hover:backdrop label {
   color: rgba(220, 142, 0, 0.23); }
+.tweak-categories .tweak-category:selected:backdrop:hover label {
+  color: rgba(255, 255, 255, 0.56); }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {

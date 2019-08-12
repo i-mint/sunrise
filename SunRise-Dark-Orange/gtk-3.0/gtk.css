@@ -4047,7 +4047,10 @@ filechooser.maximized placessidebar.sidebar,
   background-color: #040505; }
 
 .nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
-  background-color: rgba(49, 55, 57, 0.97); }
+  background-color: rgba(35, 39, 40, 0.97); }
+  .nemo-window .nemo-window-pane .view .rubberband, .nemo-window .nemo-window-pane iconview .rubberband {
+    border: 1px solid #a96d00;
+    background-color: rgba(169, 109, 0, 0.2); }
 .nemo-window .nemo-window-pane .view:selected, .nemo-window .nemo-window-pane iconview:selected {
   background-color: #DC8E00;
   color: #ffffff; }

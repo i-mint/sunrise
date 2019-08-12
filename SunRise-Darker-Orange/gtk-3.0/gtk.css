@@ -4051,6 +4051,9 @@ filechooser.maximized placessidebar.sidebar,
 
 .nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
   background-color: #FFFFFF; }
+  .nemo-window .nemo-window-pane .view .rubberband, .nemo-window .nemo-window-pane iconview .rubberband {
+    border: 1px solid #c78000;
+    background-color: rgba(199, 128, 0, 0.2); }
 .nemo-window .nemo-window-pane .view:selected, .nemo-window .nemo-window-pane iconview:selected {
   background-color: #FAA100;
   color: #ffffff; }

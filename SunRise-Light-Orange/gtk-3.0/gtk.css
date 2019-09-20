@@ -4424,3 +4424,24 @@ filechooser placessidebar.sidebar scrollbar,
   .budgie-panel .workspace-switcher .image-button image {
     background-color: transparent;
     color: #484C55; }
+
+.budgie-run-dialog {
+  background-color: #FFFFFF;
+  border-radius: 1px;
+  border-color: #FFFFFF;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.22); }
+  .budgie-run-dialog entry.search {
+    background-color: #FFFFFF;
+    color: #484C55;
+    border-radius: 1px;
+    border-color: #FFFFFF;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(250, 161, 0, 0.56);
+    box-shadow: 0 0 0 0 #FFFFFF; }
+    .budgie-run-dialog entry.search image {
+      color: #484C55; }
+    .budgie-run-dialog entry.search label {
+      color: #484C55; }
+    .budgie-run-dialog entry.search:focus {
+      border-bottom: 1px solid #FAA100; }

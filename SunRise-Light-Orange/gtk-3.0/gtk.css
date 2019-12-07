@@ -1737,9 +1737,9 @@ scrollbar {
 
 switch {
   font-size: 1px;
-  min-width: 52px;
+  min-width: 58px;
   min-height: 24px;
-  background-size: 52px 24px;
+  background-size: 58px 24px;
   background-repeat: no-repeat;
   background-position: center center; }
   switch slider {

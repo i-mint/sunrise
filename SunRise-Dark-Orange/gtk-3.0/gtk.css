@@ -628,7 +628,12 @@ headerbar .linked:not(.vertical).path-bar > button:active,
 .primary-toolbar .linked:not(.vertical).path-bar > button:checked,
 headerbar .linked:not(.vertical).path-bar > button:checked,
 .primary-toolbar .linked:not(.vertical).path-bar > button:disabled,
-headerbar .linked:not(.vertical).path-bar > button:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
+headerbar .linked:not(.vertical).path-bar > button:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:hover, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:disabled,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:hover,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:checked,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:disabled, .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
   border-radius: 0;
   border-right-style: none; }
 
@@ -638,7 +643,8 @@ headerbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child:hover,
 headerbar .linked:not(.vertical).path-bar > button:first-child:active,
 headerbar .linked:not(.vertical).path-bar > button:first-child:checked,
-headerbar .linked:not(.vertical).path-bar > button:first-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child {
+headerbar .linked:not(.vertical).path-bar > button:first-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; }
 .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat, .inline-toolbar toolbutton:last-child > button.flat, toolbar.inline-toolbar toolbutton:last-child > button.sidebar-button, .inline-toolbar toolbutton:last-child > button.sidebar-button, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:disabled,
@@ -647,7 +653,8 @@ headerbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child:hover,
 headerbar .linked:not(.vertical).path-bar > button:last-child:active,
 headerbar .linked:not(.vertical).path-bar > button:last-child:checked,
-headerbar .linked:not(.vertical).path-bar > button:last-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child {
+headerbar .linked:not(.vertical).path-bar > button:last-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   border-right-style: solid; }
@@ -657,7 +664,8 @@ headerbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child:hover,
 headerbar .linked:not(.vertical).path-bar > button:only-child:active,
 headerbar .linked:not(.vertical).path-bar > button:only-child:checked,
-headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child {
+headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child,
+.nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child {
   border-radius: 3px;
   border-style: solid; }
 
@@ -3605,6 +3613,10 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   color: #f5f5f5; }
   .thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
     background-color: rgba(169, 109, 0, 0.2); }
+.thunar notebook tab button image {
+  border-bottom: 2px solid transparent; }
+.thunar notebook tab button:hover image {
+  border-bottom: 2px solid red; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
@@ -4103,6 +4115,62 @@ filechooser placessidebar.sidebar,
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #1c1f20; }
+filechooser headerbar widget stack box.path-bar-box,
+.nautilus-window headerbar widget stack box.path-bar-box {
+  color: rgba(246, 244, 244, 0.8);
+  border-color: rgba(20, 23, 24, 0.37);
+  background-color: rgba(101, 114, 117, 0.37);
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid transparent; }
+  filechooser headerbar widget stack box.path-bar-box label,
+  .nautilus-window headerbar widget stack box.path-bar-box label {
+    color: rgba(246, 244, 244, 0.8); }
+  filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
+  .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
+    color: rgba(246, 244, 244, 0.8);
+    border-color: rgba(20, 23, 24, 0.37);
+    background-color: rgba(101, 114, 117, 0.37);
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid transparent;
+    margin: 0px; }
+    filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button label,
+    .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button label {
+      color: rgba(246, 244, 244, 0.8); }
+    filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:hover,
+    .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:hover {
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom: 2px solid rgba(220, 142, 0, 0.56);
+      color: rgba(246, 244, 244, 0.8);
+      margin: 0px; }
+      filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:hover label,
+      .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:hover label {
+        color: rgba(246, 244, 244, 0.8); }
+    filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked,
+    .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active,
+    .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:checked {
+      color: #ffffff;
+      border-color: transparent;
+      background-color: #DC8E00;
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom: 2px solid #DC8E00;
+      margin: 0px; }
+      filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active label, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked label,
+      .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active label,
+      .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:checked label {
+        color: white; }
+    filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:disabled,
+    .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:disabled {
+      color: rgba(246, 244, 244, 0.4); }
+  filechooser headerbar widget stack box.path-bar-box .dim-label, filechooser headerbar widget stack box.path-bar-box label.separator, filechooser headerbar widget stack box.path-bar-box .subtitle,
+  .nautilus-window headerbar widget stack box.path-bar-box .dim-label,
+  .nautilus-window headerbar widget stack box.path-bar-box label.separator,
+  .nautilus-window headerbar widget stack box.path-bar-box .subtitle {
+    color: rgba(246, 244, 244, 0.8);
+    border-color: transparent; }
 
 .nautilus-window notebook stack .view:backdrop, .nautilus-window notebook stack iconview:backdrop {
   color: rgba(245, 245, 245, 0.56); }

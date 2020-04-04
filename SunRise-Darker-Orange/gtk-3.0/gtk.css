@@ -4279,8 +4279,8 @@ filechooser headerbar widget stack box.path-bar-box,
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
     background-color: transparent;
     color: #f5f5f5; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-      background-color: #FAA100;
+    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover {
+      background-image: linear-gradient(to right, #FAA100, #FAA100);
       color: #ffffff; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: rgba(245, 245, 245, 0.15); }
@@ -4692,7 +4692,7 @@ filechooser placessidebar.sidebar scrollbar,
     .top .budgie-panel widget button#tasklist-button label, .top .budgie-panel widget button#tasklist-button image, .right .budgie-panel widget button#tasklist-button label, .right .budgie-panel widget button#tasklist-button image, .bottom .budgie-panel widget button#tasklist-button label, .bottom .budgie-panel widget button#tasklist-button image, .left .budgie-panel widget button#tasklist-button label, .left .budgie-panel widget button#tasklist-button image {
       color: rgba(245, 245, 245, 0.56); }
     .top .budgie-panel widget button#tasklist-button:hover, .right .budgie-panel widget button#tasklist-button:hover, .bottom .budgie-panel widget button#tasklist-button:hover, .left .budgie-panel widget button#tasklist-button:hover {
-      background-color: rgba(250, 161, 0, 0.18);
+      background-color: rgba(250, 161, 0, 0.08);
       color: #ffffff; }
       .top .budgie-panel widget button#tasklist-button:hover label, .top .budgie-panel widget button#tasklist-button:hover image, .right .budgie-panel widget button#tasklist-button:hover label, .right .budgie-panel widget button#tasklist-button:hover image, .bottom .budgie-panel widget button#tasklist-button:hover label, .bottom .budgie-panel widget button#tasklist-button:hover image, .left .budgie-panel widget button#tasklist-button:hover label, .left .budgie-panel widget button#tasklist-button:hover image {
         color: #ffffff; }

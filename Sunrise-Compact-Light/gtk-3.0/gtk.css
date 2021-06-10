@@ -1449,7 +1449,13 @@ spinbutton {
         border-style: none solid none none; }
       spinbutton:not(.vertical) button:hover {
         color: #373737;
-        background-color: rgba(55, 55, 55, 0.05); }
+        outline-color: rgba(55, 55, 55, 0.3);
+        border-color: #b5b0ab;
+        border-bottom-color: #a7a19b;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+        -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
+        background-image: linear-gradient(to top, #e0dedc, #cac7c4 1px); }
       spinbutton:not(.vertical) button:disabled {
         color: rgba(140, 139, 138, 0.3);
         background-color: transparent; }

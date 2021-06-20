@@ -677,20 +677,20 @@ button.osd {
     -gtk-icon-shadow: 0 1px black;
     outline-color: rgba(238, 238, 236, 0.3);
     border: none;
-    box-shadow: none; }
+    box-shadow: inset #af3908 0.2px 0px 7px 0.2px; }
   button.osd:active,
   button.osd:checked {
     color: white;
     border-color: rgba(0, 0, 0, 0.7);
     background-color: transparent;
-    background-image: image(rgba(0, 0, 0, 0.7));
+    background-image: image(black);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
     outline-color: rgba(238, 238, 236, 0.3);
     border: none;
-    box-shadow: none; }
+    box-shadow: inset #af3908 0.2px 0px 7px 0.2px; }
   button.osd:disabled:backdrop,
   button.osd:disabled {
     color: #8a8a89;

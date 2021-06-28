@@ -4051,6 +4051,11 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
 
+filechooser list row.activatable.sidebar-row:selected {
+  background-color: #af3908; }
+  filechooser list row.activatable.sidebar-row:selected label.sidebar-label, filechooser list row.activatable.sidebar-row:selected image.sidebar-icon {
+    color: #fff; }
+
 /***********
  * Sidebar *
  ***********/

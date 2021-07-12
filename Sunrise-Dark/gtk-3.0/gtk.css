@@ -3946,6 +3946,9 @@ row {
     background-color: #af3908; }
   row.activatable.sidebar-row .sidebar-icon {
     color: #cc4209; }
+  row .linked button:checked {
+    background-image: image(#af3908);
+    color: #fff; }
 
 /*********************
  * App Notifications *

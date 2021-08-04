@@ -2357,33 +2357,39 @@ notebook > header {
   notebook > header.bottom {
     border-top-style: solid; }
     notebook > header.bottom > tabs {
-      margin-top: -2px; }
+      margin-top: -6px; }
       notebook > header.bottom > tabs > tab:hover {
-        box-shadow: inset 0 4px #b5b0ab; }
+        box-shadow: inset 0 -2px #f56428; }
       notebook > header.bottom > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.bottom > tabs > tab:checked {
-        box-shadow: inset 0 4px #f56428; }
+        box-shadow: inset 0 -2px rgba(245, 100, 40, 0.2); }
+        notebook > header.bottom > tabs > tab:checked label, notebook > header.bottom > tabs > tab:checked {
+          opacity: 1; }
   notebook > header.left {
     border-right-style: solid; }
     notebook > header.left > tabs {
-      margin-right: -2px; }
+      margin-right: -6px; }
       notebook > header.left > tabs > tab:hover {
-        box-shadow: inset -4px 0 #b5b0ab; }
+        box-shadow: inset 0 -2px #f56428; }
       notebook > header.left > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.left > tabs > tab:checked {
-        box-shadow: inset -4px 0 #f56428; }
+        box-shadow: inset 0 -2px rgba(245, 100, 40, 0.2); }
+        notebook > header.left > tabs > tab:checked label, notebook > header.left > tabs > tab:checked {
+          opacity: 1; }
   notebook > header.right {
     border-left-style: solid; }
     notebook > header.right > tabs {
       margin-left: -2px; }
       notebook > header.right > tabs > tab:hover {
-        box-shadow: inset 4px 0 #b5b0ab; }
+        box-shadow: inset 0 -2px #f56428; }
       notebook > header.right > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.right > tabs > tab:checked {
-        box-shadow: inset 4px 0 #f56428; }
+        box-shadow: inset 0 -2px rgba(245, 100, 40, 0.2); }
+        notebook > header.right > tabs > tab:checked label, notebook > header.right > tabs > tab:checked {
+          opacity: 1; }
   notebook > header.top > tabs > arrow {
     border-top-style: none; }
   notebook > header.bottom > tabs > arrow {
@@ -3932,6 +3938,9 @@ separator {
   background: rgba(0, 0, 0, 0.1);
   min-width: 1px;
   min-height: 1px; }
+
+hdyleaflet > separator {
+  background-color: #b5b0ab; }
 
 /*********
  * Lists *

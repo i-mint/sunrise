@@ -3894,7 +3894,7 @@ actionbar > revealer > box {
 scrolledwindow viewport.frame {
   border-style: none; }
 scrolledwindow overshoot.top {
-  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -3902,7 +3902,7 @@ scrolledwindow overshoot.top {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.top:backdrop {
-    background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 100% 5%;
     background-repeat: no-repeat;
     background-position: center top;
@@ -3910,7 +3910,7 @@ scrolledwindow overshoot.top {
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.bottom {
-  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -3918,7 +3918,7 @@ scrolledwindow overshoot.bottom {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.bottom:backdrop {
-    background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 100% 5%;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -3926,7 +3926,7 @@ scrolledwindow overshoot.bottom {
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.left {
-  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: left center;
@@ -3934,7 +3934,7 @@ scrolledwindow overshoot.left {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.left:backdrop {
-    background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 5% 100%;
     background-repeat: no-repeat;
     background-position: left center;
@@ -3942,7 +3942,7 @@ scrolledwindow overshoot.left {
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.right {
-  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: right center;
@@ -3950,7 +3950,7 @@ scrolledwindow overshoot.right {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.right:backdrop {
-    background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 5% 100%;
     background-repeat: no-repeat;
     background-position: right center;
@@ -4216,7 +4216,7 @@ placessidebar row {
       color: #fff;
       background-color: #4e9a06; }
 placessidebar overshoot.top {
-  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -4224,7 +4224,7 @@ placessidebar overshoot.top {
   border: none;
   box-shadow: none; }
   placessidebar overshoot.top:backdrop {
-    background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, center top, 0, center top, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 100% 5%;
     background-repeat: no-repeat;
     background-position: center top;
@@ -4232,7 +4232,7 @@ placessidebar overshoot.top {
     border: none;
     box-shadow: none; }
 placessidebar overshoot.bottom {
-  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -4240,7 +4240,7 @@ placessidebar overshoot.bottom {
   border: none;
   box-shadow: none; }
   placessidebar overshoot.bottom:backdrop {
-    background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, center bottom, 0, center bottom, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 100% 5%;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -4248,7 +4248,7 @@ placessidebar overshoot.bottom {
     border: none;
     box-shadow: none; }
 placessidebar overshoot.left {
-  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, left center, 0, left center, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: left center;
@@ -4256,7 +4256,7 @@ placessidebar overshoot.left {
   border: none;
   box-shadow: none; }
   placessidebar overshoot.left:backdrop {
-    background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, left center, 0, left center, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 5% 100%;
     background-repeat: no-repeat;
     background-position: left center;
@@ -4264,7 +4264,7 @@ placessidebar overshoot.left {
     border: none;
     box-shadow: none; }
 placessidebar overshoot.right {
-  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(#9d9790), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(55, 55, 55, 0.07)), to(rgba(55, 55, 55, 0)));
+  background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(rgba(157, 151, 144, 0.3)), to(rgba(157, 151, 144, 0))), -gtk-gradient(radial, right center, 0, right center, 0.6, from(rgba(55, 55, 55, 0.2)), to(rgba(55, 55, 55, 0)));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: right center;
@@ -4272,7 +4272,7 @@ placessidebar overshoot.right {
   border: none;
   box-shadow: none; }
   placessidebar overshoot.right:backdrop {
-    background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(#beb9b5), to(rgba(190, 185, 181, 0)));
+    background-image: -gtk-gradient(radial, right center, 0, right center, 0.5, to(rgba(190, 185, 181, 0.3)), to(rgba(190, 185, 181, 0)));
     background-size: 5% 100%;
     background-repeat: no-repeat;
     background-position: right center;
@@ -4844,7 +4844,7 @@ headerbar button.close {
   box-shadow: 0 0 4px 0 rgba(245, 100, 40, 0.4); }
 
 .nautilus-window entry.search {
-  margin-right: 6px; }
+  margin-right: 0px; }
 
 .tweak-group button {
   color: #373737;

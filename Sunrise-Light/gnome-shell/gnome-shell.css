@@ -259,8 +259,7 @@ StScrollBar {
 
 .popup-menu {
   min-width: 15em;
-  color: #373737;
-  box-shadow: 2px 2px 2px 2px green; }
+  color: #373737; }
   .popup-menu.panel-menu {
     -boxpointer-gap: 4px;
     margin-bottom: 1.75em; }
@@ -1206,10 +1205,17 @@ StScrollBar {
   #panel .panel-button {
     font-weight: bold;
     color: #ccc;
-    -natural-hpadding: 12px;
-    -minimum-hpadding: 6px; }
+    -natural-hpadding: 2px;
+    -minimum-hpadding: 2px;
+    border-radius: 0px; }
+    #panel .panel-button.clock-display:hover .clock {
+      box-shadow: none; }
+    #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+      border-radius: 0px; }
     #panel .panel-button:hover {
-      color: white; }
+      color: white;
+      background-color: transparent;
+      box-shadow: none; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
       color: white; }
     #panel .panel-button .system-status-icon {
@@ -1225,7 +1231,8 @@ StScrollBar {
         color: #515151; }
   #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
     background-color: rgba(0, 0, 0, 0.01);
-    box-shadow: inset 0 -2px 0 0 #f67640; }
+    box-shadow: inset 0 -2px 0 0 #f67640;
+    border-radius: 0px; }
   #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
     box-shadow: none; }
     #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
@@ -1259,6 +1266,9 @@ StScrollBar {
 #overview {
   spacing: 24px;
   background-color: transparent; }
+
+#overviewGroup {
+  background-color: #000; }
 
 .overview-controls {
   padding-bottom: 32px; }

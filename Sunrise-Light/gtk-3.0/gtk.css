@@ -4884,6 +4884,10 @@ event.slanted-end label, event.slanted-end {
 event.slanted-end:backdrop label, event.slanted-end:backdrop {
   color: rgba(0, 0, 0, 0.5); }
 
+.thunar treeview.view:selected {
+  border: none;
+  box-shadow: none; }
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */

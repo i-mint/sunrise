@@ -6117,6 +6117,63 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
   opacity: 0.4;
 }
 
+.xfce4-panel {
+  background-color: #000;
+}
+.xfce4-panel label, .xfce4-panel {
+  color: #ccc;
+}
+.xfce4-panel button.toggle, .xfce4-panel button.flat {
+  background: transparent;
+  border-radius: -11px;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 2px 7px;
+}
+.xfce4-panel button.toggle label, .xfce4-panel button.toggle image, .xfce4-panel button.toggle, .xfce4-panel button.flat label, .xfce4-panel button.flat image, .xfce4-panel button.flat {
+  color: #ccc;
+}
+.xfce4-panel button.toggle:hover label, .xfce4-panel button.toggle:hover image, .xfce4-panel button.toggle:hover, .xfce4-panel button.flat:hover label, .xfce4-panel button.flat:hover image, .xfce4-panel button.flat:hover {
+  color: white;
+}
+.xfce4-panel button.toggle:active, .xfce4-panel button.flat:active {
+  background: #171717;
+}
+.xfce4-panel button.toggle:checked, .xfce4-panel button.toggle:checked:focus, .xfce4-panel button.toggle:checked:hover, .xfce4-panel button.flat:checked, .xfce4-panel button.flat:checked:focus, .xfce4-panel button.flat:checked:hover {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #f56428;
+  box-shadow: none;
+}
+.xfce4-panel button.toggle:checked label, .xfce4-panel button.toggle:checked image, .xfce4-panel button.toggle:checked, .xfce4-panel button.toggle:checked:focus label, .xfce4-panel button.toggle:checked:focus image, .xfce4-panel button.toggle:checked:focus, .xfce4-panel button.toggle:checked:hover label, .xfce4-panel button.toggle:checked:hover image, .xfce4-panel button.toggle:checked:hover, .xfce4-panel button.flat:checked label, .xfce4-panel button.flat:checked image, .xfce4-panel button.flat:checked, .xfce4-panel button.flat:checked:focus label, .xfce4-panel button.flat:checked:focus image, .xfce4-panel button.flat:checked:focus, .xfce4-panel button.flat:checked:hover label, .xfce4-panel button.flat:checked:hover image, .xfce4-panel button.flat:checked:hover {
+  color: white;
+}
+.xfce4-panel button.toggle:checked .popup label, .xfce4-panel button.toggle:checked .popup image, .xfce4-panel button.toggle:checked .popup, .xfce4-panel button.toggle:checked:focus .popup label, .xfce4-panel button.toggle:checked:focus .popup image, .xfce4-panel button.toggle:checked:focus .popup, .xfce4-panel button.toggle:checked:hover .popup label, .xfce4-panel button.toggle:checked:hover .popup image, .xfce4-panel button.toggle:checked:hover .popup, .xfce4-panel button.flat:checked .popup label, .xfce4-panel button.flat:checked .popup image, .xfce4-panel button.flat:checked .popup, .xfce4-panel button.flat:checked:focus .popup label, .xfce4-panel button.flat:checked:focus .popup image, .xfce4-panel button.flat:checked:focus .popup, .xfce4-panel button.flat:checked:hover .popup label, .xfce4-panel button.flat:checked:hover .popup image, .xfce4-panel button.flat:checked:hover .popup {
+  color: #373737;
+}
+.xfce4-panel button.toggle:checked .popup menuitem:hover, .xfce4-panel button.toggle:checked .popup menuitem:active, .xfce4-panel button.toggle:checked .popup menuitem:checked, .xfce4-panel button.toggle:checked:focus .popup menuitem:hover, .xfce4-panel button.toggle:checked:focus .popup menuitem:active, .xfce4-panel button.toggle:checked:focus .popup menuitem:checked, .xfce4-panel button.toggle:checked:hover .popup menuitem:hover, .xfce4-panel button.toggle:checked:hover .popup menuitem:active, .xfce4-panel button.toggle:checked:hover .popup menuitem:checked, .xfce4-panel button.flat:checked .popup menuitem:hover, .xfce4-panel button.flat:checked .popup menuitem:active, .xfce4-panel button.flat:checked .popup menuitem:checked, .xfce4-panel button.flat:checked:focus .popup menuitem:hover, .xfce4-panel button.flat:checked:focus .popup menuitem:active, .xfce4-panel button.flat:checked:focus .popup menuitem:checked, .xfce4-panel button.flat:checked:hover .popup menuitem:hover, .xfce4-panel button.flat:checked:hover .popup menuitem:active, .xfce4-panel button.flat:checked:hover .popup menuitem:checked {
+  background: #f56428;
+}
+.xfce4-panel button.toggle:checked .popup menuitem:hover label, .xfce4-panel button.toggle:checked .popup menuitem:hover image, .xfce4-panel button.toggle:checked .popup menuitem:hover, .xfce4-panel button.toggle:checked .popup menuitem:active label, .xfce4-panel button.toggle:checked .popup menuitem:active image, .xfce4-panel button.toggle:checked .popup menuitem:active, .xfce4-panel button.toggle:checked .popup menuitem:checked label, .xfce4-panel button.toggle:checked .popup menuitem:checked image, .xfce4-panel button.toggle:checked .popup menuitem:checked, .xfce4-panel button.toggle:checked:focus .popup menuitem:hover label, .xfce4-panel button.toggle:checked:focus .popup menuitem:hover image, .xfce4-panel button.toggle:checked:focus .popup menuitem:hover, .xfce4-panel button.toggle:checked:focus .popup menuitem:active label, .xfce4-panel button.toggle:checked:focus .popup menuitem:active image, .xfce4-panel button.toggle:checked:focus .popup menuitem:active, .xfce4-panel button.toggle:checked:focus .popup menuitem:checked label, .xfce4-panel button.toggle:checked:focus .popup menuitem:checked image, .xfce4-panel button.toggle:checked:focus .popup menuitem:checked, .xfce4-panel button.toggle:checked:hover .popup menuitem:hover label, .xfce4-panel button.toggle:checked:hover .popup menuitem:hover image, .xfce4-panel button.toggle:checked:hover .popup menuitem:hover, .xfce4-panel button.toggle:checked:hover .popup menuitem:active label, .xfce4-panel button.toggle:checked:hover .popup menuitem:active image, .xfce4-panel button.toggle:checked:hover .popup menuitem:active, .xfce4-panel button.toggle:checked:hover .popup menuitem:checked label, .xfce4-panel button.toggle:checked:hover .popup menuitem:checked image, .xfce4-panel button.toggle:checked:hover .popup menuitem:checked, .xfce4-panel button.flat:checked .popup menuitem:hover label, .xfce4-panel button.flat:checked .popup menuitem:hover image, .xfce4-panel button.flat:checked .popup menuitem:hover, .xfce4-panel button.flat:checked .popup menuitem:active label, .xfce4-panel button.flat:checked .popup menuitem:active image, .xfce4-panel button.flat:checked .popup menuitem:active, .xfce4-panel button.flat:checked .popup menuitem:checked label, .xfce4-panel button.flat:checked .popup menuitem:checked image, .xfce4-panel button.flat:checked .popup menuitem:checked, .xfce4-panel button.flat:checked:focus .popup menuitem:hover label, .xfce4-panel button.flat:checked:focus .popup menuitem:hover image, .xfce4-panel button.flat:checked:focus .popup menuitem:hover, .xfce4-panel button.flat:checked:focus .popup menuitem:active label, .xfce4-panel button.flat:checked:focus .popup menuitem:active image, .xfce4-panel button.flat:checked:focus .popup menuitem:active, .xfce4-panel button.flat:checked:focus .popup menuitem:checked label, .xfce4-panel button.flat:checked:focus .popup menuitem:checked image, .xfce4-panel button.flat:checked:focus .popup menuitem:checked, .xfce4-panel button.flat:checked:hover .popup menuitem:hover label, .xfce4-panel button.flat:checked:hover .popup menuitem:hover image, .xfce4-panel button.flat:checked:hover .popup menuitem:hover, .xfce4-panel button.flat:checked:hover .popup menuitem:active label, .xfce4-panel button.flat:checked:hover .popup menuitem:active image, .xfce4-panel button.flat:checked:hover .popup menuitem:active, .xfce4-panel button.flat:checked:hover .popup menuitem:checked label, .xfce4-panel button.flat:checked:hover .popup menuitem:checked image, .xfce4-panel button.flat:checked:hover .popup menuitem:checked {
+  color: #fff;
+}
+.xfce4-panel button.toggle:backdrop, .xfce4-panel button.flat:backdrop {
+  opacity: 0.6;
+}
+.xfce4-panel wnck-pager {
+  background: #303030;
+}
+.xfce4-panel wnck-pager:hover {
+  background: rgba(245, 100, 40, 0.4);
+}
+.xfce4-panel wnck-pager:selected {
+  background: #f56428;
+  box-shadow: none;
+  border: none;
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */

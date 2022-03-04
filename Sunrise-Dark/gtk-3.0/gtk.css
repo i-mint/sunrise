@@ -5998,6 +5998,31 @@ headerbar button.close:active {
   margin-right: 0px;
 }
 
+.gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #110f0d;
+  border-bottom-color: black;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #2b2621, #312c25 1px);
+}
+.gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:focus, .gedit-side-panel-paned .view:selected:hover {
+  background: image(#af3908);
+  border-color: #af3908;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.gedit-side-panel-paned .view:selected label, .gedit-side-panel-paned iconview:selected label, .gedit-side-panel-paned .view:selected, .gedit-side-panel-paned iconview:selected, .gedit-side-panel-paned .view:selected:focus label, .gedit-side-panel-paned .view:selected:focus, .gedit-side-panel-paned .view:selected:hover label, .gedit-side-panel-paned .view:selected:hover {
+  color: #fff;
+}
+.gedit-side-panel-paned .view:selected:backdrop, .gedit-side-panel-paned iconview:selected:backdrop, .gedit-side-panel-paned .view:selected:focus:backdrop, .gedit-side-panel-paned .view:selected:hover:backdrop {
+  box-shadow: none;
+  border: none;
+}
+
 .tweak-group button {
   color: #e3ded9;
   outline-color: rgba(227, 222, 217, 0.3);

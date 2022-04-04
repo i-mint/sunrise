@@ -5977,6 +5977,610 @@ headerbar button.close:active {
   box-shadow: none;
 }
 
+.budgie-container {
+  background-color: transparent;
+  border: none;
+}
+.budgie-container:backdrop {
+  background: transparent;
+}
+
+.night-light-indicator button, .night-light-indicator button.display-settings-button, .budgie-popover:not(.csd) stack.clock-applet-stack button, .budgie-popover:not(.csd) stack.icon-popover-stack button, .budgie-popover:not(.csd).workspace-popover button, .budgie-popover:not(.csd).budgie-menu .category-button, .budgie-menu .category-button {
+  background: image(transparent);
+  border-color: transparent;
+  padding: 4px 6px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.night-light-indicator button label, .night-light-indicator button.display-settings-button label, .budgie-popover:not(.csd) stack.clock-applet-stack button label, .budgie-popover:not(.csd) stack.icon-popover-stack button label, .budgie-popover:not(.csd).workspace-popover button label, .budgie-popover:not(.csd).budgie-menu .category-button label, .budgie-menu .category-button label, .night-light-indicator button image, .night-light-indicator button.display-settings-button image, .budgie-popover:not(.csd) stack.clock-applet-stack button image, .budgie-popover:not(.csd) stack.icon-popover-stack button image, .budgie-popover:not(.csd).workspace-popover button image, .budgie-popover:not(.csd).budgie-menu .category-button image, .budgie-menu .category-button image, .night-light-indicator button, .night-light-indicator button.display-settings-button, .budgie-popover:not(.csd) stack.clock-applet-stack button, .budgie-popover:not(.csd) stack.icon-popover-stack button, .budgie-popover:not(.csd).workspace-popover button, .budgie-popover:not(.csd).budgie-menu .category-button, .budgie-menu .category-button {
+  color: #373737;
+}
+.night-light-indicator button:hover, .budgie-popover:not(.csd) stack.clock-applet-stack button:hover, .budgie-popover:not(.csd) stack.icon-popover-stack button:hover, .budgie-popover:not(.csd).workspace-popover button:hover, .budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-menu .category-button:hover {
+  background: image(rgba(55, 55, 55, 0.1));
+  border-color: #b5b0ab;
+  box-shadow: none;
+}
+.night-light-indicator button:hover label, .budgie-popover:not(.csd) stack.clock-applet-stack button:hover label, .budgie-popover:not(.csd) stack.icon-popover-stack button:hover label, .budgie-popover:not(.csd).workspace-popover button:hover label, .budgie-popover:not(.csd).budgie-menu .category-button:hover label, .budgie-menu .category-button:hover label, .night-light-indicator button:hover, .budgie-popover:not(.csd) stack.clock-applet-stack button:hover, .budgie-popover:not(.csd) stack.icon-popover-stack button:hover, .budgie-popover:not(.csd).workspace-popover button:hover, .budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-menu .category-button:hover {
+  color: #373737;
+}
+.night-light-indicator button:hover image, .budgie-popover:not(.csd) stack.clock-applet-stack button:hover image, .budgie-popover:not(.csd) stack.icon-popover-stack button:hover image, .budgie-popover:not(.csd).workspace-popover button:hover image, .budgie-popover:not(.csd).budgie-menu .category-button:hover image, .budgie-menu .category-button:hover image {
+  color: #f45615;
+}
+.night-light-indicator button:active, .budgie-popover:not(.csd) stack.clock-applet-stack button:active, .budgie-popover:not(.csd) stack.icon-popover-stack button:active, .budgie-popover:not(.csd).workspace-popover button:active, .budgie-popover:not(.csd).budgie-menu .category-button:active, .budgie-menu .category-button:active, .night-light-indicator button:selected, .budgie-popover:not(.csd) stack.clock-applet-stack button:selected, .budgie-popover:not(.csd) stack.icon-popover-stack button:selected, .budgie-popover:not(.csd).workspace-popover button:selected, .budgie-popover:not(.csd).budgie-menu .category-button:selected, .budgie-menu .category-button:selected, .night-light-indicator button:checked, .budgie-popover:not(.csd) stack.clock-applet-stack button:checked, .budgie-popover:not(.csd) stack.icon-popover-stack button:checked, .budgie-popover:not(.csd).workspace-popover button:checked, .budgie-popover:not(.csd).budgie-menu .category-button:checked, .budgie-menu .category-button:checked {
+  background: image(white);
+  border-color: #f2f2f2;
+  font-weight: normal;
+  box-shadow: 0 0 4px 0 rgba(245, 100, 40, 0.4);
+}
+.night-light-indicator button:active label, .budgie-popover:not(.csd) stack.clock-applet-stack button:active label, .budgie-popover:not(.csd) stack.icon-popover-stack button:active label, .budgie-popover:not(.csd).workspace-popover button:active label, .budgie-popover:not(.csd).budgie-menu .category-button:active label, .budgie-menu .category-button:active label, .night-light-indicator button:active image, .budgie-popover:not(.csd) stack.clock-applet-stack button:active image, .budgie-popover:not(.csd) stack.icon-popover-stack button:active image, .budgie-popover:not(.csd).workspace-popover button:active image, .budgie-popover:not(.csd).budgie-menu .category-button:active image, .budgie-menu .category-button:active image, .night-light-indicator button:active, .budgie-popover:not(.csd) stack.clock-applet-stack button:active, .budgie-popover:not(.csd) stack.icon-popover-stack button:active, .budgie-popover:not(.csd).workspace-popover button:active, .budgie-popover:not(.csd).budgie-menu .category-button:active, .budgie-menu .category-button:active, .night-light-indicator button:selected label, .budgie-popover:not(.csd) stack.clock-applet-stack button:selected label, .budgie-popover:not(.csd) stack.icon-popover-stack button:selected label, .budgie-popover:not(.csd).workspace-popover button:selected label, .budgie-popover:not(.csd).budgie-menu .category-button:selected label, .budgie-menu .category-button:selected label, .night-light-indicator button:selected image, .budgie-popover:not(.csd) stack.clock-applet-stack button:selected image, .budgie-popover:not(.csd) stack.icon-popover-stack button:selected image, .budgie-popover:not(.csd).workspace-popover button:selected image, .budgie-popover:not(.csd).budgie-menu .category-button:selected image, .budgie-menu .category-button:selected image, .night-light-indicator button:selected, .budgie-popover:not(.csd) stack.clock-applet-stack button:selected, .budgie-popover:not(.csd) stack.icon-popover-stack button:selected, .budgie-popover:not(.csd).workspace-popover button:selected, .budgie-popover:not(.csd).budgie-menu .category-button:selected, .budgie-menu .category-button:selected, .night-light-indicator button:checked label, .budgie-popover:not(.csd) stack.clock-applet-stack button:checked label, .budgie-popover:not(.csd) stack.icon-popover-stack button:checked label, .budgie-popover:not(.csd).workspace-popover button:checked label, .budgie-popover:not(.csd).budgie-menu .category-button:checked label, .budgie-menu .category-button:checked label, .night-light-indicator button:checked image, .budgie-popover:not(.csd) stack.clock-applet-stack button:checked image, .budgie-popover:not(.csd) stack.icon-popover-stack button:checked image, .budgie-popover:not(.csd).workspace-popover button:checked image, .budgie-popover:not(.csd).budgie-menu .category-button:checked image, .budgie-menu .category-button:checked image, .night-light-indicator button:checked, .budgie-popover:not(.csd) stack.clock-applet-stack button:checked, .budgie-popover:not(.csd) stack.icon-popover-stack button:checked, .budgie-popover:not(.csd).workspace-popover button:checked, .budgie-popover:not(.csd).budgie-menu .category-button:checked, .budgie-menu .category-button:checked {
+  color: black;
+}
+
+.budgie-menu row button {
+  background: image(transparent);
+  border-color: transparent;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: 200ms ease-out;
+}
+.budgie-menu row button:hover {
+  background: image(rgba(55, 55, 55, 0.1));
+  border-color: #b5b0ab;
+}
+.budgie-menu row button:hover label, .budgie-menu row button:hover {
+  color: #373737;
+}
+.budgie-menu row button:active {
+  background: image(#f56428);
+  border-color: #b5b0ab;
+  font-weight: normal;
+}
+.budgie-menu row button:active label, .budgie-menu row button:active {
+  color: #fff;
+}
+
+.budgie-menu scrolledwindow,
+.budgie-menu list,
+.budgie-menu row,
+.budgie-menu scrollbar {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.budgie-menu entry {
+  border-color: transparent;
+  border-bottom: 2px solid #f56428;
+  border-radius: 0;
+  background: transparent;
+  padding: 9px 4px;
+  box-shadow: none;
+  caret-color: currentColor;
+}
+.budgie-menu entry label, .budgie-menu entry image, .budgie-menu entry {
+  color: #373737;
+}
+.budgie-menu .categories {
+  padding: 0 2px;
+}
+.budgie-menu .categories label, .budgie-menu .categories {
+  color: #373737;
+}
+.budgie-notification-window, .raven-background,
+.raven-frame,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list, .budgie-popover:not(.csd).user-menu, .budgie-popover:not(.csd).places-menu, .budgie-popover:not(.csd).background {
+  background-image: linear-gradient(to bottom left, whitesmoke, #ebebeb, #eddecf);
+}
+.budgie-notification-window label, .raven-background label,
+.raven-frame label,
+.raven label,
+.raven-notifications-view > .raven-background > .frame > list label, .budgie-popover:not(.csd).user-menu label, .budgie-popover:not(.csd).places-menu label, .budgie-popover:not(.csd).background label {
+  color: #373737;
+}
+
+.budgie-popover:not(.csd).background {
+  border-radius: 4px;
+  background-clip: border-box;
+  border: none;
+  color: transparent;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.34);
+}
+.budgie-popover:not(.csd) > frame.container,
+.budgie-popover:not(.csd) > frame.container > border {
+  border-style: none;
+  background: transparent;
+}
+.budgie-popover:not(.csd) list:hover label, .budgie-popover:not(.csd) list:hover, .budgie-popover:not(.csd) list:focus label, .budgie-popover:not(.csd) list:focus, .budgie-popover:not(.csd) list:active label, .budgie-popover:not(.csd) list:active, .budgie-popover:not(.csd) list:checked label, .budgie-popover:not(.csd) list:checked, .budgie-popover:not(.csd) list:selected label, .budgie-popover:not(.csd) list:selected, .budgie-popover:not(.csd) row:hover label, .budgie-popover:not(.csd) row:hover, .budgie-popover:not(.csd) row:focus label, .budgie-popover:not(.csd) row:focus, .budgie-popover:not(.csd) row:active label, .budgie-popover:not(.csd) row:active, .budgie-popover:not(.csd) row:checked label, .budgie-popover:not(.csd) row:checked, .budgie-popover:not(.csd) row:selected label, .budgie-popover:not(.csd) row:selected {
+  color: #373737;
+}
+.budgie-popover:not(.csd) list:backdrop, .budgie-popover:not(.csd) list:disabled, .budgie-popover:not(.csd) row:backdrop, .budgie-popover:not(.csd) row:disabled {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd) .categories {
+  border-right: 1px solid rgba(55, 55, 55, 0.1);
+}
+.budgie-popover:not(.csd).user-menu row, .budgie-popover:not(.csd).user-menu list, .budgie-popover:not(.csd).places-menu row, .budgie-popover:not(.csd).places-menu list {
+  background: image(transparent);
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+.budgie-popover:not(.csd).user-menu row:hover, .budgie-popover:not(.csd).user-menu list:hover, .budgie-popover:not(.csd).places-menu row:hover, .budgie-popover:not(.csd).places-menu list:hover {
+  background: image(transparent);
+  box-shadow: none;
+  border-color: #b5b0ab;
+  transition: none;
+  animation: none;
+}
+.budgie-popover:not(.csd).user-menu row:active, .budgie-popover:not(.csd).user-menu row:checked, .budgie-popover:not(.csd).user-menu list:active, .budgie-popover:not(.csd).user-menu list:checked, .budgie-popover:not(.csd).places-menu row:active, .budgie-popover:not(.csd).places-menu row:checked, .budgie-popover:not(.csd).places-menu list:active, .budgie-popover:not(.csd).places-menu list:checked {
+  background: image(white);
+  border-color: #f2f2f2;
+  font-weight: normal;
+  box-shadow: 0 0 4px 0 rgba(245, 100, 40, 0.4);
+}
+.budgie-popover:not(.csd).user-menu row:active label, .budgie-popover:not(.csd).user-menu row:active image, .budgie-popover:not(.csd).user-menu row:active, .budgie-popover:not(.csd).user-menu row:checked label, .budgie-popover:not(.csd).user-menu row:checked image, .budgie-popover:not(.csd).user-menu row:checked, .budgie-popover:not(.csd).user-menu list:active label, .budgie-popover:not(.csd).user-menu list:active image, .budgie-popover:not(.csd).user-menu list:active, .budgie-popover:not(.csd).user-menu list:checked label, .budgie-popover:not(.csd).user-menu list:checked image, .budgie-popover:not(.csd).user-menu list:checked, .budgie-popover:not(.csd).places-menu row:active label, .budgie-popover:not(.csd).places-menu row:active image, .budgie-popover:not(.csd).places-menu row:active, .budgie-popover:not(.csd).places-menu row:checked label, .budgie-popover:not(.csd).places-menu row:checked image, .budgie-popover:not(.csd).places-menu row:checked, .budgie-popover:not(.csd).places-menu list:active label, .budgie-popover:not(.csd).places-menu list:active image, .budgie-popover:not(.csd).places-menu list:active, .budgie-popover:not(.csd).places-menu list:checked label, .budgie-popover:not(.csd).places-menu list:checked image, .budgie-popover:not(.csd).places-menu list:checked {
+  color: black;
+}
+.budgie-popover:not(.csd).user-menu row button, .budgie-popover:not(.csd).user-menu list button, .budgie-popover:not(.csd).places-menu row button, .budgie-popover:not(.csd).places-menu list button {
+  margin: 1px 0;
+}
+.budgie-popover:not(.csd).user-menu row button image, .budgie-popover:not(.csd).user-menu list button image, .budgie-popover:not(.csd).places-menu row button image, .budgie-popover:not(.csd).places-menu list button image {
+  color: #f45615;
+}
+.budgie-popover:not(.csd).budgie-menu row, .budgie-popover:not(.csd).budgie-menu list {
+  background: image(transparent);
+}
+.budgie-popover:not(.csd).budgie-menu row button, .budgie-popover:not(.csd).budgie-menu list button {
+  padding: 3px 6px;
+  margin: 5px 0 0 0;
+}
+.budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover {
+  background: rgba(55, 55, 55, 0.1);
+}
+.budgie-popover:not(.csd).budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover label, .budgie-popover:not(.csd).budgie-menu list button:hover {
+  color: #373737;
+}
+.budgie-popover:not(.csd).budgie-menu .category-button {
+  margin: 5px 0 2px 0;
+}
+.budgie-popover:not(.csd) stack.icon-popover-stack {
+  padding: 2px;
+}
+.budgie-popover:not(.csd) stack.clock-applet-stack {
+  padding: 2px;
+}
+.night-light-indicator .container {
+  padding: 4px 6px;
+}
+.night-light-indicator .view-header {
+  background: transparent;
+}
+.night-light-indicator spinbutton {
+  background: #E0DDD9;
+  color: #373737;
+  border-radius: 4px;
+  border: 1px solid #f56428;
+}
+.night-light-indicator spinbutton button.up:hover, .night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.up {
+  border-radius: 0px 4px 4px 0px;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.night-light-indicator spinbutton button.down:hover, .night-light-indicator spinbutton button.down:active, .night-light-indicator spinbutton button.down {
+  border-radius: 0;
+  background: transparent;
+  border-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.down:active {
+  border-color: transparent;
+  border-color: transparent;
+}
+.night-light-indicator spinbutton button.up:active image, .night-light-indicator spinbutton button.up:active, .night-light-indicator spinbutton button.down:active image, .night-light-indicator spinbutton button.down:active {
+  color: #f56428;
+}
+.night-light-indicator entry {
+  border-color: transparent;
+}
+.night-light-indicator entry:focus, .night-light-indicator entry {
+  background: transparent;
+  border-color: transparent;
+}
+.night-light-indicator entry selection {
+  background: #f56428;
+  color: #fff;
+}
+.night-light-indicator button.combo {
+  padding: 2px 8px;
+  background: image(transparent);
+}
+.night-light-indicator button.combo:hover {
+  background: image(rgba(55, 55, 55, 0.1));
+  border-color: #b5b0ab;
+}
+
+.budgie-panel {
+  background: image(#000);
+  box-shadow: none;
+  border: none;
+}
+.budgie-panel label, .budgie-panel image {
+  color: rgba(204, 204, 204, 0.6);
+}
+.budgie-panel button {
+  background: image(transparent);
+  box-shadow: none;
+  border-radius: 4px;
+  border: none;
+}
+.budgie-panel button label, .budgie-panel button image, .budgie-panel button {
+  color: rgba(204, 204, 204, 0.6);
+}
+.budgie-panel button:hover {
+  background: image(#171717);
+}
+.budgie-panel button:active, .budgie-panel button:checked, .budgie-panel button:selected {
+  background: image(#1f1f1f);
+  border: none;
+}
+.budgie-panel button:active label, .budgie-panel button:active image, .budgie-panel button:active, .budgie-panel button:checked label, .budgie-panel button:checked image, .budgie-panel button:checked, .budgie-panel button:selected label, .budgie-panel button:selected image, .budgie-panel button:selected {
+  color: #ccc;
+}
+.budgie-panel button#tasklist-button, .budgie-panel button.flat {
+  background: image(#000);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+.budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image, .budgie-panel button.flat label, .budgie-panel button.flat image {
+  color: rgba(204, 204, 204, 0.6);
+}
+.top .budgie-panel button#tasklist-button, .top .budgie-panel button.flat {
+  border-bottom: 2px solid #000;
+}
+.bottom .budgie-panel button#tasklist-button, .bottom .budgie-panel button.flat {
+  border-top: 2px solid #000;
+}
+.left .budgie-panel button#tasklist-button, .left .budgie-panel button.flat {
+  border-right: 2px solid #000;
+}
+.right .budgie-panel button#tasklist-button, .right .budgie-panel button.flat {
+  border-left: 2px solid #000;
+}
+.budgie-panel button#tasklist-button:hover, .budgie-panel button.flat:hover {
+  background: image(#000);
+}
+.top .budgie-panel button#tasklist-button:hover, .top .budgie-panel button.flat:hover {
+  border-bottom: 2px solid #f56428;
+}
+.bottom .budgie-panel button#tasklist-button:hover, .bottom .budgie-panel button.flat:hover {
+  border-top: 2px solid #f56428;
+}
+.left .budgie-panel button#tasklist-button:hover, .left .budgie-panel button.flat:hover {
+  border-right: 2px solid #f56428;
+}
+.right .budgie-panel button#tasklist-button:hover, .right .budgie-panel button.flat:hover {
+  border-left: 2px solid #f56428;
+}
+.budgie-panel button#tasklist-button:active label, .budgie-panel button#tasklist-button:active image, .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked label, .budgie-panel button#tasklist-button:checked image, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected label, .budgie-panel button#tasklist-button:selected image, .budgie-panel button#tasklist-button:selected, .budgie-panel button.flat:active label, .budgie-panel button.flat:active image, .budgie-panel button.flat:active, .budgie-panel button.flat:checked label, .budgie-panel button.flat:checked image, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected label, .budgie-panel button.flat:selected image, .budgie-panel button.flat:selected {
+  color: #ccc;
+}
+.top .budgie-panel button#tasklist-button:active, .top .budgie-panel button#tasklist-button:checked, .top .budgie-panel button#tasklist-button:selected, .top .budgie-panel button.flat:active, .top .budgie-panel button.flat:checked, .top .budgie-panel button.flat:selected {
+  border-bottom: 2px solid rgba(245, 100, 40, 0.6);
+  border-radius: 4px 4px 0 0;
+}
+.bottom .budgie-panel button#tasklist-button:active, .bottom .budgie-panel button#tasklist-button:checked, .bottom .budgie-panel button#tasklist-button:selected, .bottom .budgie-panel button.flat:active, .bottom .budgie-panel button.flat:checked, .bottom .budgie-panel button.flat:selected {
+  border-top: 2px solid rgba(245, 100, 40, 0.6);
+  border-radius: 0 0 4px 4px;
+}
+.left .budgie-panel button#tasklist-button:active, .left .budgie-panel button#tasklist-button:checked, .left .budgie-panel button#tasklist-button:selected, .left .budgie-panel button.flat:active, .left .budgie-panel button.flat:checked, .left .budgie-panel button.flat:selected {
+  border-right: 2px solid rgba(245, 100, 40, 0.6);
+  border-radius: 0 4px 4px 0;
+}
+.right .budgie-panel button#tasklist-button:active, .right .budgie-panel button#tasklist-button:checked, .right .budgie-panel button#tasklist-button:selected, .right .budgie-panel button.flat:active, .right .budgie-panel button.flat:checked, .right .budgie-panel button.flat:selected {
+  border-left: 2px solid rgba(245, 100, 40, 0.6);
+  border-radius: 4px 0 0 4px;
+}
+.budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected {
+  background: image(#1f1f1f);
+}
+.budgie-panel button.flat:active, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected {
+  background: image(#2e2e2e);
+}
+.top .budgie-panel button.flat:active, .top .budgie-panel button.flat:checked, .top .budgie-panel button.flat:selected {
+  border-bottom: 2px solid #f56428;
+  border-radius: 4px 4px 0 0;
+}
+.bottom .budgie-panel button.flat:active, .bottom .budgie-panel button.flat:checked, .bottom .budgie-panel button.flat:selected {
+  border-top: 2px solid #f56428;
+  border-radius: 0 0 4px 4px;
+}
+.left .budgie-panel button.flat:active, .left .budgie-panel button.flat:checked, .left .budgie-panel button.flat:selected {
+  border-right: 2px solid #f56428;
+  border-radius: 0 4px 4px 0;
+}
+.right .budgie-panel button.flat:active, .right .budgie-panel button.flat:checked, .right .budgie-panel button.flat:selected {
+  border-left: 2px solid #f56428;
+  border-radius: 4px 0 0 4px;
+}
+.budgie-panel button.flat.running {
+  background: image(#000);
+}
+.budgie-panel button.launcher, .budgie-panel button.flat.running {
+  border-radius: 0;
+}
+.top .budgie-panel button.launcher, .top .budgie-panel button.flat.running {
+  border-bottom: 2px solid #000;
+}
+.bottom .budgie-panel button.launcher, .bottom .budgie-panel button.flat.running {
+  border-top: 2px solid #000;
+}
+.left .budgie-panel button.launcher, .left .budgie-panel button.flat.running {
+  border-right: 2px solid #000;
+}
+.right .budgie-panel button.launcher, .right .budgie-panel button.flat.running {
+  border-left: 2px solid #000;
+}
+.top .budgie-panel button.launcher:hover, .top .budgie-panel button.flat.running:hover {
+  border-bottom: 2px solid rgba(245, 100, 40, 0.6);
+}
+.bottom .budgie-panel button.launcher:hover, .bottom .budgie-panel button.flat.running:hover {
+  border-top: 2px solid rgba(245, 100, 40, 0.6);
+}
+.left .budgie-panel button.launcher:hover, .left .budgie-panel button.flat.running:hover {
+  border-right: 2px solid rgba(245, 100, 40, 0.6);
+}
+.right .budgie-panel button.launcher:hover, .right .budgie-panel button.flat.running:hover {
+  border-left: 2px solid rgba(245, 100, 40, 0.6);
+}
+.budgie-panel button.launcher:checked, .budgie-panel button.launcher:selected, .budgie-panel button.flat.running:checked, .budgie-panel button.flat.running:selected {
+  background: #000;
+  border-radius: 0;
+}
+.top .budgie-panel button.launcher:checked, .top .budgie-panel button.launcher:selected, .top .budgie-panel button.flat.running:checked, .top .budgie-panel button.flat.running:selected {
+  border-bottom: 2px solid #f56428;
+}
+.bottom .budgie-panel button.launcher:checked, .bottom .budgie-panel button.launcher:selected, .bottom .budgie-panel button.flat.running:checked, .bottom .budgie-panel button.flat.running:selected {
+  border-top: 2px solid #f56428;
+}
+.left .budgie-panel button.launcher:checked, .left .budgie-panel button.launcher:selected, .left .budgie-panel button.flat.running:checked, .left .budgie-panel button.flat.running:selected {
+  border-right: 2px solid #f56428;
+}
+.right .budgie-panel button.launcher:checked, .right .budgie-panel button.launcher:selected, .right .budgie-panel button.flat.running:checked, .right .budgie-panel button.flat.running:selected {
+  border-left: 2px solid #f56428;
+}
+.budgie-panel separator {
+  background: rgba(204, 204, 204, 0.4);
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item {
+  background: #121212;
+  border-radius: 0;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item label, .budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
+  color: rgba(204, 204, 204, 0.6);
+}
+.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-bottom: 2px solid rgba(55, 55, 55, 0.2);
+  margin: 0 2px;
+}
+.bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-top: 2px solid rgba(55, 55, 55, 0.2);
+  margin: 0 2px;
+}
+.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-right: 2px solid rgba(55, 55, 55, 0.2);
+  margin: 2px 0;
+}
+.right .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
+  border-left: 2px solid rgba(55, 55, 55, 0.2);
+  margin: 2px 0;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  background: image(#1f1f1f);
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace button.workspace-icon-button {
+  background: transparent;
+  border: none;
+}
+.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-bottom: 2px solid #f56428;
+  border-radius: 4px 4px 0 0;
+}
+.bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-top: 2px solid #f56428;
+  border-radius: 0 0 4px 4px;
+}
+.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-right: 2px solid #f56428;
+  border-radius: 4px 0 0 4px;
+}
+.right .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+  border-left: 2px solid #f56428;
+  border-radius: 0 4px 4px 0;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item button.workspace-icon-button {
+  padding: 4px;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item label.workspace-more-label {
+  font-weight: normal;
+  color: #f56428;
+  opacity: 1;
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button {
+  background: #000;
+  border-radius: 4px;
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button image {
+  color: rgba(204, 204, 204, 0.6);
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active {
+  background: #f56428;
+  border: none;
+}
+.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button:active image {
+  color: #fff;
+}
+.budgie-panel.transparent {
+  background: image(transparent);
+}
+.budgie-panel.transparent .workspace-layout .workspace-item,
+.budgie-panel.transparent .workspace-layout .workspace-item.current-workspace {
+  background: transparent;
+}
+.budgie-panel.transparent button.flat.running,
+.budgie-panel.transparent button.flat,
+.budgie-panel.transparent button.launcher,
+.budgie-panel.transparent button#tasklist-button,
+.budgie-panel.transparent button.image-button.workspace-add-button {
+  background: image(transparent);
+}
+.top .budgie-panel.transparent button.launcher, .top .budgie-panel.transparent button.flat, .top .budgie-panel.transparent button#tasklist-button {
+  border-bottom-color: transparent;
+}
+.bottom .budgie-panel.transparent button.launcher, .bottom .budgie-panel.transparent button.flat, .bottom .budgie-panel.transparent button#tasklist-button {
+  border-top-color: transparent;
+}
+.left .budgie-panel.transparent button.launcher, .left .budgie-panel.transparent button.flat, .left .budgie-panel.transparent button#tasklist-button {
+  border-right-color: transparent;
+}
+.right .budgie-panel.transparent button.launcher, .right .budgie-panel.transparent button.flat, .right .budgie-panel.transparent button#tasklist-button {
+  border-left-color: transparent;
+}
+.top .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher), .bottom .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher) {
+  padding: 0 4px;
+}
+.left .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher), .right .budgie-panel button.flat:not(.raven-trigger):not(.budgie-menu-launcher) {
+  padding: 2px 0;
+}
+
+.raven-background,
+.raven-header,
+.raven-frame,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list {
+  border-radius: 4px;
+  box-shadow: none;
+}
+.raven-background label, .raven-background image, .raven-background,
+.raven-header label,
+.raven-header image,
+.raven-header,
+.raven-frame label,
+.raven-frame image,
+.raven-frame,
+.raven label,
+.raven image,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list label,
+.raven-notifications-view > .raven-background > .frame > list image,
+.raven-notifications-view > .raven-background > .frame > list {
+  color: #373737;
+}
+
+.raven-frame > border {
+  border: none 0 transparent;
+  border-left: 0.2px solid #b5b0ab;
+  box-shadow: none;
+}
+
+.raven calendar.raven-calendar {
+  background: _solid(#e0dedc);
+  color: #373737;
+  padding: 4px;
+  border-color: transparent;
+}
+.raven calendar.raven-calendar.button, .raven calendar.raven-calendar.button-focus {
+  background: transparent;
+}
+.raven calendar.raven-calendar:selected {
+  background: image(transparent);
+  color: #f56428;
+}
+.raven button {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #b5b0ab;
+  border-bottom-color: #a7a19b;
+  background-image: linear-gradient(to top, #d6d4d1 2px, #e0dedc);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.raven button label {
+  color: inherit;
+}
+.raven button:hover {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #b5b0ab;
+  border-bottom-color: #a7a19b;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #e0dedc, #cac7c4 1px);
+}
+.raven button:hover label {
+  color: inherit;
+}
+.raven button:active, .raven button:checked, .raven button:selected, .raven button:checked:hover, .raven button:selected:hover {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #b5b0ab;
+  background-image: image(#e5e3e1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: 0 0 4px 0 rgba(245, 100, 40, 0.2);
+}
+.raven button:active label, .raven button:checked label, .raven button:selected label, .raven button:checked:hover label, .raven button:selected:hover label {
+  color: inherit;
+}
+
+.budgie-run-dialog {
+  border-radius: 4px;
+  border-color: #b5b0ab;
+}
+.budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus {
+  background: image(transparent);
+  padding: 9px 4px;
+  box-shadow: none;
+  border-radius: 4px;
+  border-color: none;
+  border-bottom: 2px solid #f56428;
+}
+.budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus label,
+.budgie-run-dialog entry.search:focus image,
+.budgie-run-dialog entry.search:focus {
+  color: #373737;
+}
+.budgie-run-dialog entry.search image,
+.budgie-run-dialog entry.search:focus image {
+  padding: 0 9px;
+}
+.budgie-run-dialog list row:selected,
+.budgie-run-dialog list row:selected:hover {
+  background: image(rgba(55, 55, 55, 0.1));
+  border-color: #b5b0ab;
+}
+.budgie-run-dialog list row:selected label, .budgie-run-dialog list row:selected image, .budgie-run-dialog list row:selected,
+.budgie-run-dialog list row:selected:hover label,
+.budgie-run-dialog list row:selected:hover image,
+.budgie-run-dialog list row:selected:hover {
+  color: #373737;
+}
+
+.budgie-notification-window {
+  border-radius: 4px;
+  background-clip: border-box;
+}
+.budgie-notification-window button {
+  border-radius: 4px;
+}
+
 .nautilus-path-bar button {
   margin-right: 0px;
 }

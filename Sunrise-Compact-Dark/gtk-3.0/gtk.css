@@ -6550,19 +6550,19 @@ headerbar button.close:active {
   border-radius: 4px;
 }
 
-.nautilus-path-bar button {
+.nautilus-path-bar button:not(.popup) {
   margin-right: 0px;
 }
-.nautilus-path-bar button.image-button:last-child {
+.nautilus-path-bar button:not(.popup).image-button:last-child {
   color: white;
   background-image: image(black);
   border-bottom: 2px solid rgba(175, 57, 8, 0.4);
   opacity: 0.8;
 }
-.nautilus-path-bar button:hover {
+.nautilus-path-bar button:not(.popup):hover {
   border-bottom: 2px solid #af3908;
 }
-.nautilus-path-bar button:active {
+.nautilus-path-bar button:not(.popup):active {
   color: #e3ded9;
   outline-color: rgba(227, 222, 217, 0.3);
   border-color: #110f0d;
@@ -6600,6 +6600,45 @@ headerbar button.close:active {
 
 .nautilus-window entry.search {
   margin-right: 0px;
+}
+
+.horizontal.path-buttons-box {
+  background: image(transparent);
+}
+.horizontal.path-buttons-box button {
+  background: image(transparent);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.horizontal.path-buttons-box button:hover {
+  border-bottom: 2px solid #af3908;
+}
+.horizontal.path-buttons-box button:active {
+  color: white;
+}
+.horizontal.path-buttons-box button.current-dir {
+  color: white;
+  background-image: image(black);
+  border-bottom: 2px solid rgba(175, 57, 8, 0.4);
+  opacity: 0.8;
+  margin-left: 6px;
+  border-radius: 4px 0 0 4px;
+}
+
+.nautilus-path-bar > button.popup.toggle {
+  color: white;
+  background-image: image(black);
+  border-bottom: 2px solid rgba(175, 57, 8, 0.4);
+  opacity: 0.8;
+}
+.nautilus-path-bar > button.popup.toggle:hover {
+  background: image(black);
+  box-shadow: none;
+}
+.nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
+  background: image(#af3908);
+  color: #fff;
 }
 
 .gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {

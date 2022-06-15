@@ -6539,16 +6539,16 @@ headerbar button.close:active {
 }
 
 .budgie-run-dialog {
-  border-radius: 4px;
-  border-color: #b5b0ab;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px 8px 0 0;
 }
 .budgie-run-dialog entry.search,
 .budgie-run-dialog entry.search:focus {
   background: image(transparent);
   padding: 9px 4px;
   box-shadow: none;
-  border-radius: 4px;
-  border-color: none;
+  border: none;
   border-bottom: 2px solid #f56428;
 }
 .budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search,
@@ -6564,7 +6564,6 @@ headerbar button.close:active {
 .budgie-run-dialog list row:selected,
 .budgie-run-dialog list row:selected:hover {
   background: image(rgba(55, 55, 55, 0.1));
-  border-color: #b5b0ab;
 }
 .budgie-run-dialog list row:selected label, .budgie-run-dialog list row:selected image, .budgie-run-dialog list row:selected,
 .budgie-run-dialog list row:selected:hover label,

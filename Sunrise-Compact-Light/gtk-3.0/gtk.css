@@ -6833,54 +6833,62 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 }
 
 .panel.xfce4-panel {
-  background-color: #000;
-  color: #ccc;
+  background-color: #bebab6;
+  color: rgba(55, 55, 55, 0.8);
+  text-shadow: none;
 }
 .panel.xfce4-panel label, .panel.xfce4-panel image {
   color: inherit;
 }
-.panel.xfce4-panel button.toggle, .panel.xfce4-panel button.flat {
-  background: transparent;
-  color: #ccc;
-  border-radius: -11px;
-  box-shadow: none;
+.panel.xfce4-panel button,
+.panel.xfce4-panel #clock-button {
+  background-color: transparent;
+  color: #373737;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.panel.xfce4-panel button:hover,
+.panel.xfce4-panel #clock-button:hover {
+  background: image(#dbd9d7);
+  color: #373737;
   text-shadow: none;
-  border: none;
-  border-bottom: 2px solid transparent;
 }
-.panel.xfce4-panel button.toggle:hover, .panel.xfce4-panel button.flat:hover {
-  color: white;
+.panel.xfce4-panel button:active, .panel.xfce4-panel button:checked,
+.panel.xfce4-panel #clock-button:active,
+.panel.xfce4-panel #clock-button:checked {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #b5b0ab;
+  background-image: image(#e5e3e1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  border: 1px solid #f56428;
 }
-.panel.xfce4-panel button.toggle:active, .panel.xfce4-panel button.flat:active {
-  background: #171717;
-  color: white;
+.panel.xfce4-panel .tasklist button {
+  background: image(rgba(174, 168, 163, 0.5));
+  color: rgba(55, 55, 55, 0.8);
+  text-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 0 1px;
 }
-.panel.xfce4-panel button.toggle:active label, .panel.xfce4-panel button.toggle:active image, .panel.xfce4-panel button.flat:active label, .panel.xfce4-panel button.flat:active image {
-  color: inherit;
+.panel.xfce4-panel .tasklist button:hover {
+  background: image(#dbd9d7);
+  color: #373737;
+  text-shadow: none;
 }
-.panel.xfce4-panel button.toggle:checked, .panel.xfce4-panel button.toggle:checked:focus, .panel.xfce4-panel button.toggle:checked:hover, .panel.xfce4-panel button.flat:checked, .panel.xfce4-panel button.flat:checked:focus, .panel.xfce4-panel button.flat:checked:hover {
-  background: transparent;
-  color: white;
-  border: none;
-  border-bottom: 2px solid #f56428;
-  box-shadow: none;
+.panel.xfce4-panel .tasklist button:active, .panel.xfce4-panel .tasklist button:checked {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #b5b0ab;
+  background-image: image(#e5e3e1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  border: 1px solid #f56428;
 }
-.panel.xfce4-panel button.toggle:checked label, .panel.xfce4-panel button.toggle:checked image, .panel.xfce4-panel button.toggle:checked:focus label, .panel.xfce4-panel button.toggle:checked:focus image, .panel.xfce4-panel button.toggle:checked:hover label, .panel.xfce4-panel button.toggle:checked:hover image, .panel.xfce4-panel button.flat:checked label, .panel.xfce4-panel button.flat:checked image, .panel.xfce4-panel button.flat:checked:focus label, .panel.xfce4-panel button.flat:checked:focus image, .panel.xfce4-panel button.flat:checked:hover label, .panel.xfce4-panel button.flat:checked:hover image {
-  color: inherit;
-}
-.panel.xfce4-panel button.toggle:backdrop, .panel.xfce4-panel button.flat:backdrop {
-  opacity: 0.6;
-}
-.panel.xfce4-panel wnck-pager {
-  background: #303030;
-}
-.panel.xfce4-panel wnck-pager:hover {
-  background: rgba(245, 100, 40, 0.4);
-}
-.panel.xfce4-panel wnck-pager:selected {
-  background: #f56428;
-  box-shadow: none;
-  border: none;
+.panel.xfce4-panel wnck-pager:hover, .panel.xfce4-panel wnck-pager:selected {
+  background-color: #f56428;
 }
 
 /* GTK NAMED COLORS

@@ -6,5 +6,5 @@ Xfwm4 themes base on [Default-theme](https://gitlab.xfce.org/Dridi/xfwm4/-/tree/
 License : [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)</br></br>
 Theme can be download [here](https://www.pling.com/p/1258305)</br></br>
 SCREENSHOTS:</br>
-![sunrisescreenshot](https://i.ibb.co/pP8DRMh/sunrise-nautilus-screenshots.png "sunrise-nautilus-screenshot")</br></br>
+![sunrisescreenshot](https://i.ibb.co/Wv9P1vK/sunrise-nautilus-screenshots.png "sunrise-nautilus-screenshot")</br></br>
 ![sunrisescreenshot](https://i.ibb.co/GRPyPFN/sunrise-widget-factory-screenshots.png "sunrise-widget-factory-screenshot")</br>

@@ -2019,7 +2019,8 @@ headerbar {
   border-style: solid;
   border-color: black;
   border-radius: 0;
-  background: #1a1714 linear-gradient(to top, #25211c, #2b2621);
+  color: #e3ded9;
+  background: #25211c linear-gradient(to top, #312c25, #37312a);
   box-shadow: inset 0 1px rgba(175, 57, 8, 0.07);
   /* Darken switchbuttons for headerbars. issue #1588 */
   /* hide the close button separator */
@@ -2058,10 +2059,9 @@ headerbar button.toggle:checked {
 .titlebar:not(headerbar) button.toggle:checked:backdrop,
 headerbar stackswitcher button:checked:backdrop,
 headerbar button.toggle:checked:backdrop {
-  color: #89847e;
+  background: image(#201e19);
+  color: #e3ded9;
   border-color: #171411;
-  background-image: image(#201e19);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 .selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar),
 .selection-mode headerbar,
@@ -2380,6 +2380,54 @@ headerbar button {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+headerbar entry,
+headerbar entry.search {
+  color: #e3ded9;
+  border-color: #110f0d;
+  background-color: #2e2923;
+  box-shadow: inset 0 0 0 1px rgba(175, 57, 8, 0);
+}
+headerbar entry label, headerbar entry image,
+headerbar entry.search label,
+headerbar entry.search image {
+  color: inherit;
+}
+headerbar entry:focus,
+headerbar entry.search:focus {
+  background-color: black;
+  box-shadow: 0 0 2px 0 rgba(175, 57, 8, 0.4);
+  border-color: #1d0901;
+  caret-color: currentColor;
+}
+headerbar entry:focus label, headerbar entry:focus image,
+headerbar entry.search:focus label,
+headerbar entry.search:focus image {
+  color: inherit;
+}
+headerbar entry:backdrop,
+headerbar entry.search:backdrop {
+  color: #bfbab5;
+  border-color: #171411;
+  background-color: #201e19;
+  box-shadow: none;
+}
+headerbar entry:backdrop label, headerbar entry:backdrop image,
+headerbar entry.search:backdrop label,
+headerbar entry.search:backdrop image {
+  color: inherit;
+}
+headerbar entry:disabled,
+headerbar entry.search:disabled {
+  color: #645f5a;
+  border-color: #110f0d;
+  background-color: #231f1a;
+  box-shadow: none;
+}
+headerbar entry:disabled label, headerbar entry:disabled image,
+headerbar entry.search:disabled label,
+headerbar entry.search:disabled image {
+  color: inherit;
+}
 headerbar switch {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -2387,6 +2435,54 @@ headerbar switch {
 headerbar.titlebar headerbar:not(.titlebar) {
   background: none;
   box-shadow: none;
+}
+headerbar button {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #110f0d;
+  border-bottom-color: black;
+  background-image: linear-gradient(to top, #2b2621 2px, #2e2923);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+headerbar button:hover {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #110f0d;
+  border-bottom-color: black;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #2b2621, #312c25 1px);
+  -gtk-icon-effect: highlight;
+}
+headerbar button:active, headerbar button:checked {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: black;
+  background-image: image(black);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+headerbar button:backdrop {
+  color: #89847e;
+  border-color: #171411;
+  background-image: image(#2e2923);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  transition: backdrop_transition;
+  -gtk-icon-effect: none;
+}
+headerbar button:disabled, headerbar button:backdrop:disabled {
+  color: #645f5a;
+  border-color: #060504;
+  background-image: image(#231f1a);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
 .background .titlebar:backdrop, .background .titlebar {
@@ -5945,6 +6041,10 @@ headerbar button.close:active {
   background-image: image(#5f5548);
   box-shadow: none;
 }
+headerbar button.minimize, headerbar button.maximize, headerbar button.close {
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8969411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8969411765);
+}
 
 .budgie-container {
   background-color: transparent;
@@ -6171,12 +6271,12 @@ headerbar button.close:active {
 }
 
 .budgie-panel {
-  background: image(#000);
+  background: image(#000000);
   box-shadow: none;
   border: none;
 }
 .budgie-panel label, .budgie-panel image {
-  color: rgba(204, 204, 204, 0.6);
+  color: rgba(199, 197, 197, 0.6);
 }
 .budgie-panel button {
   background: image(transparent);
@@ -6185,157 +6285,198 @@ headerbar button.close:active {
   border: none;
 }
 .budgie-panel button label, .budgie-panel button image, .budgie-panel button {
-  color: rgba(204, 204, 204, 0.6);
+  color: rgba(199, 197, 197, 0.6);
 }
 .budgie-panel button:hover {
   background: image(#171717);
 }
 .budgie-panel button:active, .budgie-panel button:checked, .budgie-panel button:selected {
-  background: image(#1f1f1f);
+  background: image(#af3908);
   border: none;
+  box-shadow: none;
 }
 .budgie-panel button:active label, .budgie-panel button:active image, .budgie-panel button:active, .budgie-panel button:checked label, .budgie-panel button:checked image, .budgie-panel button:checked, .budgie-panel button:selected label, .budgie-panel button:selected image, .budgie-panel button:selected {
-  color: #ccc;
+  color: #fff;
 }
-.budgie-panel button#tasklist-button, .budgie-panel button.flat {
-  background: image(#000);
+.budgie-panel button#tasklist-button,
+.budgie-panel button.flat:not(.running) {
+  background: image(#000000);
   border-radius: 0;
   box-shadow: none;
   border: none;
 }
-.budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image, .budgie-panel button.flat label, .budgie-panel button.flat image {
-  color: rgba(204, 204, 204, 0.6);
+.budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image,
+.budgie-panel button.flat:not(.running) label,
+.budgie-panel button.flat:not(.running) image {
+  color: rgba(199, 197, 197, 0.6);
 }
-.top .budgie-panel button#tasklist-button, .top .budgie-panel button.flat {
-  border-bottom: 2px solid #000;
+.top .budgie-panel button#tasklist-button,
+.top .budgie-panel button.flat:not(.running) {
+  border-bottom: 2px solid #000000;
+  margin-bottom: 2px;
 }
-.bottom .budgie-panel button#tasklist-button, .bottom .budgie-panel button.flat {
-  border-top: 2px solid #000;
+.bottom .budgie-panel button#tasklist-button,
+.bottom .budgie-panel button.flat:not(.running) {
+  border-top: 2px solid #000000;
+  margin-top: 2px;
 }
-.left .budgie-panel button#tasklist-button, .left .budgie-panel button.flat {
-  border-right: 2px solid #000;
+.left .budgie-panel button#tasklist-button,
+.left .budgie-panel button.flat:not(.running) {
+  border-right: 2px solid #000000;
+  margin-right: 2px;
 }
-.right .budgie-panel button#tasklist-button, .right .budgie-panel button.flat {
-  border-left: 2px solid #000;
+.right .budgie-panel button#tasklist-button,
+.right .budgie-panel button.flat:not(.running) {
+  border-left: 2px solid #000000;
+  margin-left: 2px;
 }
-.budgie-panel button#tasklist-button:hover, .budgie-panel button.flat:hover {
-  background: image(#000);
+.budgie-panel button#tasklist-button:hover,
+.budgie-panel button.flat:not(.running):hover {
+  background: image(#000000);
 }
-.top .budgie-panel button#tasklist-button:hover, .top .budgie-panel button.flat:hover {
+.top .budgie-panel button#tasklist-button:hover, .top .budgie-panel button#tasklist-button:checked:hover, .top .budgie-panel button#tasklist-button:selected:hover,
+.top .budgie-panel button.flat:not(.running):hover,
+.top .budgie-panel button.flat:not(.running):checked:hover,
+.top .budgie-panel button.flat:not(.running):selected:hover {
   border-bottom: 2px solid #af3908;
 }
-.bottom .budgie-panel button#tasklist-button:hover, .bottom .budgie-panel button.flat:hover {
+.bottom .budgie-panel button#tasklist-button:hover, .bottom .budgie-panel button#tasklist-button:checked:hover, .bottom .budgie-panel button#tasklist-button:selected:hover,
+.bottom .budgie-panel button.flat:not(.running):hover,
+.bottom .budgie-panel button.flat:not(.running):checked:hover,
+.bottom .budgie-panel button.flat:not(.running):selected:hover {
   border-top: 2px solid #af3908;
 }
-.left .budgie-panel button#tasklist-button:hover, .left .budgie-panel button.flat:hover {
+.left .budgie-panel button#tasklist-button:hover, .left .budgie-panel button#tasklist-button:checked:hover, .left .budgie-panel button#tasklist-button:selected:hover,
+.left .budgie-panel button.flat:not(.running):hover,
+.left .budgie-panel button.flat:not(.running):checked:hover,
+.left .budgie-panel button.flat:not(.running):selected:hover {
   border-right: 2px solid #af3908;
 }
-.right .budgie-panel button#tasklist-button:hover, .right .budgie-panel button.flat:hover {
+.right .budgie-panel button#tasklist-button:hover, .right .budgie-panel button#tasklist-button:checked:hover, .right .budgie-panel button#tasklist-button:selected:hover,
+.right .budgie-panel button.flat:not(.running):hover,
+.right .budgie-panel button.flat:not(.running):checked:hover,
+.right .budgie-panel button.flat:not(.running):selected:hover {
   border-left: 2px solid #af3908;
 }
-.budgie-panel button#tasklist-button:active label, .budgie-panel button#tasklist-button:active image, .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked label, .budgie-panel button#tasklist-button:checked image, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected label, .budgie-panel button#tasklist-button:selected image, .budgie-panel button#tasklist-button:selected, .budgie-panel button.flat:active label, .budgie-panel button.flat:active image, .budgie-panel button.flat:active, .budgie-panel button.flat:checked label, .budgie-panel button.flat:checked image, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected label, .budgie-panel button.flat:selected image, .budgie-panel button.flat:selected {
-  color: #ccc;
+.budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected,
+.budgie-panel button.flat:not(.running):active,
+.budgie-panel button.flat:not(.running):checked,
+.budgie-panel button.flat:not(.running):selected {
+  background: image(#383838);
 }
-.top .budgie-panel button#tasklist-button:active, .top .budgie-panel button#tasklist-button:checked, .top .budgie-panel button#tasklist-button:selected, .top .budgie-panel button.flat:active, .top .budgie-panel button.flat:checked, .top .budgie-panel button.flat:selected {
+.budgie-panel button#tasklist-button:active label,
+.budgie-panel button#tasklist-button:active image, .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked label,
+.budgie-panel button#tasklist-button:checked image, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected label,
+.budgie-panel button#tasklist-button:selected image, .budgie-panel button#tasklist-button:selected,
+.budgie-panel button.flat:not(.running):active label,
+.budgie-panel button.flat:not(.running):active image,
+.budgie-panel button.flat:not(.running):active,
+.budgie-panel button.flat:not(.running):checked label,
+.budgie-panel button.flat:not(.running):checked image,
+.budgie-panel button.flat:not(.running):checked,
+.budgie-panel button.flat:not(.running):selected label,
+.budgie-panel button.flat:not(.running):selected image,
+.budgie-panel button.flat:not(.running):selected {
+  color: #C7C5C5;
+}
+.top .budgie-panel button#tasklist-button:active, .top .budgie-panel button#tasklist-button:checked, .top .budgie-panel button#tasklist-button:selected,
+.top .budgie-panel button.flat:not(.running):active,
+.top .budgie-panel button.flat:not(.running):checked,
+.top .budgie-panel button.flat:not(.running):selected {
   border-bottom: 2px solid rgba(175, 57, 8, 0.6);
   border-radius: 4px 4px 0 0;
 }
-.bottom .budgie-panel button#tasklist-button:active, .bottom .budgie-panel button#tasklist-button:checked, .bottom .budgie-panel button#tasklist-button:selected, .bottom .budgie-panel button.flat:active, .bottom .budgie-panel button.flat:checked, .bottom .budgie-panel button.flat:selected {
+.bottom .budgie-panel button#tasklist-button:active, .bottom .budgie-panel button#tasklist-button:checked, .bottom .budgie-panel button#tasklist-button:selected,
+.bottom .budgie-panel button.flat:not(.running):active,
+.bottom .budgie-panel button.flat:not(.running):checked,
+.bottom .budgie-panel button.flat:not(.running):selected {
   border-top: 2px solid rgba(175, 57, 8, 0.6);
   border-radius: 0 0 4px 4px;
 }
-.left .budgie-panel button#tasklist-button:active, .left .budgie-panel button#tasklist-button:checked, .left .budgie-panel button#tasklist-button:selected, .left .budgie-panel button.flat:active, .left .budgie-panel button.flat:checked, .left .budgie-panel button.flat:selected {
+.left .budgie-panel button#tasklist-button:active, .left .budgie-panel button#tasklist-button:checked, .left .budgie-panel button#tasklist-button:selected,
+.left .budgie-panel button.flat:not(.running):active,
+.left .budgie-panel button.flat:not(.running):checked,
+.left .budgie-panel button.flat:not(.running):selected {
   border-right: 2px solid rgba(175, 57, 8, 0.6);
   border-radius: 0 4px 4px 0;
 }
-.right .budgie-panel button#tasklist-button:active, .right .budgie-panel button#tasklist-button:checked, .right .budgie-panel button#tasklist-button:selected, .right .budgie-panel button.flat:active, .right .budgie-panel button.flat:checked, .right .budgie-panel button.flat:selected {
+.right .budgie-panel button#tasklist-button:active, .right .budgie-panel button#tasklist-button:checked, .right .budgie-panel button#tasklist-button:selected,
+.right .budgie-panel button.flat:not(.running):active,
+.right .budgie-panel button.flat:not(.running):checked,
+.right .budgie-panel button.flat:not(.running):selected {
   border-left: 2px solid rgba(175, 57, 8, 0.6);
-  border-radius: 4px 0 0 4px;
-}
-.budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected {
-  background: image(#1f1f1f);
-}
-.budgie-panel button.flat:active, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected {
-  background: image(#2e2e2e);
-}
-.top .budgie-panel button.flat:active, .top .budgie-panel button.flat:checked, .top .budgie-panel button.flat:selected {
-  border-bottom: 2px solid #af3908;
-  border-radius: 4px 4px 0 0;
-}
-.bottom .budgie-panel button.flat:active, .bottom .budgie-panel button.flat:checked, .bottom .budgie-panel button.flat:selected {
-  border-top: 2px solid #af3908;
-  border-radius: 0 0 4px 4px;
-}
-.left .budgie-panel button.flat:active, .left .budgie-panel button.flat:checked, .left .budgie-panel button.flat:selected {
-  border-right: 2px solid #af3908;
-  border-radius: 0 4px 4px 0;
-}
-.right .budgie-panel button.flat:active, .right .budgie-panel button.flat:checked, .right .budgie-panel button.flat:selected {
-  border-left: 2px solid #af3908;
   border-radius: 4px 0 0 4px;
 }
 .budgie-panel button.flat.running {
-  background: image(#000);
-}
-.budgie-panel button.launcher, .budgie-panel button.flat.running {
   border-radius: 0;
+  margin: 2px;
+  border-left: 2px solid #000000;
 }
-.top .budgie-panel button.launcher, .top .budgie-panel button.flat.running {
-  border-bottom: 2px solid #000;
-}
-.bottom .budgie-panel button.launcher, .bottom .budgie-panel button.flat.running {
-  border-top: 2px solid #000;
-}
-.left .budgie-panel button.launcher, .left .budgie-panel button.flat.running {
-  border-right: 2px solid #000;
-}
-.right .budgie-panel button.launcher, .right .budgie-panel button.flat.running {
-  border-left: 2px solid #000;
-}
-.top .budgie-panel button.launcher:hover, .top .budgie-panel button.flat.running:hover {
-  border-bottom: 2px solid rgba(175, 57, 8, 0.6);
-}
-.bottom .budgie-panel button.launcher:hover, .bottom .budgie-panel button.flat.running:hover {
+.top .budgie-panel button.flat.running {
   border-top: 2px solid rgba(175, 57, 8, 0.6);
+  border-bottom: 2px solid #000000;
 }
-.left .budgie-panel button.launcher:hover, .left .budgie-panel button.flat.running:hover {
+.bottom .budgie-panel button.flat.running {
+  border-bottom: 2px solid rgba(175, 57, 8, 0.6);
+  border-top: 2px solid #000000;
+}
+.left .budgie-panel button.flat.running {
+  border-left: 2px solid rgba(175, 57, 8, 0.6);
+  border-right: 2px solid #000000;
+}
+.right .budgie-panel button.flat.running {
   border-right: 2px solid rgba(175, 57, 8, 0.6);
 }
-.right .budgie-panel button.launcher:hover, .right .budgie-panel button.flat.running:hover {
-  border-left: 2px solid rgba(175, 57, 8, 0.6);
-}
-.budgie-panel button.launcher:checked, .budgie-panel button.launcher:selected, .budgie-panel button.flat.running:checked, .budgie-panel button.flat.running:selected {
-  background: #000;
-  border-radius: 0;
-}
-.top .budgie-panel button.launcher:checked, .top .budgie-panel button.launcher:selected, .top .budgie-panel button.flat.running:checked, .top .budgie-panel button.flat.running:selected {
-  border-bottom: 2px solid #af3908;
-}
-.bottom .budgie-panel button.launcher:checked, .bottom .budgie-panel button.launcher:selected, .bottom .budgie-panel button.flat.running:checked, .bottom .budgie-panel button.flat.running:selected {
+.top .budgie-panel button.flat.running:hover {
   border-top: 2px solid #af3908;
 }
-.left .budgie-panel button.launcher:checked, .left .budgie-panel button.launcher:selected, .left .budgie-panel button.flat.running:checked, .left .budgie-panel button.flat.running:selected {
-  border-right: 2px solid #af3908;
+.bottom .budgie-panel button.flat.running:hover {
+  border-bottom: 2px solid #af3908;
 }
-.right .budgie-panel button.launcher:checked, .right .budgie-panel button.launcher:selected, .right .budgie-panel button.flat.running:checked, .right .budgie-panel button.flat.running:selected {
+.left .budgie-panel button.flat.running:hover {
   border-left: 2px solid #af3908;
 }
-.budgie-panel separator {
-  background: rgba(204, 204, 204, 0.4);
+.right .budgie-panel button.flat.running:hover {
+  border-right: 2px solid #af3908;
 }
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  background: #121212;
+.budgie-panel button.flat.running:checked, .budgie-panel button.flat.running:selected {
+  background: image(transparent);
   border-radius: 0;
 }
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item label, .budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
-  color: rgba(204, 204, 204, 0.6);
+.top .budgie-panel button.flat.running:checked, .top .budgie-panel button.flat.running:selected {
+  border-bottom: 2px solid #af3908;
+  border-top: 2px solid #000000;
+}
+.bottom .budgie-panel button.flat.running:checked, .bottom .budgie-panel button.flat.running:selected {
+  border-top: 2px solid #af3908;
+  border-bottom: 2px solid #000000;
+}
+.left .budgie-panel button.flat.running:checked, .left .budgie-panel button.flat.running:selected {
+  border-right: 2px solid #af3908;
+  border-left: 2px solid #000000;
+}
+.right .budgie-panel button.flat.running:checked, .right .budgie-panel button.flat.running:selected {
+  border-left: 2px solid #af3908;
+  border-right: 2px solid #000000;
+}
+.budgie-panel separator {
+  background: rgba(199, 197, 197, 0.4);
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item {
+  border-radius: 0;
+}
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item label,
+.budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
+  color: rgba(199, 197, 197, 0.6);
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
   border-bottom: 2px solid rgba(227, 222, 217, 0.2);
+  background: image(#242424);
   margin: 0 2px;
 }
 .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
   border-top: 2px solid rgba(227, 222, 217, 0.2);
+  background: image(#242424);
   margin: 0 2px;
 }
 .left .budgie-panel .workspace-switcher .workspace-layout .workspace-item grid {
@@ -6346,26 +6487,24 @@ headerbar button.close:active {
   border-left: 2px solid rgba(227, 222, 217, 0.2);
   margin: 2px 0;
 }
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
-  background: image(#1f1f1f);
-}
 .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace button.workspace-icon-button {
   background: transparent;
   border: none;
 }
-.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace grid {
   border-bottom: 2px solid #af3908;
   border-radius: 4px 4px 0 0;
 }
-.bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+.bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace grid {
+  background: image(#383838);
   border-top: 2px solid #af3908;
   border-radius: 0 0 4px 4px;
 }
-.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace grid {
   border-right: 2px solid #af3908;
   border-radius: 4px 0 0 4px;
 }
-.right .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
+.right .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace grid {
   border-left: 2px solid #af3908;
   border-radius: 0 4px 4px 0;
 }
@@ -6378,11 +6517,11 @@ headerbar button.close:active {
   opacity: 1;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button {
-  background: #000;
+  background: #000000;
   border-radius: 4px;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button image {
-  color: rgba(204, 204, 204, 0.6);
+  color: rgba(199, 197, 197, 0.6);
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button:active {
   background: #af3908;
@@ -6557,6 +6696,7 @@ headerbar button.close:active {
   background-image: image(black);
   border-bottom: 2px solid rgba(175, 57, 8, 0.4);
   opacity: 0.8;
+  text-shadow: none;
 }
 .nautilus-path-bar button:not(.popup):hover {
   border-bottom: 2px solid #af3908;
@@ -6565,7 +6705,7 @@ headerbar button.close:active {
   color: #e3ded9;
   outline-color: rgba(227, 222, 217, 0.3);
   border-color: #110f0d;
-  background-image: image(#14120f);
+  background-image: image(black);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
@@ -6802,8 +6942,8 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 }
 
 .panel.xfce4-panel {
-  background-color: #25211c;
-  color: rgba(227, 222, 217, 0.8);
+  background-color: #000000;
+  color: rgba(199, 197, 197, 0.8);
   text-shadow: none;
 }
 .panel.xfce4-panel label, .panel.xfce4-panel image {
@@ -6812,49 +6952,84 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 .panel.xfce4-panel button,
 .panel.xfce4-panel #clock-button {
   background-color: transparent;
-  color: #e3ded9;
+  color: rgba(199, 197, 197, 0.8);
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.panel.xfce4-panel button label,
+.panel.xfce4-panel button image,
+.panel.xfce4-panel #clock-button label,
+.panel.xfce4-panel #clock-button image {
+  color: inherit;
 }
 .panel.xfce4-panel button:hover,
 .panel.xfce4-panel #clock-button:hover {
-  background: image(#3f3830);
-  color: #e3ded9;
+  background: image(#333333);
+  color: #C7C5C5;
   text-shadow: none;
+}
+.panel.xfce4-panel button:hover label,
+.panel.xfce4-panel button:hover image,
+.panel.xfce4-panel #clock-button:hover label,
+.panel.xfce4-panel #clock-button:hover image {
+  color: inherit;
 }
 .panel.xfce4-panel button:active, .panel.xfce4-panel button:checked,
 .panel.xfce4-panel #clock-button:active,
 .panel.xfce4-panel #clock-button:checked {
-  color: #e3ded9;
-  outline-color: rgba(227, 222, 217, 0.3);
-  border-color: #110f0d;
-  background-image: image(#14120f);
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #7e2906;
+  background-image: image(#832b06);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
-  border: 1px solid #af3908;
+}
+.panel.xfce4-panel button:active label,
+.panel.xfce4-panel button:active image, .panel.xfce4-panel button:checked label,
+.panel.xfce4-panel button:checked image,
+.panel.xfce4-panel #clock-button:active label,
+.panel.xfce4-panel #clock-button:active image,
+.panel.xfce4-panel #clock-button:checked label,
+.panel.xfce4-panel #clock-button:checked image {
+  color: inherit;
 }
 .panel.xfce4-panel .tasklist button {
-  background: image(rgba(52, 46, 39, 0.5));
-  color: rgba(227, 222, 217, 0.8);
+  background: image(rgba(36, 36, 36, 0.7));
+  color: rgba(199, 197, 197, 0.8);
   text-shadow: none;
   border: 1px solid rgba(0, 0, 0, 0.5);
   margin: 0 1px;
+  box-shadow: none;
+}
+.panel.xfce4-panel .tasklist button label,
+.panel.xfce4-panel .tasklist button image {
+  color: inherit;
 }
 .panel.xfce4-panel .tasklist button:hover {
-  background: image(#3f3830);
-  color: #e3ded9;
+  background: image(#2e2e2e);
+  color: #C7C5C5;
   text-shadow: none;
 }
+.panel.xfce4-panel .tasklist button:hover label,
+.panel.xfce4-panel .tasklist button:hover image {
+  color: inherit;
+}
 .panel.xfce4-panel .tasklist button:active, .panel.xfce4-panel .tasklist button:checked {
-  color: #e3ded9;
-  outline-color: rgba(227, 222, 217, 0.3);
-  border-color: #110f0d;
-  background-image: image(#14120f);
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #7e2906;
+  background-image: image(#832b06);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
-  border: 1px solid #af3908;
+}
+.panel.xfce4-panel .tasklist button:active label,
+.panel.xfce4-panel .tasklist button:active image, .panel.xfce4-panel .tasklist button:checked label,
+.panel.xfce4-panel .tasklist button:checked image {
+  color: inherit;
 }
 .panel.xfce4-panel wnck-pager:hover, .panel.xfce4-panel wnck-pager:selected {
   background-color: #af3908;

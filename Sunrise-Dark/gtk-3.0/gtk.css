@@ -2531,7 +2531,10 @@ window.csd > .titlebar:not(headerbar) {
   box-shadow: none;
 }
 .titlebar:not(headerbar) separator {
-  background-color: #110f0d;
+  background-color: black;
+}
+.titlebar:not(headerbar) separator:backdrop {
+  background-color: #090807;
 }
 
 window.devel headerbar.titlebar:not(.selection-mode) {
@@ -2588,8 +2591,7 @@ treeview.view:selected:focus, treeview.view:selected {
   border-radius: 0;
 }
 treeview.view:selected:backdrop, treeview.view:selected {
-  border-left-color: #d79c84;
-  border-top-color: rgba(227, 222, 217, 0.1);
+  border-color: transparent;
 }
 treeview.view:disabled {
   color: #645f5a;
@@ -2605,10 +2607,10 @@ treeview.view:disabled:backdrop {
 }
 treeview.view.separator {
   min-height: 2px;
-  color: #2e2923;
+  color: black;
 }
 treeview.view.separator:backdrop {
-  color: rgba(46, 41, 35, 0.1);
+  color: rgba(9, 8, 7, 0.1);
 }
 treeview.view:backdrop {
   border-left-color: #5c5751;
@@ -4985,10 +4987,6 @@ separator {
   min-height: 1px;
 }
 
-hdyleaflet > separator {
-  background-color: #110f0d;
-}
-
 /*********
  * Lists *
  *********/
@@ -5226,10 +5224,10 @@ stacksidebar row.needs-attention > label {
 }
 
 separator.sidebar {
-  background-color: #110f0d;
+  background-color: black;
 }
 separator.sidebar:backdrop {
-  background-color: #171411;
+  background-color: #090807;
 }
 separator.sidebar.selection-mode, .selection-mode separator.sidebar {
   background-color: #4d1904;
@@ -5410,14 +5408,14 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: image(#110f0d);
+  background-image: image(black);
   background-size: 1px 1px;
 }
 paned > separator:selected {
   background-image: image(#af3908);
 }
 paned > separator:backdrop {
-  background-image: image(#171411);
+  background-image: image(#090807);
 }
 paned > separator.wide {
   min-width: 5px;

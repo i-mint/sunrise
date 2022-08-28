@@ -6623,7 +6623,7 @@ headerbar button.minimize, headerbar button.maximize, headerbar button.close {
 }
 
 .raven calendar.raven-calendar {
-  background: _solid(#e0dedc);
+  background: image(#e0dedc);
   color: #373737;
   padding: 4px;
   border-color: transparent;
@@ -6632,8 +6632,11 @@ headerbar button.minimize, headerbar button.maximize, headerbar button.close {
   background: transparent;
 }
 .raven calendar.raven-calendar:selected {
-  background: image(transparent);
-  color: #f56428;
+  color: #fff;
+  background: image(#f56428);
+  border-bottom: 9px solid #e0dedc;
+  border-radius: 0;
+  box-shadow: none;
 }
 .raven button {
   color: #373737;

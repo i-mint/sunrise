@@ -651,13 +651,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .calendar .calendar-week-number {
   font-size: 7pt;
-  font-weight: bold;
-  height: 1.8em;
-  width: 2.3em;
+  font-weight: bold !important;
+  height: 1.3em !important;
+  width: 1.3em !important;
   border-radius: 2px;
-  margin: 6px;
-  background-color: #28241f;
+  margin: 6px !important;
+  padding: 6px !important;
+  background-color: #25211c;
   color: #eeebe8;
+  text-align: center !important;
 }
 
 /* Events */

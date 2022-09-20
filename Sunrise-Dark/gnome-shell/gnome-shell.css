@@ -335,12 +335,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-right: 0;
   padding-left: 1.75em;
 }
-.popup-menu-item:checked {
-  background-color: #342e27 !important;
+.popup-menu-item:checked, .popup-menu-item:checked:hover {
+  background-color: #574d42 !important;
   box-shadow: none;
 }
 .popup-menu-item.selected {
-  background-color: #3c362e !important;
+  background-color: #3f3830 !important;
   color: #e3ded9;
 }
 .popup-menu-item:active {

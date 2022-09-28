@@ -2763,8 +2763,9 @@ menubar > menuitem menu:dir(rtl), menubar > menuitem menu:dir(ltr),
 }
 menubar > menuitem:hover,
 .menubar > menuitem:hover {
-  box-shadow: inset 0 -3px #af3908;
-  color: #f56428;
+  color: #fff;
+  background-color: #af3908;
+  border-radius: 2px;
 }
 menubar > menuitem:disabled,
 .menubar > menuitem:disabled {
@@ -6940,6 +6941,18 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 .thunar .linked.path-bar > button.toggle:checked:backdrop,
 .thunar button.path-bar-button.toggle:checked:backdrop {
   opacity: 0.4;
+}
+.thunar menubar .csd.popup > decoration,
+.thunar menubar .csd.popup > menu {
+  border-radius: 4px;
+}
+.thunar menubar .csd.popup > decoration menuitem:first-child,
+.thunar menubar .csd.popup > menu menuitem:first-child {
+  margin-top: 4px;
+}
+.thunar menubar .csd.popup > decoration menuitem:last-child,
+.thunar menubar .csd.popup > menu menuitem:last-child {
+  margin-bottom: 4px;
 }
 
 .panel.xfce4-panel {

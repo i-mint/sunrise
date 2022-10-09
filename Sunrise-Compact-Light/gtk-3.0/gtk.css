@@ -6774,8 +6774,9 @@ headerbar button.minimize, headerbar button.maximize, headerbar button.close {
   margin-right: 0px;
 }
 
-.horizontal.path-buttons-box {
-  background: image(transparent);
+.horizontal.path-buttons-box > .horizontal > .dim-label, .horizontal.path-buttons-box > .horizontal > label.separator,
+headerbar .horizontal.path-buttons-box > .horizontal > .subtitle, .titlebar:not(headerbar) .horizontal.path-buttons-box > .horizontal > .subtitle {
+  color: transparent;
 }
 .horizontal.path-buttons-box button {
   background: image(transparent);
@@ -6789,28 +6790,22 @@ headerbar button.minimize, headerbar button.maximize, headerbar button.close {
 .horizontal.path-buttons-box button:active {
   color: black;
 }
+.horizontal.path-buttons-box button:active.current-dir {
+  background-image: image(transparent);
+}
 .horizontal.path-buttons-box button.current-dir {
   color: black;
   background-image: image(white);
   border-bottom: 2px solid rgba(245, 100, 40, 0.4);
   opacity: 0.8;
   margin-left: 6px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 6px;
 }
 
 .nautilus-path-bar > button.popup.toggle {
-  color: black;
-  background-image: image(white);
-  border-bottom: 2px solid rgba(245, 100, 40, 0.4);
-  opacity: 0.8;
-}
-.nautilus-path-bar > button.popup.toggle:hover {
-  background: image(white);
-  box-shadow: none;
-}
-.nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
-  background: image(#f56428);
-  color: #fff;
+  border-radius: 4px;
 }
 
 .gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {

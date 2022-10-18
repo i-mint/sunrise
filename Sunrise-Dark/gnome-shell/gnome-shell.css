@@ -38,7 +38,7 @@ stage {
   padding: 12px;
 }
 
-.workspace-thumbnails, #dash {
+.workspace-thumbnails {
   color: #eeeeec;
   background-color: rgba(38, 38, 38, 0.7);
   border: 2px solid rgba(0, 0, 0, 0.4);
@@ -1744,7 +1744,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .app-well-app:hover .overview-icon, .app-well-app:selected .overview-icon,
 .grid-search-result:hover .overview-icon,
 .grid-search-result:selected .overview-icon {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .app-well-app:focus .overview-icon,
 .grid-search-result:focus .overview-icon {
@@ -1752,12 +1752,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .app-well-app:drop .overview-icon,
 .grid-search-result:drop .overview-icon {
-  background-color: rgba(175, 57, 8, 0.85);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .app-well-app:active .overview-icon, .app-well-app:checked .overview-icon,
 .grid-search-result:active .overview-icon,
 .grid-search-result:checked .overview-icon {
-  background-color: rgba(12, 12, 12, 0.4);
+  color: #fff;
+  background-color: #af3908;
 }
 .app-well-app .overview-icon.overview-icon-with-label,
 .grid-search-result .overview-icon.overview-icon-with-label {
@@ -1878,6 +1879,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Dash */
 #dash {
+  color: #C7C5C5;
+  background-color: #000000;
+  font-weight: bold;
+  border: 2px solid rgba(0, 0, 0, 0.4);
   font-size: 9pt;
   padding: 5px 0;
   border-radius: 0 15px 15px 0;
@@ -1895,6 +1900,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #dash .empty-dash-drop-target {
   width: 32px;
   height: 32px;
+}
+#dash .app-well-app:hover .overview-icon, .right #dash .app-well-app:hover .overview-icon, .bottom #dash .app-well-app:hover .overview-icon, .top #dash .app-well-app:hover .overview-icon {
+  background-color: rgba(199, 197, 197, 0.3);
+}
+#dash .app-well-app:active .overview-icon, .right #dash .app-well-app:active .overview-icon, .bottom #dash .app-well-app:active .overview-icon, .top #dash .app-well-app:active .overview-icon {
+  box-shadow: none;
+  background-color: #af3908;
 }
 
 .dash-item-container > StWidget {
@@ -1915,23 +1927,24 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .show-apps .overview-icon {
-  color: #eeeeec;
+  color: #C7C5C5;
 }
 .show-apps:hover .overview-icon, .show-apps:selected .overview-icon {
-  background-color: rgba(238, 238, 236, 0.1);
+  background-color: rgba(199, 197, 197, 0.3);
 }
 .show-apps:focus .overview-icon {
-  background-color: rgba(238, 238, 236, 0.3);
+  background-color: rgba(199, 197, 197, 0.3);
 }
 .show-apps:drop .overview-icon {
-  background-color: rgba(175, 57, 8, 0.85);
+  background-color: rgba(199, 197, 197, 0.1);
 }
 .show-apps:active .overview-icon, .show-apps:checked .overview-icon {
-  background-color: rgba(12, 12, 12, 0.4);
+  color: #fff;
+  background-color: #af3908;
 }
 .show-apps:focus .overview-icon, .show-apps:checked .overview-icon {
-  background-color: rgba(12, 12, 12, 0.9);
-  color: #e3ded9;
+  background-color: black;
+  color: #C7C5C5;
 }
 
 /* Workspace pager */

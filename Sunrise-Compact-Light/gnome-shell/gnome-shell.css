@@ -1941,9 +1941,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #fff;
   background-color: #f56428;
 }
+.show-apps:hover .overview-icon {
+  color: #fff;
+  background-color: #f56428;
+  border-radius: 5px;
+}
+.show-apps:active .overview-icon, .show-apps:checked:active .overview-icon {
+  color: black;
+  background-color: #f56428;
+  border-radius: 5px;
+}
 .show-apps:focus .overview-icon, .show-apps:checked .overview-icon {
-  background-color: #cfccc9;
-  color: #373737;
+  color: #fff;
+  background-color: #f56428;
+  border-radius: 5px;
 }
 
 /* Workspace pager */

@@ -1046,8 +1046,8 @@ button.suggested-action.flat:backdrop:disabled {
 }
 button.suggested-action:disabled {
   color: #adacab;
-  border-color: #b5b0ab;
-  background-image: image(#ecebea);
+  border-color: #110f0d;
+  background-image: image(#4d4944);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -1207,8 +1207,8 @@ button.destructive-action.flat:backdrop:disabled {
 }
 button.destructive-action:disabled {
   color: #adacab;
-  border-color: #b5b0ab;
-  background-image: image(#ecebea);
+  border-color: #110f0d;
+  background-image: image(#4d4944);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);

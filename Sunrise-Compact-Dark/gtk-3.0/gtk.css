@@ -185,7 +185,7 @@ assistant .sidebar label.highlight {
 .osd {
   color: #eeeeec;
   border: none;
-  background-color: rgba(38, 38, 38, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   background-clip: padding-box;
   text-shadow: 0 1px black;
   -gtk-icon-shadow: 0 1px black;
@@ -386,7 +386,7 @@ entry:drop(active) {
 }
 .osd spinbutton:not(.vertical),
 .osd entry {
-  color: white;
+  color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -396,7 +396,7 @@ entry:drop(active) {
 }
 .osd spinbutton:focus:not(.vertical),
 .osd entry:focus {
-  color: white;
+  color: #eeeeec;
   border-color: #af3908;
   background-color: rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -406,7 +406,7 @@ entry:drop(active) {
 }
 .osd spinbutton:backdrop:not(.vertical),
 .osd entry:backdrop {
-  color: white;
+  color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -416,9 +416,9 @@ entry:drop(active) {
 }
 .osd spinbutton:disabled:not(.vertical),
 .osd entry:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(58, 58, 58, 0.5);
+  background-color: rgba(24, 24, 24, 0.5);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -766,7 +766,7 @@ button.osd {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -782,7 +782,7 @@ button.osd:hover {
   color: white;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(68, 68, 68, 0.9));
+  background-image: image(rgba(31, 31, 31, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -807,10 +807,10 @@ button.osd:checked {
 }
 button.osd:disabled:backdrop,
 button.osd:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -821,7 +821,7 @@ button.osd:backdrop {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -834,7 +834,7 @@ button.osd:backdrop {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -846,7 +846,7 @@ button.osd:backdrop {
   color: white;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(68, 68, 68, 0.9));
+  background-image: image(rgba(31, 31, 31, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -871,10 +871,10 @@ button.osd:backdrop {
 .app-notification button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled,
 .osd button:disabled:backdrop,
 .osd button:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -885,7 +885,7 @@ button.osd:backdrop {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -908,7 +908,7 @@ button.osd:backdrop {
   color: white;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(68, 68, 68, 0.9));
+  background-image: image(rgba(31, 31, 31, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -917,10 +917,10 @@ button.osd:backdrop {
 }
 .app-notification button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled,
 .osd button.flat:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -1094,10 +1094,10 @@ button.suggested-action:disabled:checked {
 }
 .osd button.suggested-action:disabled:backdrop,
 .osd button.suggested-action:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -1255,10 +1255,10 @@ button.destructive-action:disabled:checked {
 }
 .osd button.destructive-action:disabled:backdrop,
 .osd button.destructive-action:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -1797,7 +1797,7 @@ spinbutton:not(.vertical) button:dir(rtl):first-child {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.5);
   -gtk-icon-shadow: none;
   box-shadow: none;
@@ -1841,7 +1841,7 @@ spinbutton.vertical button.down {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -1852,7 +1852,7 @@ spinbutton.vertical button.down {
   color: white;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(68, 68, 68, 0.9));
+  background-image: image(rgba(31, 31, 31, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -1871,10 +1871,10 @@ spinbutton.vertical button.down {
   outline-color: rgba(238, 238, 236, 0.3);
 }
 .osd spinbutton.vertical button:first-child:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -1884,7 +1884,7 @@ spinbutton.vertical button.down {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -1961,7 +1961,7 @@ toolbar.osd {
   padding: 13px;
   border: none;
   border-radius: 5px;
-  background-color: rgba(38, 38, 38, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 toolbar.osd.left, toolbar.osd.right, toolbar.osd.top, toolbar.osd.bottom {
   border-radius: 0;
@@ -2020,13 +2020,14 @@ headerbar {
   border-color: #221f1a;
   border-radius: 0;
   color: #e3ded9;
-  background: #1a1714 linear-gradient(to top, #25211c, #2b2621);
+  background: #25211c linear-gradient(to top, #312c25, #37312a);
   box-shadow: inset 0 1px rgba(175, 57, 8, 0.07);
   /* Darken switchbuttons for headerbars. issue #1588 */
   /* hide the close button separator */
 }
 .titlebar:backdrop:not(headerbar),
 headerbar:backdrop {
+  color: rgba(227, 222, 217, 0.5);
   border-color: #24211c;
   background-color: #2e2923;
   background-image: none;
@@ -3820,7 +3821,7 @@ radio:backdrop {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -3832,7 +3833,7 @@ radio:backdrop {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -3856,7 +3857,7 @@ radio:backdrop {
   color: #eeeeec;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(38, 38, 38, 0.9));
+  background-image: image(rgba(0, 0, 0, 0.9));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -3864,10 +3865,10 @@ radio:backdrop {
 }
 .osd check:disabled,
 .osd radio:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -3978,7 +3979,7 @@ row:selected progressbar trough, progressbar row:selected trough, row:selected s
   background-color: rgba(0, 0, 0, 0.5);
 }
 .osd progressbar trough:disabled, progressbar .osd trough:disabled, .osd scale fill:disabled, scale .osd fill:disabled, .osd scale trough:disabled, scale .osd trough:disabled {
-  background-color: rgba(58, 58, 58, 0.5);
+  background-color: rgba(24, 24, 24, 0.5);
 }
 
 progressbar progress, scale highlight {
@@ -4125,7 +4126,7 @@ row:selected scale slider:disabled, row:selected scale slider {
   -gtk-icon-shadow: 0 1px black;
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: rgba(0, 0, 0, 0.7);
-  background-color: #262626;
+  background-color: black;
 }
 .osd scale slider:hover {
   color: white;
@@ -4137,7 +4138,7 @@ row:selected scale slider:disabled, row:selected scale slider {
   text-shadow: 0 1px black;
   -gtk-icon-shadow: 0 1px black;
   outline-color: rgba(238, 238, 236, 0.3);
-  background-color: #262626;
+  background-color: black;
 }
 .osd scale slider:active {
   color: white;
@@ -4149,18 +4150,18 @@ row:selected scale slider:disabled, row:selected scale slider {
   text-shadow: none;
   -gtk-icon-shadow: none;
   outline-color: rgba(238, 238, 236, 0.3);
-  background-color: #262626;
+  background-color: black;
 }
 .osd scale slider:disabled {
-  color: #8a8a89;
+  color: #777776;
   border-color: rgba(0, 0, 0, 0.7);
   background-color: transparent;
-  background-image: image(rgba(58, 58, 58, 0.5));
+  background-image: image(rgba(24, 24, 24, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
   -gtk-icon-shadow: none;
-  background-color: #262626;
+  background-color: black;
 }
 .osd scale slider:backdrop {
   color: #eeeeec;
@@ -4171,10 +4172,10 @@ row:selected scale slider:disabled, row:selected scale slider {
   box-shadow: none;
   text-shadow: none;
   -gtk-icon-shadow: none;
-  background-color: #262626;
+  background-color: black;
 }
 .osd scale slider:backdrop:disabled {
-  background-color: #262626;
+  background-color: black;
 }
 scale marks,
 scale value {
@@ -5050,7 +5051,7 @@ row .linked button:checked {
 .app-notification.frame {
   padding: 10px;
   border-radius: 0 0 5px 5px;
-  background-color: rgba(38, 38, 38, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 2px);
   background-clip: padding-box;
 }
@@ -6023,26 +6024,26 @@ headerbar button.minimize {
   color: orange;
 }
 headerbar button.minimize:active {
-  background-image: image(#5f5548);
+  background-image: image(#000000);
   box-shadow: none;
 }
 headerbar button.maximize {
   color: green;
 }
 headerbar button.maximize:active {
-  background-image: image(#5f5548);
+  background-image: image(#000000);
   box-shadow: none;
 }
 headerbar button.close {
   color: red;
 }
 headerbar button.close:active {
-  background-image: image(#5f5548);
+  background-image: image(#000000);
   box-shadow: none;
 }
 headerbar button.minimize, headerbar button.maximize, headerbar button.close {
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9289411765);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.9289411765);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8969411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8969411765);
 }
 
 .budgie-container {
@@ -6867,19 +6868,15 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 }
 .thunar menubar,
 .thunar toolbar {
-  background: image(#25211c);
+  background: #312c25;
   color: #e3ded9;
-  box-shadow: none;
 }
 .thunar menubar:backdrop,
 .thunar toolbar:backdrop {
-  background: image(#2e2923);
-}
-.thunar menubar:backdrop label, .thunar menubar:backdrop image, .thunar menubar:backdrop,
-.thunar toolbar:backdrop label,
-.thunar toolbar:backdrop image,
-.thunar toolbar:backdrop {
-  color: rgba(227, 222, 217, 0.6);
+  color: rgba(227, 222, 217, 0.5);
+  background-color: #2e2923;
+  background-image: none;
+  transition: 200ms ease-out;
 }
 .thunar menubar button.flat,
 .thunar toolbar button.flat {
@@ -6936,21 +6933,17 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 .thunar .linked.path-bar > button.toggle:active, .thunar .linked.path-bar > button.toggle:checked,
 .thunar button.path-bar-button.toggle:active,
 .thunar button.path-bar-button.toggle:checked {
+  background: image(black);
   color: white;
-  background-image: image(black);
-  opacity: 0.8;
   border-bottom: 2px solid rgba(175, 57, 8, 0.4);
 }
-.thunar .linked.path-bar > button.toggle:active:backdrop, .thunar .linked.path-bar > button.toggle:checked:backdrop,
-.thunar button.path-bar-button.toggle:active:backdrop,
+.thunar .linked.path-bar > button.toggle:checked,
+.thunar button.path-bar-button.toggle:checked {
+  opacity: 0.8;
+}
+.thunar .linked.path-bar > button.toggle:checked:backdrop,
 .thunar button.path-bar-button.toggle:checked:backdrop {
   opacity: 0.4;
-}
-.thunar .linked.path-bar > button:backdrop label, .thunar .linked.path-bar > button:backdrop image, .thunar .linked.path-bar > button:backdrop,
-.thunar button.path-bar-button:backdrop label,
-.thunar button.path-bar-button:backdrop image,
-.thunar button.path-bar-button:backdrop {
-  color: rgba(227, 222, 217, 0.6);
 }
 .thunar menubar .csd.popup > decoration,
 .thunar menubar .csd.popup > menu {

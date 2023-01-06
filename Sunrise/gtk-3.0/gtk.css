@@ -641,7 +641,7 @@ button:active,
 button:checked {
   color: #373737;
   outline-color: rgba(55, 55, 55, 0.3);
-  border-color: #bebab6;
+  border-color: #a7a19b;
   background-image: image(#dbd9d7);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
@@ -990,7 +990,7 @@ button.suggested-action:active,
 button.suggested-action:checked {
   color: #fff;
   outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #e0490a;
+  border-color: #af3908;
   background-image: image(#f56b32);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
@@ -1151,7 +1151,7 @@ button.destructive-action:active,
 button.destructive-action:checked {
   color: #fff;
   outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #b2161d;
+  border-color: #851015;
   background-image: image(#e4212a);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
@@ -2144,7 +2144,7 @@ headerbar.selection-mode button.toggle:checked,
 headerbar.selection-mode button.toggle:active {
   color: #fff;
   outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #e0490a;
+  border-color: #af3908;
   background-image: image(#f56b32);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
@@ -2561,6 +2561,63 @@ window.devel headerbar.titlebar:not(.selection-mode):backdrop {
 /************
  * Pathbars *
  ************/
+filechooser .path-bar.linked > button {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #110f0d;
+  border-bottom-color: black;
+  background-image: linear-gradient(to top, #221f1a 2px, #2e2923);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+filechooser .path-bar.linked > button:hover {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #110f0d;
+  border-bottom-color: black;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #2b2621, #312c25 1px);
+  -gtk-icon-effect: highlight;
+  border-bottom: 2px solid #f56428;
+}
+filechooser .path-bar.linked > button:active, filechooser .path-bar.linked > button:checked {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: black;
+  background-image: image(#050505);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  border-bottom: 2px solid rgba(245, 100, 40, 0.4);
+}
+filechooser .path-bar.linked > button:active:backdrop, filechooser .path-bar.linked > button:checked:backdrop {
+  background: image(#201e19);
+  color: #e3ded9;
+  border-color: #171411;
+  border-bottom: 2px solid rgba(245, 100, 40, 0.4);
+}
+filechooser .path-bar.linked > button:backdrop {
+  color: #bfbab5;
+  border-color: #110f0d;
+  background-image: image(#2e2923);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  transition: backdrop_transition;
+  -gtk-icon-effect: none;
+}
+filechooser .path-bar.linked > button:disabled, filechooser .path-bar.linked > button:backdrop:disabled {
+  color: #837f7a;
+  border-color: #060504;
+  background-image: image(#231f1a);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+
 .path-bar button.text-button, .path-bar button.image-button, .path-bar button {
   padding-left: 4px;
   padding-right: 4px;
@@ -5203,6 +5260,13 @@ filechooser .dialog-action-box:backdrop {
 filechooser #pathbarbox {
   border-bottom: 1px solid #e0dedc;
 }
+filechooser #pathbarbox.view.vertical > stack, filechooser iconview#pathbarbox.vertical > stack {
+  background: #25211c linear-gradient(to top, #312c25, #37312a);
+  box-shadow: inset 0 1px rgba(245, 100, 40, 0.2);
+}
+filechooser #pathbarbox.view.vertical > stack:backdrop, filechooser iconview#pathbarbox.vertical > stack:backdrop {
+  background: image(#2e2923);
+}
 
 filechooserbutton:drop(active) {
   box-shadow: none;
@@ -6929,7 +6993,7 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 .thunar toolbar button.flat:checked {
   color: #fff;
   outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #e0490a;
+  border-color: #af3908;
   background-image: image(#f56b32);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;

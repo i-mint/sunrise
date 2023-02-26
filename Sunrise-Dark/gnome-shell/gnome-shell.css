@@ -1197,7 +1197,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .run-dialog .run-dialog-entry {
   width: 20em;
   min-height: 1.4em;
-  background-color: black;
+  background-color: #000000;
 }
 .run-dialog .run-dialog-description {
   font-size: 10pt;
@@ -1661,7 +1661,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-style: solid;
   border-color: #af3908;
   color: #e3ded9;
-  background-color: black;
+  background-color: #000000;
   box-shadow: 0 0 2px 0 rgba(175, 57, 8, 0.4);
 }
 .search-entry .search-entry-icon {
@@ -1773,7 +1773,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 9px;
   border: 1px solid rgba(175, 57, 8, 0.3);
 }
@@ -1783,6 +1783,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: 1px solid #4d1904;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 12px;
+}
+.app-folder-dialog .overview-icon.overview-icon-with-label {
+  color: #C7C5C5;
 }
 .app-folder-dialog .folder-name-container {
   padding: 24px 36px 0;
@@ -1795,7 +1798,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: transparent;
 }
 .app-folder-dialog .folder-name-container .folder-name-label:focus, .app-folder-dialog .folder-name-container .folder-name-entry:focus {
-  background-color: black;
+  background-color: #000000;
   selection-background-color: #af3908;
   selected-color: #fff;
 }

@@ -32,6 +32,9 @@
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
+.background.csd.unified {
+  border-radius: 8px;
+}
 
 /*
    These wildcard seems unavoidable, need to investigate.
@@ -5828,8 +5831,8 @@ decoration:backdrop {
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(26, 23, 20, 0.8);
 }
-.csd decoration {
-  border-radius: 0;
+.csd.unified decoration {
+  border-radius: 8px;
 }
 tooltip.csd decoration {
   border-radius: 5px;

@@ -7064,6 +7064,35 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 .thunar menubar .csd.popup > menu menuitem:last-child {
   margin-bottom: 4px;
 }
+.thunar notebook button.flat {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #4c4843;
+  border-bottom-color: #312e2b;
+  background-image: linear-gradient(to top, #5c5752 2px, #67615b);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.thunar notebook button.flat:hover {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #827b73;
+  border-bottom-color: #67615b;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #9b948e, #857d76 1px);
+}
+.thunar notebook button.flat:active {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #af3908;
+  background-image: image(#f56b32);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
 
 .panel.xfce4-panel {
   background-color: #000000;

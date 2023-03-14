@@ -592,17 +592,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 32px;
   height: 32px;
   padding: 0;
-  margin: 2px;
+  margin: 4px;
   border-radius: 18px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   font-feature-settings: "tnum";
 }
 .calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
-  background-color: #3c362e;
+  background-color: #4b4339;
 }
 .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
-  color: #f9f8f6;
-  background-color: #201c18;
+  color: #eeebe8;
+  background-color: #25211c;
+  font-weight: bold;
+  box-shadow: inset 0 0 0 2px #af3908;
 }
 .calendar .calendar-day-base.calendar-day-heading {
   color: #f9f8f6;

@@ -5521,7 +5521,7 @@ paned > separator:selected {
   background-image: image(#f56428);
 }
 paned > separator:backdrop {
-  background-image: #ceccc9;
+  background: image(#ceccc9);
 }
 paned > separator.wide {
   min-width: 5px;
@@ -6876,8 +6876,8 @@ headerbar .horizontal.path-buttons-box > .horizontal > .subtitle, .titlebar:not(
   border-bottom: 2px solid rgba(245, 100, 40, 0.4);
   opacity: 0.8;
   margin-left: 6px;
-  border-radius: 4px;
   text-align: center;
+  border-radius: 4px;
   margin-right: 6px;
 }
 

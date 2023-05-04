@@ -241,7 +241,7 @@ StEntry StLabel.hint-text {
 
 /* Slider */
 .slider {
-  height: 15px;
+  height: 18px;
   -barlevel-height: 3px;
   -barlevel-background-color: #201c18;
   -barlevel-border-width: 1px;
@@ -251,9 +251,9 @@ StEntry StLabel.hint-text {
   -barlevel-overdrive-color: #b2161d;
   -barlevel-overdrive-border-color: #bc171e;
   -barlevel-overdrive-separator-width: 1px;
-  -slider-handle-radius: 7.5px;
+  -slider-handle-radius: 8.5px;
   -slider-handle-border-width: 1px;
-  -slider-handle-border-color: #e3ded9;
+  -slider-handle-border-color: #201c18;
   color: #e3ded9;
 }
 .slider:hover {
@@ -1652,6 +1652,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: #2f2a1f;
   border-color: #110f0d;
 }
+.search-entry StLabel.hint-text {
+  margin-left: 0px;
+}
 .search-entry:hover {
   background-color: #3c362e;
   border-color: #1a1714;
@@ -1665,6 +1668,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #e3ded9;
   background-color: #000000;
   box-shadow: 0 0 2px 0 rgba(175, 57, 8, 0.4);
+}
+.search-entry:focus StLabel.hint-text {
+  margin-left: 12px;
 }
 .search-entry .search-entry-icon {
   icon-size: 1.09em;

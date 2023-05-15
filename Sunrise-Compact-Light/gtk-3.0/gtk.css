@@ -6802,11 +6802,14 @@ headerbar button.minimize, headerbar button.maximize, headerbar button.close {
   margin-right: 0px;
 }
 .nautilus-path-bar button:not(.popup).image-button:last-child {
-  color: black;
+  color: #000000;
   background-image: image(white);
   border-bottom: 2px solid rgba(245, 100, 40, 0.4);
   opacity: 0.8;
   text-shadow: none;
+}
+.nautilus-path-bar button:not(.popup).image-button:last-child:backdrop {
+  opacity: 0.5;
 }
 .nautilus-path-bar button:not(.popup):hover {
   border-bottom: 2px solid #f56428;
@@ -6878,6 +6881,9 @@ headerbar .horizontal.path-buttons-box > .horizontal > .subtitle, .titlebar:not(
   margin-left: 6px;
   border-radius: 4px;
   margin-right: 6px;
+}
+.horizontal.path-buttons-box button.current-dir:backdrop {
+  opacity: 0.5;
 }
 
 .nautilus-path-bar > button.popup.toggle {

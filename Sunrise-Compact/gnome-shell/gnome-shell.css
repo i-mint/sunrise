@@ -1483,7 +1483,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel {
   background-color: #000000;
   font-weight: bold;
-  height: 1.86em;
+  height: 2.46em;
   font-feature-settings: "tnum";
 }
 #panel.unlock-screen, #panel.login-screen {

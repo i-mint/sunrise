@@ -326,6 +326,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 6px;
   padding: 6px;
   border-radius: 0;
+  border-top: 1px solid transparent;
 }
 .popup-menu-item:ltr {
   padding-right: 1.75em;
@@ -336,8 +337,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-left: 1.75em;
 }
 .popup-menu-item:checked, .popup-menu-item:checked:hover {
-  background-color: #f0f0f0 !important;
+  background-color: #d2cfcc !important;
   box-shadow: none;
+  font-weight: bold !important;
+  border-top: 1px solid rgba(181, 176, 171, 0.8);
 }
 .popup-menu-item.selected {
   background-color: #cac7c4 !important;
@@ -364,9 +367,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-sub-menu {
-  background-color: #d9d6d4;
+  background-color: #d2cfcc !important;
   box-shadow: none;
-  border-top: 1px solid rgba(181, 176, 171, 0.8);
+  border-top: 0px solid rgba(181, 176, 171, 0.8);
   border-bottom: 1px solid rgba(181, 176, 171, 0.8);
   border-radius: 0;
 }
@@ -601,7 +604,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
   color: #444444;
-  background-color: #d9d6d4;
+  background-color: #d2cfcc;
   font-weight: bold;
   box-shadow: inset 0 0 0 2px #f56428;
 }
@@ -1611,15 +1614,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .window-clone-border {
   border-width: 4px;
   border-style: solid;
-  border-color: #d6d4d1;
+  border-color: #d2cfcc;
   border-radius: 7px;
   box-shadow: inset 0 0 0 1px rgba(181, 176, 171, 0.2);
 }
 
 .window-caption {
-  color: #373737;
-  background-color: #e0dedc;
-  border: 1px solid #d6d4d1;
+  color: #fff;
+  background-color: #f56428;
+  border: 1px solid #d2cfcc;
   border-radius: 6px;
   padding: 6px 12px;
   font-weight: normal;

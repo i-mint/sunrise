@@ -2030,7 +2030,7 @@ headerbar {
 }
 .titlebar:backdrop:not(headerbar),
 headerbar:backdrop {
-  color: rgba(227, 222, 217, 0.5);
+  color: #89847e;
   border-color: #1e1b17;
   background-color: #2e2923;
   background-image: none;
@@ -2410,7 +2410,7 @@ headerbar entry.search:focus image {
 }
 headerbar entry:backdrop,
 headerbar entry.search:backdrop {
-  color: #bfbab5;
+  color: #89847e;
   border-color: #1e1b17;
   background-color: #201e19;
   box-shadow: none;
@@ -6121,6 +6121,9 @@ headerbar button.minimize, headerbar button.maximize, headerbar button.close {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.8969411765);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8969411765);
 }
+headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.close:backdrop {
+  color: #89847e;
+}
 
 .budgie-container {
   background-color: transparent;
@@ -6777,8 +6780,8 @@ headerbar button.minimize, headerbar button.maximize, headerbar button.close {
   opacity: 0.8;
   text-shadow: none;
 }
-.nautilus-path-bar button:not(.popup).image-button:last-child:backdrop {
-  opacity: 0.5;
+.nautilus-path-bar button:not(.popup).image-button:last-child:backdrop label, .nautilus-path-bar button:not(.popup).image-button:last-child:backdrop image, .nautilus-path-bar button:not(.popup).image-button:last-child:backdrop {
+  color: #89847e;
 }
 .nautilus-path-bar button:not(.popup):hover {
   border-bottom: 2px solid #af3908;

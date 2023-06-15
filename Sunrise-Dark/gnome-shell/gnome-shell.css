@@ -188,6 +188,9 @@ StEntry:focus {
   border-color: #1d0901;
   box-shadow: inset 0 0 0 1px #af3908;
 }
+StEntry:focus StLabel.hint-text {
+  margin-left: 12px;
+}
 StEntry:insensitive {
   color: #89847e;
   border-color: #2a251f;

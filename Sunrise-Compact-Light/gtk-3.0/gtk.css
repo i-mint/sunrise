@@ -5522,6 +5522,7 @@ paned > separator:selected {
 }
 paned > separator:backdrop {
   background: image(#ceccc9);
+  background-size: 1px 1px;
 }
 paned > separator.wide {
   min-width: 5px;

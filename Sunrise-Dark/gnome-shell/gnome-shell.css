@@ -627,7 +627,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-left-width: 1px;
 }
 .calendar .calendar-nonwork-day {
-  color: #89847e;
+  color: #9b9690;
+  font-weight: bold;
+  border-bottom-width: 1px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-color: #1d1a16;
+  border-radius: 0;
 }
 .calendar .calendar-today {
   font-weight: bold;
@@ -655,7 +662,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-weight: bold;
 }
 .calendar .calendar-other-month-day {
-  color: rgba(227, 222, 217, 0.5);
+  color: #645f5a;
 }
 .calendar .calendar-week-number {
   font-size: 7pt;

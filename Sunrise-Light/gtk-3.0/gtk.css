@@ -7152,95 +7152,47 @@ event.slanted-end:backdrop label, event.slanted-end:backdrop {
 
 .panel.xfce4-panel {
   background-color: #e7e6e4;
-  color: rgba(55, 55, 55, 0.8);
+  color: #373737;
   text-shadow: none;
-}
-.panel.xfce4-panel label, .panel.xfce4-panel image {
-  color: inherit;
 }
 .panel.xfce4-panel button,
-.panel.xfce4-panel #clock-button {
-  background-color: transparent;
-  color: rgba(55, 55, 55, 0.8);
+.panel.xfce4-panel button.flat,
+.panel.xfce4-panel #clock-button,
+.panel.xfce4-panel .tasklist button {
+  color: #373737;
+  background: image(#e7e6e4);
   border-radius: 4px;
-  border: none;
-  box-shadow: none;
   border: 1px solid rgba(0, 0, 0, 0);
 }
-.panel.xfce4-panel button label,
-.panel.xfce4-panel button image,
-.panel.xfce4-panel #clock-button label,
-.panel.xfce4-panel #clock-button image {
-  color: inherit;
-}
 .panel.xfce4-panel button:hover,
-.panel.xfce4-panel #clock-button:hover {
-  background: image(#b7b3ae);
-  color: #373737;
-  text-shadow: none;
-}
-.panel.xfce4-panel button:hover label,
-.panel.xfce4-panel button:hover image,
-.panel.xfce4-panel #clock-button:hover label,
-.panel.xfce4-panel #clock-button:hover image {
-  color: inherit;
-}
-.panel.xfce4-panel button:active, .panel.xfce4-panel button:checked,
-.panel.xfce4-panel #clock-button:active,
-.panel.xfce4-panel #clock-button:checked {
-  color: #fff;
-  outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #e0490a;
-  background-image: image(#f56b32);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-}
-.panel.xfce4-panel button:active label,
-.panel.xfce4-panel button:active image, .panel.xfce4-panel button:checked label,
-.panel.xfce4-panel button:checked image,
-.panel.xfce4-panel #clock-button:active label,
-.panel.xfce4-panel #clock-button:active image,
-.panel.xfce4-panel #clock-button:checked label,
-.panel.xfce4-panel #clock-button:checked image {
-  color: inherit;
-}
-.panel.xfce4-panel .tasklist button {
-  background: image(rgba(214, 212, 209, 0.5));
-  color: rgba(55, 55, 55, 0.8);
-  text-shadow: none;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  margin: 0 1px;
+.panel.xfce4-panel button.flat:hover,
+.panel.xfce4-panel #clock-button:hover,
+.panel.xfce4-panel .tasklist button:hover {
+  color: #6c6c6b;
+  background-color: transparent;
   box-shadow: none;
 }
-.panel.xfce4-panel .tasklist button label,
-.panel.xfce4-panel .tasklist button image {
-  color: inherit;
+.panel.xfce4-panel button:active, .panel.xfce4-panel button:checked, .panel.xfce4-panel button:checked:hover,
+.panel.xfce4-panel button.flat:active,
+.panel.xfce4-panel button.flat:checked,
+.panel.xfce4-panel button.flat:checked:hover,
+.panel.xfce4-panel #clock-button:active,
+.panel.xfce4-panel #clock-button:checked,
+.panel.xfce4-panel #clock-button:checked:hover,
+.panel.xfce4-panel .tasklist button:active,
+.panel.xfce4-panel .tasklist button:checked,
+.panel.xfce4-panel .tasklist button:checked:hover {
+  color: #494948;
+  box-shadow: inset 0 -2px 0 0 #f45210;
+  border-radius: 0;
 }
-.panel.xfce4-panel .tasklist button:hover {
-  background: image(rgba(200, 197, 193, 0.5));
-  color: #373737;
-  text-shadow: none;
+.panel.xfce4-panel wnck-pager {
+  background-color: #c4c3c1;
 }
-.panel.xfce4-panel .tasklist button:hover label,
-.panel.xfce4-panel .tasklist button:hover image {
-  color: inherit;
+.panel.xfce4-panel wnck-pager:hover {
+  background-color: #a7a19b;
 }
-.panel.xfce4-panel .tasklist button:active, .panel.xfce4-panel .tasklist button:checked {
-  color: #fff;
-  outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #e0490a;
-  background-image: image(#f56b32);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-}
-.panel.xfce4-panel .tasklist button:active label,
-.panel.xfce4-panel .tasklist button:active image, .panel.xfce4-panel .tasklist button:checked label,
-.panel.xfce4-panel .tasklist button:checked image {
-  color: inherit;
-}
-.panel.xfce4-panel wnck-pager:hover, .panel.xfce4-panel wnck-pager:selected {
+.panel.xfce4-panel wnck-pager:selected {
   background-color: #f56428;
 }
 

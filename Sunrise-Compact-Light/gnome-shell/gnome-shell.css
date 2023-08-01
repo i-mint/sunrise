@@ -318,7 +318,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu-content {
-  padding: 16px 0;
+  padding: 6px;
   background-color: #e0dedc;
   box-shadow: none;
   border-color: transparent;
@@ -328,22 +328,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu-item {
   spacing: 6px;
   padding: 6px;
-  border-radius: 0;
-  border-top: 1px solid transparent;
+  border-radius: 5px;
 }
 .popup-menu-item:ltr {
-  padding-right: 1.75em;
-  padding-left: 0;
+  padding-left: 6px;
 }
 .popup-menu-item:rtl {
-  padding-right: 0;
-  padding-left: 1.75em;
+  padding-right: 6px;
 }
 .popup-menu-item:checked, .popup-menu-item:checked:hover {
-  background-color: #d2cfcc !important;
+  background-color: #bab5b1 !important;
   box-shadow: none;
   font-weight: bold !important;
-  border-top: 1px solid rgba(181, 176, 171, 0.8);
+  border-radius: 5px 5px 0 0;
+  border: none;
 }
 .popup-menu-item.selected {
   background-color: #cac7c4 !important;
@@ -370,11 +368,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-sub-menu {
-  background-color: #d2cfcc !important;
+  background-color: #bab5b1 !important;
   box-shadow: none;
-  border-top: 0px solid rgba(181, 176, 171, 0.8);
-  border-bottom: 1px solid rgba(181, 176, 171, 0.8);
-  border-radius: 0;
+  border-radius: 0 0 5px 5px;
+  border: none;
 }
 
 .popup-menu-ornament {
@@ -413,12 +410,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -st-icon-style: symbolic;
 }
 .aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:ltr {
-  padding-left: 14px;
-  margin-left: 1.09em;
+  margin-left: 1em;
 }
 .aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:rtl {
-  padding-right: 14px;
-  margin-right: 1.09em;
+  margin-right: 1em;
 }
 
 /* Date/Time Menu */

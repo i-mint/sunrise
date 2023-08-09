@@ -6812,6 +6812,9 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   opacity: 0.8;
   text-shadow: none;
 }
+.nautilus-path-bar button:not(.popup).image-button:last-child:active {
+  color: rgba(0, 0, 0, 0.5);
+}
 .nautilus-path-bar button:not(.popup).image-button:last-child:backdrop label, .nautilus-path-bar button:not(.popup).image-button:last-child:backdrop image, .nautilus-path-bar button:not(.popup).image-button:last-child:backdrop {
   color: #8c8b8a;
 }
@@ -6819,8 +6822,8 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   border-bottom: 2px solid #f56428;
 }
 .nautilus-path-bar button:not(.popup):active {
-  color: #373737;
-  outline-color: rgba(55, 55, 55, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  outline-color: rgba(0, 0, 0, 0);
   border-color: #bebab6;
   background-image: image(white);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);

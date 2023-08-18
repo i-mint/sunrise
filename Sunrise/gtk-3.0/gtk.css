@@ -6952,17 +6952,23 @@ headerbar .horizontal.path-buttons-box > .horizontal > .subtitle, .titlebar:not(
   -gtk-icon-shadow: none;
 }
 
-event label, event {
-  color: black;
+event.slanted-end,
+event.color-light {
+  box-shadow: inset 0 39px 0 0 #f56428;
+  border: 1px solid #f56428;
 }
-event:backdrop label, event:backdrop {
-  color: rgba(0, 0, 0, 0.5);
+event.slanted-end label, event.slanted-end,
+event.color-light label,
+event.color-light {
+  color: #fff;
 }
+event.slanted-end:backdrop,
+event.color-light:backdrop {
+  opacity: 0.5;
+}
+
 event.slanted-end label, event.slanted-end {
-  color: black;
-}
-event.slanted-end:backdrop label, event.slanted-end:backdrop {
-  color: rgba(0, 0, 0, 0.5);
+  padding: 9px;
 }
 
 .thunar .sidebar .view, .thunar .sidebar iconview {

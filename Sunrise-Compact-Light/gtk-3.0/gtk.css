@@ -6802,26 +6802,26 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   border-radius: 4px;
 }
 
-.nautilus-path-bar button:not(.popup) {
+.nautilus-path-bar > button:not(.popup) {
   margin-right: 0px;
 }
-.nautilus-path-bar button:not(.popup).image-button:last-child {
+.nautilus-path-bar > button:not(.popup).image-button:last-child {
   color: #000000;
   background-image: image(white);
   border-bottom: 2px solid rgba(245, 100, 40, 0.4);
   opacity: 0.8;
   text-shadow: none;
 }
-.nautilus-path-bar button:not(.popup).image-button:last-child:active {
+.nautilus-path-bar > button:not(.popup).image-button:last-child:active {
   color: rgba(0, 0, 0, 0.5);
 }
-.nautilus-path-bar button:not(.popup).image-button:last-child:backdrop label, .nautilus-path-bar button:not(.popup).image-button:last-child:backdrop image, .nautilus-path-bar button:not(.popup).image-button:last-child:backdrop {
+.nautilus-path-bar > button:not(.popup).image-button:last-child:backdrop label, .nautilus-path-bar > button:not(.popup).image-button:last-child:backdrop image, .nautilus-path-bar > button:not(.popup).image-button:last-child:backdrop {
   color: #8c8b8a;
 }
-.nautilus-path-bar button:not(.popup):hover {
+.nautilus-path-bar > button:not(.popup):hover {
   border-bottom: 2px solid #f56428;
 }
-.nautilus-path-bar button:not(.popup):active {
+.nautilus-path-bar > button:not(.popup):active {
   color: rgba(0, 0, 0, 0.5);
   outline-color: rgba(0, 0, 0, 0);
   border-color: #bebab6;
@@ -6861,40 +6861,90 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   margin-right: 0px;
 }
 
-.horizontal.path-buttons-box > .horizontal > .dim-label, .horizontal.path-buttons-box > .horizontal > label.separator,
-headerbar .horizontal.path-buttons-box > .horizontal > .subtitle, .titlebar:not(headerbar) .horizontal.path-buttons-box > .horizontal > .subtitle {
-  color: transparent;
-}
-.horizontal.path-buttons-box button {
-  background: image(transparent);
-  border: none;
-  border-radius: 0;
+headerbar.windowhandle box.path-buttons-box {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #bebab6;
+  border-bottom-color: #a7a19b;
+  background-image: linear-gradient(to top, #d6d4d1 2px, #e0dedc);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
+  border: 1px solid #bebab6;
+  border-right: 0px;
+  border-radius: 5px 0 0 5px;
+  margin: 2px 0;
+  padding: 0;
   box-shadow: none;
 }
-.horizontal.path-buttons-box button:hover {
-  border-bottom: 2px solid #f56428;
+headerbar.windowhandle box.path-buttons-box > box > button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0;
 }
-.horizontal.path-buttons-box button:active {
-  color: black;
+headerbar.windowhandle box.path-buttons-box > box > button:hover {
+  border-bottom-width: 0px;
+  background-color: transparent;
 }
-.horizontal.path-buttons-box button:active.current-dir {
-  background-image: image(transparent);
+headerbar.windowhandle box.path-buttons-box > box > button:active label, headerbar.windowhandle box.path-buttons-box > box > button:active image {
+  opacity: 0.2;
 }
-.horizontal.path-buttons-box button.current-dir {
-  color: black;
-  background-image: image(white);
-  border-bottom: 2px solid rgba(245, 100, 40, 0.4);
-  opacity: 0.8;
-  margin-left: 6px;
-  border-radius: 4px;
-  margin-right: 6px;
+headerbar.windowhandle box.path-buttons-box > box > button.current-dir label, headerbar.windowhandle box.path-buttons-box > box > button.current-dir image {
+  opacity: 1;
 }
-.horizontal.path-buttons-box button.current-dir:backdrop {
+headerbar.windowhandle box.path-buttons-box > box:first-child > button {
+  border-radius: 5px 0 0 5px;
+}
+headerbar.windowhandle box.path-buttons-box:backdrop {
+  color: #8c8b8a;
+  border-color: #c5c1be;
+  background-image: image(#e0dedc);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  transition: backdrop_transition;
+  -gtk-icon-effect: none;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle {
+  border-color: #bebab6;
+  border-radius: 0 5px 5px 0;
+  border-left: 0px solid transparent;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle image {
   opacity: 0.5;
 }
-
-.nautilus-path-bar > button.popup.toggle {
-  border-radius: 4px;
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:hover, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #bebab6;
+  border-bottom-color: #a7a19b;
+  background-image: linear-gradient(to top, #d6d4d1 2px, #e0dedc);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.07);
+  border-color: #bebab6;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:active image {
+  opacity: 0.2;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked {
+  box-shadow: none;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked label, headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:checked image {
+  opacity: 1;
+}
+headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdrop {
+  color: #8c8b8a;
+  border-color: #c5c1be;
+  background-image: image(#e0dedc);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  transition: backdrop_transition;
+  -gtk-icon-effect: none;
 }
 
 .gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {

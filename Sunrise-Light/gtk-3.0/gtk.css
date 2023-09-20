@@ -1354,12 +1354,20 @@ button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:b
   border-color: transparent;
 }
 
-viewswitcher > box > button.radio {
+headerbar.windowhandle viewswitcher {
   margin: 6px 0;
+}
+headerbar.windowhandle viewswitcher > box > button.radio {
+  margin: -3px 0;
   padding: 0;
 }
-viewswitcher > box > button.radio:active, viewswitcher > box > button.radio:checked {
+headerbar.windowhandle viewswitcher > box > button.radio:active, headerbar.windowhandle viewswitcher > box > button.radio:checked {
   box-shadow: 0 0 6px 0 rgba(245, 100, 40, 0.8);
+}
+headerbar.windowhandle viewswitcher > box > button.radio:checked:backdrop:backdrop {
+  background: image(#d2cfcb);
+  color: #373737;
+  border-color: #c5c1be;
 }
 
 stacksidebar row.needs-attention > label,
@@ -1457,7 +1465,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .linked:not(.vertical) > spinbutton:not(.vertical),
 .linked:not(.vertical) > entry,
 .inline-toolbar button,
-.linked > button, viewswitcher > box > button.radio, toolbar.inline-toolbar toolbutton > button.flat {
+.linked > button, headerbar.windowhandle viewswitcher > box > button.radio, toolbar.inline-toolbar toolbutton > button.flat {
   border-right-style: none;
   border-radius: 0;
   -gtk-outline-radius: 0;
@@ -1466,7 +1474,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
-.linked > button:first-child, viewswitcher > box > button.radio:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
+.linked > button:first-child, headerbar.windowhandle viewswitcher > box > button.radio:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   -gtk-outline-top-left-radius: 5px;
@@ -1476,7 +1484,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
-.linked > button:last-child, viewswitcher > box > button.radio:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
+.linked > button:last-child, headerbar.windowhandle viewswitcher > box > button.radio:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
   border-right-style: solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1487,7 +1495,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
 .linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
 .linked:not(.vertical) > entry:only-child,
 .inline-toolbar button:only-child,
-.linked > button:only-child, viewswitcher > box > button.radio:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
+.linked > button:only-child, headerbar.windowhandle viewswitcher > box > button.radio:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
   border-style: solid;
   border-radius: 5px;
   -gtk-outline-radius: 5px;

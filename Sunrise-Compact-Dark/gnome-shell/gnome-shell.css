@@ -653,7 +653,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-image: url("assets/calendar-today-dark.svg");
 }
 .calendar .calendar-day-with-events.calendar-work-day {
-  color: #f9f8f6;
+  color: #e3ded9;
+  font-weight: bold;
+}
+.calendar .calendar-day-with-events.calendar-today {
+  color: #fff;
   font-weight: bold;
 }
 .calendar .calendar-other-month-day {

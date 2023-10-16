@@ -7271,6 +7271,10 @@ event.slanted-end label, event.slanted-end {
   background-color: #f56428;
 }
 
+#whiskermenu-window button:active, #whiskermenu-window button:checked {
+  background: image(#ffffff);
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */

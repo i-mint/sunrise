@@ -5880,7 +5880,7 @@ decoration:backdrop {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13);
 }
 .csd.unified decoration {
-  border-radius: 5px;
+  border-radius: 8px;
 }
 tooltip.csd decoration {
   border-radius: 5px;

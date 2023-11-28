@@ -6413,6 +6413,10 @@ raven,
   background-color: #14120f;
 }
 
+.nemo-window toolbar.primary-toolbar {
+  border-bottom: 1px solid #1a1714;
+}
+
 .nautilus-path-bar > button:not(.popup) {
   margin-right: 0px;
 }

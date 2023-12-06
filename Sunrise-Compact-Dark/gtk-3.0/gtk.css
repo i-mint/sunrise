@@ -6377,6 +6377,9 @@ raven,
 .budgie-popover button label, .budgie-popover button image, .budgie-popover button {
   color: #e3ded9;
 }
+.budgie-popover button:disabled label, .budgie-popover button:disabled, .budgie-popover button:checked:disabled label, .budgie-popover button:checked:disabled {
+  color: rgba(227, 222, 217, 0.5);
+}
 .budgie-popover > frame.container > border, .budgie-popover > frame.container {
   border-style: none;
   background: transparent;

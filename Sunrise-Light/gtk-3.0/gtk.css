@@ -6431,26 +6431,6 @@ raven,
   box-shadow: inset 0 -2px 0 0 #f56428;
 }
 
-.nemo-window paned treeview.view {
-  background-color: #f0efee;
-  box-shadow: none;
-}
-.nemo-window paned treeview.view:selected, .nemo-window paned treeview.view:selected:backdrop {
-  background-color: #f56428;
-  box-shadow: none;
-  border: none;
-}
-.nemo-window scrolledwindow.frame.nemo-places-sidebar {
-  border: none;
-}
-.nemo-window paned > box.nemo-inactive-pane.nemo-window-pane.vertical .view, .nemo-window paned > box.nemo-inactive-pane.nemo-window-pane.vertical iconview {
-  background-color: #f2f2f2;
-}
-
-.nemo-window toolbar.primary-toolbar {
-  border-bottom: 1px solid #bebab6;
-}
-
 .nautilus-path-bar > button:not(.popup) {
   margin-right: 0px;
 }
@@ -6594,6 +6574,36 @@ headerbar.windowhandle box.linked.nautilus-path-bar > button.popup.toggle:backdr
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   transition: backdrop_transition;
   -gtk-icon-effect: none;
+}
+
+.nemo-window paned treeview.view {
+  background-color: #f0efee;
+  box-shadow: none;
+}
+.nemo-window paned treeview.view:hover {
+  background-image: linear-gradient(to top, #cac7c4);
+}
+.nemo-window paned treeview.view:active, .nemo-window paned treeview.view:selected, .nemo-window paned treeview.view:selected:hover {
+  background: image(#f56428);
+  box-shadow: none;
+  border: none;
+}
+.nemo-window paned treeview.view:active label, .nemo-window paned treeview.view:active image, .nemo-window paned treeview.view:selected label, .nemo-window paned treeview.view:selected image, .nemo-window paned treeview.view:selected:hover label, .nemo-window paned treeview.view:selected:hover image {
+  color: #fff;
+  text-shadow: none;
+}
+.nemo-window paned treeview.view:selected:backdrop {
+  opacity: 0.5;
+}
+.nemo-window scrolledwindow.frame.nemo-places-sidebar {
+  border: none;
+}
+.nemo-window paned > box.nemo-inactive-pane.nemo-window-pane.vertical .view, .nemo-window paned > box.nemo-inactive-pane.nemo-window-pane.vertical iconview {
+  background-color: #f2f2f2;
+}
+
+.nemo-window toolbar.primary-toolbar {
+  border-bottom: 1px solid #bebab6;
 }
 
 .gedit-side-panel-paned .view:hover, .gedit-side-panel-paned iconview:hover {

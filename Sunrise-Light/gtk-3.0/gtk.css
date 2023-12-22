@@ -6208,6 +6208,7 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   background-image: linear-gradient(to top, #e0dedc, #cac7c4 1px);
   border-radius: 0;
   box-shadow: none;
+  border-color: transparent;
 }
 .budgie-menu .category-button:checked, .budgie-menu .category-button:checked:hover {
   color: black;
@@ -6226,7 +6227,7 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   border-radius: 0;
 }
 .budgie-menu list button:hover {
-  background-color: rgba(55, 55, 55, 0.07);
+  background-color: transparent;
 }
 
 raven,

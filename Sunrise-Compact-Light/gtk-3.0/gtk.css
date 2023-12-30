@@ -6270,45 +6270,57 @@ raven,
   border: none;
 }
 .top .budgie-panel button.toggle,
-.top .budgie-panel button.flat {
+.top .budgie-panel button.flat,
+.top .budgie-panel button.image-button.workspace-add-button {
   border: none;
 }
 .top .budgie-panel button.toggle:active, .top .budgie-panel button.toggle:checked,
 .top .budgie-panel button.flat:active,
-.top .budgie-panel button.flat:checked {
+.top .budgie-panel button.flat:checked,
+.top .budgie-panel button.image-button.workspace-add-button:active,
+.top .budgie-panel button.image-button.workspace-add-button:checked {
   box-shadow: inset 0 2px 0 0 #f56428;
   border: none;
 }
 
 .bottom .budgie-panel button.toggle,
-.bottom .budgie-panel button.flat {
+.bottom .budgie-panel button.flat,
+.bottom .budgie-panel button.image-button.workspace-add-button {
   border: none;
 }
 .bottom .budgie-panel button.toggle:active, .bottom .budgie-panel button.toggle:checked,
 .bottom .budgie-panel button.flat:active,
-.bottom .budgie-panel button.flat:checked {
+.bottom .budgie-panel button.flat:checked,
+.bottom .budgie-panel button.image-button.workspace-add-button:active,
+.bottom .budgie-panel button.image-button.workspace-add-button:checked {
   box-shadow: inset 0 -2px 0 0 #f56428;
   border: none;
 }
 
 .left .budgie-panel button.toggle,
-.left .budgie-panel button.flat {
+.left .budgie-panel button.flat,
+.left .budgie-panel button.image-button.workspace-add-button {
   border: none;
 }
 .left .budgie-panel button.toggle:active, .left .budgie-panel button.toggle:checked,
 .left .budgie-panel button.flat:active,
-.left .budgie-panel button.flat:checked {
+.left .budgie-panel button.flat:checked,
+.left .budgie-panel button.image-button.workspace-add-button:active,
+.left .budgie-panel button.image-button.workspace-add-button:checked {
   box-shadow: inset 2px 0 0 0 #f56428;
   border: none;
 }
 
 .right .budgie-panel button.toggle,
-.right .budgie-panel button.flat {
+.right .budgie-panel button.flat,
+.right .budgie-panel button.image-button.workspace-add-button {
   border: none;
 }
 .right .budgie-panel button.toggle:active, .right .budgie-panel button.toggle:checked,
 .right .budgie-panel button.flat:active,
-.right .budgie-panel button.flat:checked {
+.right .budgie-panel button.flat:checked,
+.right .budgie-panel button.image-button.workspace-add-button:active,
+.right .budgie-panel button.image-button.workspace-add-button:checked {
   box-shadow: inset -2px 0 0 0 #f56428;
   border: none;
 }

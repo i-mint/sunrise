@@ -6252,6 +6252,7 @@ raven,
   border-color: transparent;
   border-radius: 0;
   color: #C7C5C5;
+  padding: 0 3px;
 }
 .budgie-panel button:hover,
 .budgie-panel button.flat:hover {

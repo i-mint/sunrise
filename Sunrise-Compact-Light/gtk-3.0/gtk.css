@@ -6186,6 +6186,8 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   border-radius: 0;
   border-color: transparent;
   background-color: transparent;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .budgie-menu .category-button {
   border: 1px solid transparent;
@@ -6443,6 +6445,8 @@ raven,
   border-radius: 8px 8px 0 0;
   border-color: transparent;
   box-shadow: inset 0 -2px 0 0 #f56428;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .nautilus-path-bar > button:not(.popup) {

@@ -6889,6 +6889,9 @@ event.slanted-end label, event.slanted-end {
   transition: backdrop_transition;
   -gtk-icon-effect: none;
 }
+.thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
+  background-color: #ffffff;
+}
 
 .panel.xfce4-panel {
   background-color: #000000;

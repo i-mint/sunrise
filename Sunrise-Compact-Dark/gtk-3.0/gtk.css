@@ -6164,6 +6164,7 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   font-weight: normal;
   border-radius: 5px;
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 3px 0;
 }
 .budgie-menu .category-button label, .budgie-menu .category-button image, .budgie-menu .category-button {
   color: #e3ded9;
@@ -6196,9 +6197,13 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
 }
 .budgie-menu list button {
   border-radius: 0;
+  padding: 2px 0;
 }
 .budgie-menu list button:hover {
   background-color: transparent;
+}
+.budgie-menu list:first-child {
+  padding-top: 4px;
 }
 
 raven,

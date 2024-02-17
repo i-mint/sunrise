@@ -6423,6 +6423,10 @@ raven,
   padding-bottom: 4px;
 }
 
+.night-light-indicator .container {
+  padding: 4px 6px;
+}
+
 .nautilus-path-bar > button:not(.popup) {
   margin-right: 0px;
 }

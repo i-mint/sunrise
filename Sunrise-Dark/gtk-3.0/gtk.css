@@ -6813,34 +6813,15 @@ event.slanted-end label, event.slanted-end {
 .thunar menubar .csd.popup > menu menuitem:last-child {
   margin-bottom: 4px;
 }
-.thunar notebook button.flat {
-  color: #e3ded9;
-  outline-color: rgba(227, 222, 217, 0.3);
-  border-color: black;
-  border-bottom-color: black;
-  background-image: linear-gradient(to top, black 2px, black);
-  text-shadow: 0 -1px black;
-  -gtk-icon-shadow: 0 -1px black;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image, .thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:backdrop image,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:backdrop image {
+  opacity: 0.3;
 }
-.thunar notebook button.flat:hover {
-  color: #e3ded9;
-  outline-color: rgba(227, 222, 217, 0.3);
-  border-color: #171411;
-  border-bottom-color: black;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.8089411765);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8089411765);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
-  background-image: linear-gradient(to top, #312c25, #37312a 1px);
-}
-.thunar notebook button.flat:active {
-  color: #e3ded9;
-  outline-color: rgba(227, 222, 217, 0.3);
-  border-color: #4d1904;
-  background-image: image(#832b06);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
+.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover image, .thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active image,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover image,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active image {
+  opacity: 1;
 }
 .thunar toolbar > toolitem box.horizontal > entry {
   color: #e3ded9;

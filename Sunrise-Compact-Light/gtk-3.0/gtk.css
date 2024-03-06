@@ -1462,7 +1462,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
-.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .budgie-popover .linked button, .linked:not(.vertical) > spinbutton:not(.vertical),
+.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button, .budgie-popover .linked button, .linked:not(.vertical) > spinbutton:not(.vertical),
 .linked:not(.vertical) > entry,
 .inline-toolbar button,
 .linked > button, headerbar.windowhandle viewswitcher > box > button.radio, toolbar.inline-toolbar toolbutton > button.flat {
@@ -1471,7 +1471,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-radius: 0;
 }
 
-.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
+.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button:first-child, .budgie-popover .linked button:first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical),
 .linked:not(.vertical) > entry:first-child,
 .inline-toolbar button:first-child,
 .linked > button:first-child, headerbar.windowhandle viewswitcher > box > button.radio:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
@@ -1481,7 +1481,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-left-radius: 5px;
 }
 
-.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
+.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button:last-child, .budgie-popover .linked button:last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical),
 .linked:not(.vertical) > entry:last-child,
 .inline-toolbar button:last-child,
 .linked > button:last-child, headerbar.windowhandle viewswitcher > box > button.radio:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
@@ -1492,7 +1492,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   -gtk-outline-bottom-right-radius: 5px;
 }
 
-.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .budgie-popover .linked button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
+.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button:only-child, .budgie-popover .linked button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical),
 .linked:not(.vertical) > entry:only-child,
 .inline-toolbar button:only-child,
 .linked > button:only-child, headerbar.windowhandle viewswitcher > box > button.radio:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
@@ -6931,6 +6931,31 @@ event.slanted-end label, event.slanted-end {
 }
 .panel.xfce4-panel wnck-pager:selected {
   background-color: #f56428;
+}
+.panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button {
+  background: image(transparent);
+  color: #373737;
+  box-shadow: none;
+  border: 1px solid #bebab6;
+}
+.panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button image {
+  padding: 2px;
+}
+.panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button:first-child {
+  border-top: 1px solid #bebab6;
+  border-bottom: 1px solid #bebab6;
+  border-left: 1px solid #bebab6;
+  border-right: 0px solid #bebab6;
+}
+.panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button:last-child {
+  border-top: 1px solid #bebab6;
+  border-bottom: 1px solid #bebab6;
+  border-right: 1px solid #bebab6;
+  border-left: 0px solid #bebab6;
+}
+.panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button:active image {
+  background-color: #cfccc9;
+  border-radius: 4px;
 }
 
 #whiskermenu-window button:active, #whiskermenu-window button:checked {

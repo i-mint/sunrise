@@ -6831,7 +6831,7 @@ event.slanted-end label, event.slanted-end {
 }
 .thunar .linked.path-bar > button:backdrop,
 .thunar button.path-bar-button:backdrop {
-  color: #e3ded9;
+  color: #89847e;
   border-color: #110f0d;
   background-image: image(#2e2923);
   text-shadow: none;

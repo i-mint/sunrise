@@ -4,6 +4,7 @@ Type=X-GNOME-Metatheme
 Comment= Sunrise Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Sunrise
+MetacityTheme=Sunrise
 IconTheme=Yaru
 CursorTheme=Adwaita
 CursorSize=24

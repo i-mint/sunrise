@@ -1,9 +1,10 @@
 [X-GNOME-Metatheme]
 Name=Sunrise-Compact
 Type=X-GNOME-Metatheme
-Comment= Sunrise Gtk Themes 
+Comment=Sunrise-Compact Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Sunrise-Compact
+MetacityTheme=Sunrise-Compact
 IconTheme=Yaru
 CursorTheme=Adwaita
 CursorSize=24

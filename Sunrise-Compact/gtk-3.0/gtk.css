@@ -6981,6 +6981,72 @@ event.slanted-end label, event.slanted-end {
   background: image(#ffffff);
 }
 
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button, .mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
+  background: image(#000000);
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button label, .mate-panel-menu-bar #PanelApplet > button.brisk-button label, .mate-panel-menu-bar #PanelApplet > button label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button image, .mate-panel-menu-bar #PanelApplet > button.brisk-button image, .mate-panel-menu-bar #PanelApplet > button image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button, .mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
+  color: #C7C5C5;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover, .mate-panel-menu-bar #PanelApplet > button:hover {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover label, .mate-panel-menu-bar #PanelApplet > button:hover label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover image, .mate-panel-menu-bar #PanelApplet > button:hover image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover, .mate-panel-menu-bar #PanelApplet > button:hover {
+  color: #959494;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active, .mate-panel-menu-bar #PanelApplet > button:active, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked, .mate-panel-menu-bar #PanelApplet > button:checked {
+  box-shadow: inset 0 -2px 0 0 #f67640;
+  border-radius: 0;
+  border: none;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active label, .mate-panel-menu-bar #PanelApplet > button:active label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active image, .mate-panel-menu-bar #PanelApplet > button:active image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active, .mate-panel-menu-bar #PanelApplet > button:active, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked label, .mate-panel-menu-bar #PanelApplet > button:checked label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked image, .mate-panel-menu-bar #PanelApplet > button:checked image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked, .mate-panel-menu-bar #PanelApplet > button:checked {
+  color: #c5c3c3;
+}
+
+.mate-panel-menu-bar {
+  background-color: #000000;
+}
+.mate-panel-menu-bar label, .mate-panel-menu-bar image, .mate-panel-menu-bar {
+  color: #C7C5C5;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-pager,
+.mate-panel-menu-bar #PanelApplet > .wnck-pager {
+  background-color: #282727;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-pager:hover,
+.mate-panel-menu-bar #PanelApplet > .wnck-pager:hover {
+  background-color: #454545;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-pager:selected,
+.mate-panel-menu-bar #PanelApplet > .wnck-pager:selected {
+  background-color: #f56428;
+}
+
+.caja-navigation-window box.caja-side-pane .frame treeview.view {
+  color: #373737;
+  background: image(#f0efee);
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:backdrop {
+  color: #5e5e5e;
+  background-color: #fcfcfc;
+  border-color: #c5c1be;
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:hover {
+  background: image(rgba(55, 55, 55, 0.07));
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:active, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover {
+  background: image(#f56428);
+  color: #fff;
+}
+.caja-navigation-window box.caja-side-pane .frame treeview.view:active:backdrop, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:backdrop, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover:backdrop {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */

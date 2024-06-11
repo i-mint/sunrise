@@ -6983,6 +6983,9 @@ event.slanted-end label, event.slanted-end {
 .mate-panel-menu-bar label, .mate-panel-menu-bar image, .mate-panel-menu-bar {
   color: #C7C5C5;
 }
+.mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
+  font-weight: bold;
+}
 .mate-panel-menu-bar #PanelApplet > wnck-pager,
 .mate-panel-menu-bar #PanelApplet > .wnck-pager {
   background-color: #282727;

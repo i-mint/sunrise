@@ -5903,21 +5903,21 @@ headerbar.selection-mode button.titlebutton:backdrop,
   -gtk-icon-shadow: none;
 }
 
-.thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
+entry.caja-location-entry selection:focus, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
   background-color: #af3908;
 }
-label:selected, .selection-mode button.titlebutton, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
+label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
   color: #fff;
 }
-label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .view text selection:disabled,
+label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, entry.caja-location-entry selection:disabled:focus, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .view text selection:disabled,
 textview text selection:disabled:focus,
 textview text selection:disabled, iconview text selection:disabled:focus, iconview text selection:disabled, flowbox flowboxchild:disabled:selected,
 entry selection:disabled, modelbutton.flat:disabled:selected,
@@ -5925,7 +5925,7 @@ entry selection:disabled, modelbutton.flat:disabled:selected,
   color: #d79c84;
 }
 
-label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .view text selection:backdrop,
+label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, entry.caja-location-entry selection:backdrop:focus, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .view text selection:backdrop,
 textview text selection:backdrop:focus,
 textview text selection:backdrop, iconview text selection:backdrop:focus, iconview text selection:backdrop, flowbox flowboxchild:backdrop:selected,
 entry selection:backdrop, modelbutton.flat:backdrop:selected,
@@ -7017,6 +7017,54 @@ event.slanted-end label, event.slanted-end {
 }
 .caja-navigation-window box.caja-side-pane .frame treeview.view:active:backdrop, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:backdrop, .caja-navigation-window box.caja-side-pane .frame treeview.view:selected:hover:backdrop {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.caja-notebook .frame {
+  border-width: 0 0 1px;
+}
+
+.caja-side-pane .frame {
+  border-width: 1px 0 0;
+}
+
+.caja-notebook {
+  border-top: 1px solid #1a1714;
+}
+
+toolbar.horizontal.primary-toolbar {
+  border-bottom: 1px solid #1a1714;
+}
+
+entry.caja-location-entry {
+  background: image(#2f2a1f);
+  border-color: #1a1714;
+  box-shadow: none;
+  border-radius: 5px;
+}
+entry.caja-location-entry label, entry.caja-location-entry image, entry.caja-location-entry {
+  color: #c3b9a4;
+}
+entry.caja-location-entry:focus {
+  background: image(#000000);
+  border-color: #af3908;
+  box-shadow: none;
+}
+entry.caja-location-entry:focus label, entry.caja-location-entry:focus image, entry.caja-location-entry:focus {
+  color: #c3b9a4;
+}
+entry.caja-location-entry:backdrop {
+  background: image(#2e2923);
+  border-color: #1e1b17;
+}
+entry.caja-location-entry:backdrop label, entry.caja-location-entry:backdrop image, entry.caja-location-entry:backdrop {
+  color: #89847e;
+}
+entry.caja-location-entry:disabled {
+  background: image(#2a251f);
+  border-color: #1a1714;
+}
+entry.caja-location-entry:disabled label, entry.caja-location-entry:disabled image, entry.caja-location-entry:disabled {
+  color: #645f5a;
 }
 
 /* GTK NAMED COLORS

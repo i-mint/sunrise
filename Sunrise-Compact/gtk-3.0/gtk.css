@@ -5934,21 +5934,21 @@ headerbar.selection-mode button.titlebutton:backdrop,
   -gtk-icon-shadow: none;
 }
 
-entry.caja-location-entry selection:focus, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
+entry.caja-location-entry selection:focus, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
   background-color: #f56428;
 }
-label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
+label:selected, .selection-mode button.titlebutton, entry.caja-location-entry selection:focus, .thunar paned > grid > paned > notebook > stack > .standard-view .view:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:selected, .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:selected:hover, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .view text selection:focus, .view text selection,
 textview text selection:focus,
 textview text selection, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected,
 entry selection, modelbutton.flat:selected,
 .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
   color: #fff;
 }
-label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, entry.caja-location-entry selection:disabled:focus, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .view text selection:disabled,
+label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, entry.caja-location-entry selection:disabled:focus, .thunar paned > grid > paned > notebook > stack > .standard-view .view:disabled:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:disabled:selected, .thunar .sidebar .view:disabled:selected, .thunar .sidebar iconview:disabled:selected, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .view text selection:disabled,
 textview text selection:disabled:focus,
 textview text selection:disabled, iconview text selection:disabled:focus, iconview text selection:disabled, flowbox flowboxchild:disabled:selected,
 entry selection:disabled, modelbutton.flat:disabled:selected,
@@ -5956,14 +5956,14 @@ entry selection:disabled, modelbutton.flat:disabled:selected,
   color: #fab294;
 }
 
-label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, entry.caja-location-entry selection:backdrop:focus, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .view text selection:backdrop,
+label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, entry.caja-location-entry selection:backdrop:focus, .thunar paned > grid > paned > notebook > stack > .standard-view .view:backdrop:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:backdrop:selected, .thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .view text selection:backdrop,
 textview text selection:backdrop:focus,
 textview text selection:backdrop, iconview text selection:backdrop:focus, iconview text selection:backdrop, flowbox flowboxchild:backdrop:selected,
 entry selection:backdrop, modelbutton.flat:backdrop:selected,
 .menuitem.button.flat:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected {
   color: rgba(255, 255, 255, 0.5);
 }
-label:backdrop selection:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .thunar .sidebar .view:backdrop:disabled:selected, .thunar .sidebar iconview:backdrop:disabled:selected, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:disabled:selected, .view text selection:backdrop:disabled,
+label:backdrop selection:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .thunar paned > grid > paned > notebook > stack > .standard-view .view:backdrop:disabled:selected, .thunar paned > grid > paned > notebook > stack > .standard-view iconview:backdrop:disabled:selected, .thunar .sidebar .view:backdrop:disabled:selected, .thunar .sidebar iconview:backdrop:disabled:selected, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:disabled:selected, .view text selection:backdrop:disabled,
 textview text selection:backdrop:disabled, iconview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected,
 entry selection:backdrop:disabled, modelbutton.flat:backdrop:disabled:selected,
 .menuitem.button.flat:backdrop:disabled:selected, spinbutton:not(.vertical) selection:backdrop:disabled, treeview.view:backdrop:disabled:selected, row:backdrop:disabled:selected, calendar:backdrop:disabled:selected {
@@ -6901,7 +6901,6 @@ event.slanted-end label, event.slanted-end {
 .thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
   background-color: #ffffff;
 }
-
 .panel.xfce4-panel {
   background-color: #000000;
   color: #C7C5C5;

@@ -2047,7 +2047,7 @@ searchbar > revealer > box {
 .titlebar:not(headerbar),
 headerbar {
   padding: 0 6px;
-  min-height: 33px;
+  min-height: 40px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #bebab6;
@@ -2411,8 +2411,8 @@ headerbar entry,
 headerbar spinbutton,
 headerbar separator:not(.sidebar),
 headerbar button {
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 headerbar entry,
 headerbar entry.search {
@@ -2463,8 +2463,8 @@ headerbar entry.search:disabled image {
   color: inherit;
 }
 headerbar switch {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 headerbar.titlebar headerbar:not(.titlebar) {
   background: none;
@@ -5911,7 +5911,7 @@ button.titlebutton {
 }
 button.titlebutton:not(.appmenu) {
   border-radius: 9999px;
-  padding: 2px;
+  padding: 5px;
   margin: 0 2px;
   min-width: 0;
   min-height: 0;

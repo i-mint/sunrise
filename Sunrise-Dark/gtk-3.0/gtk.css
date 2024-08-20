@@ -6509,6 +6509,19 @@ raven,
   border: none;
 }
 
+.nautilus-window .floating-bar {
+  color: #e3ded9;
+  background-color: rgba(175, 57, 8, 0.2);
+  border: 1px solid #af3908;
+  padding: 1px;
+}
+.nautilus-window .floating-bar.bottom.right {
+  border-radius: 5px 0 0 0;
+}
+.nautilus-window .floating-bar.bottom.left {
+  border-radius: 0 5px 0 0;
+}
+
 .nemo-window paned treeview.view {
   background-color: #29241f;
   box-shadow: none;

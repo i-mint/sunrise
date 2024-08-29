@@ -1461,6 +1461,16 @@ stacksidebar row.needs-attention > label:dir(rtl),
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 
+.primary-toolbar toolitem > grid > button.flat.scale,
+.primary-toolbar toolitem > grid > button.flat {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.primary-toolbar toolitem > button.raised.toggle.popup {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button, .budgie-popover .linked button, .linked:not(.vertical) > spinbutton:not(.vertical),
 .linked:not(.vertical) > entry,
 .inline-toolbar button,

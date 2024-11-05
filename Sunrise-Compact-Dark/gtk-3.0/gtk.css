@@ -6782,35 +6782,22 @@ event.slanted-end label, event.slanted-end {
   background-image: linear-gradient(to top, #2b2621, #312c25 1px);
   -gtk-icon-effect: highlight;
 }
-.thunar menubar,
+.thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
+  background-color: #231f1a;
+}
 .thunar toolbar {
   background: #312c25;
   color: #e3ded9;
 }
-.thunar menubar:backdrop,
-.thunar menubar button.flat:backdrop,
-.thunar toolbar:backdrop,
-.thunar toolbar button.flat:backdrop {
-  color: rgba(227, 222, 217, 0.5);
-  background-color: #2e2923;
+.thunar toolbar toolbutton > button.flat {
+  background-color: transparent;
   background-image: none;
-  transition: 200ms ease-out;
+  border-color: transparent;
 }
-.thunar menubar:backdrop label, .thunar menubar:backdrop image,
-.thunar menubar button.flat:backdrop label,
-.thunar menubar button.flat:backdrop image,
-.thunar toolbar:backdrop label,
-.thunar toolbar:backdrop image,
-.thunar toolbar button.flat:backdrop label,
-.thunar toolbar button.flat:backdrop image {
-  color: inherit;
-}
-.thunar menubar button.flat,
-.thunar toolbar button.flat {
+.thunar toolbar toolbutton > button.flat image, .thunar toolbar toolbutton > button.flat {
   color: #e3ded9;
 }
-.thunar menubar button.flat:hover,
-.thunar toolbar button.flat:hover {
+.thunar toolbar toolbutton > button.flat:hover {
   color: #e3ded9;
   outline-color: rgba(227, 222, 217, 0.3);
   border-color: #1a1714;
@@ -6819,20 +6806,46 @@ event.slanted-end label, event.slanted-end {
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   background-image: linear-gradient(to top, #2b2621, #312c25 1px);
+  -gtk-icon-effect: highlight;
 }
-.thunar menubar button.flat:active, .thunar menubar button.flat:checked,
-.thunar toolbar button.flat:active,
-.thunar toolbar button.flat:checked {
-  color: #fff;
-  outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #4d1904;
-  background-image: image(#832b06);
+.thunar toolbar toolbutton > button.flat:active {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: black;
+  background-image: image(black);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
-.thunar .linked.path-bar > button,
-.thunar button.path-bar-button {
+.thunar toolbar toolbutton > button.flat:checked {
+  background: image(#af3908);
+  border-color: #af3908;
+}
+.thunar toolbar toolbutton > button.flat:checked image, .thunar toolbar toolbutton > button.flat:checked {
+  color: #fff;
+}
+.thunar toolbar toolbutton > button.flat:disabled image, .thunar toolbar toolbutton > button.flat:disabled {
+  color: #645f5a;
+}
+.thunar toolbar toolbutton > button.flat:disabled:backdrop image, .thunar toolbar toolbutton > button.flat:disabled:backdrop {
+  color: rgba(100, 95, 90, 0.4);
+}
+.thunar toolbar toolbutton > button.flat:not(:disabled):backdrop {
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.thunar toolbar toolbutton > button.flat:not(:disabled):backdrop image, .thunar toolbar toolbutton > button.flat:not(:disabled):backdrop {
+  color: #89847e;
+}
+.thunar toolbar:backdrop {
+  color: #89847e;
+  border-color: #1e1b17;
+  background-color: #2e2923;
+  background-image: none;
+  transition: 200ms ease-out;
+}
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button {
   color: #e3ded9;
   outline-color: rgba(227, 222, 217, 0.3);
   border-color: #1a1714;
@@ -6842,19 +6855,33 @@ event.slanted-end label, event.slanted-end {
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
-.thunar .linked.path-bar > button:not(.toggle):hover,
-.thunar button.path-bar-button:not(.toggle):hover {
-  color: #fff;
-  outline-color: rgba(255, 255, 255, 0.3);
-  border-color: #7e2906;
-  border-bottom-color: #4d1904;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.6649411765);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6649411765);
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button:not(.toggle):hover {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #1a1714;
+  border-bottom-color: black;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
-  background-image: linear-gradient(to top, #aa3708, #b43b08 1px);
+  background-image: linear-gradient(to top, #2b2621, #312c25 1px);
+  -gtk-icon-effect: highlight;
 }
-.thunar .linked.path-bar > button.toggle:hover,
-.thunar button.path-bar-button.toggle:hover {
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button:not(.toggle):active {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: black;
+  background-image: image(black);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button:disabled image, .thunar toolbar toolitem .linked.path-bar > button.path-bar-button:disabled {
+  color: #645f5a;
+}
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop image, .thunar toolbar toolitem .linked.path-bar > button.path-bar-button:disabled:backdrop {
+  color: rgba(100, 95, 90, 0.4);
+}
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button.toggle:hover {
   color: #e3ded9;
   outline-color: rgba(227, 222, 217, 0.3);
   border-color: #1a1714;
@@ -6865,23 +6892,27 @@ event.slanted-end label, event.slanted-end {
   background-image: linear-gradient(to top, #2b2621, #312c25 1px);
   border-bottom: 2px solid #af3908;
 }
-.thunar .linked.path-bar > button.toggle:active, .thunar .linked.path-bar > button.toggle:checked,
-.thunar button.path-bar-button.toggle:active,
-.thunar button.path-bar-button.toggle:checked {
-  background: image(black);
-  color: white;
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button.toggle:active {
+  color: rgba(255, 255, 255, 0.5);
+  outline-color: rgba(255, 255, 255, 0);
+  border-color: #1a1714;
+  background-image: image(black);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
   border-bottom: 2px solid rgba(175, 57, 8, 0.4);
 }
-.thunar .linked.path-bar > button.toggle:checked,
-.thunar button.path-bar-button.toggle:checked {
-  opacity: 0.8;
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button.toggle:checked {
+  color: #ffffff;
+  background-image: image(black);
+  border-bottom: 2px solid rgba(175, 57, 8, 0.4);
 }
-.thunar .linked.path-bar > button.toggle:checked:backdrop,
-.thunar button.path-bar-button.toggle:checked:backdrop {
-  opacity: 0.4;
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button.toggle:checked:backdrop {
+  color: rgba(255, 255, 255, 0.5);
+  background-image: image(rgba(0, 0, 0, 0.5));
+  border-bottom: 2px solid rgba(175, 57, 8, 0.4);
 }
-.thunar .linked.path-bar > button:backdrop,
-.thunar button.path-bar-button:backdrop {
+.thunar toolbar toolitem .linked.path-bar > button.path-bar-button:backdrop {
   color: #89847e;
   border-color: #1e1b17;
   background-image: image(#2e2923);
@@ -6890,6 +6921,53 @@ event.slanted-end label, event.slanted-end {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   transition: backdrop_transition;
   -gtk-icon-effect: none;
+}
+.thunar toolbar toolitem box.horizontal > entry {
+  color: #e3ded9;
+  border-color: #1a1714;
+  background-color: #2e2923;
+  box-shadow: inset 0 0 0 1px rgba(175, 57, 8, 0);
+}
+.thunar toolbar toolitem box.horizontal > entry label, .thunar toolbar toolitem box.horizontal > entry image {
+  color: inherit;
+}
+.thunar toolbar toolitem box.horizontal > entry:focus {
+  background-color: black;
+  box-shadow: 0 0 2px 0 rgba(175, 57, 8, 0.4);
+  border-color: #1d0901;
+  caret-color: currentColor;
+}
+.thunar toolbar toolitem box.horizontal > entry:focus label, .thunar toolbar toolitem box.horizontal > entry:focus image {
+  color: inherit;
+}
+.thunar toolbar toolitem box.horizontal > entry:backdrop {
+  color: #89847e;
+  border-color: #1e1b17;
+  background-color: #201e19;
+  box-shadow: none;
+}
+.thunar toolbar toolitem box.horizontal > entry:backdrop label, .thunar toolbar toolitem box.horizontal > entry:backdrop image {
+  color: inherit;
+}
+.thunar toolbar toolitem box.horizontal > entry:disabled {
+  color: #645f5a;
+  border-color: #1a1714;
+  background-color: #231f1a;
+  box-shadow: none;
+}
+.thunar toolbar toolitem box.horizontal > entry:disabled label, .thunar toolbar toolitem box.horizontal > entry:disabled image {
+  color: inherit;
+}
+.thunar menubar {
+  background: #312c25;
+  color: #e3ded9;
+}
+.thunar menubar:backdrop {
+  color: #89847e;
+  border-color: #1e1b17;
+  background-color: #2e2923;
+  background-image: none;
+  transition: 200ms ease-out;
 }
 .thunar menubar .csd.popup > decoration,
 .thunar menubar .csd.popup > menu {
@@ -6913,34 +6991,7 @@ event.slanted-end label, event.slanted-end {
 .thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active image {
   opacity: 1;
 }
-.thunar toolbar > toolitem box.horizontal > entry {
-  color: #e3ded9;
-  outline-color: rgba(227, 222, 217, 0.3);
-  border-color: #1a1714;
-  border-bottom-color: black;
-  background-image: linear-gradient(to top, #2b2621 2px, #2e2923);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-.thunar toolbar > toolitem box.horizontal > entry:focus {
-  background-image: image(black);
-  box-shadow: 0 0 2px 0 rgba(175, 57, 8, 0.4);
-  border-color: #af3908;
-}
-.thunar toolbar > toolitem box.horizontal > entry:backdrop {
-  color: #89847e;
-  border-color: #1e1b17;
-  background-image: image(#2e2923);
-  text-shadow: none;
-  -gtk-icon-shadow: none;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-  transition: backdrop_transition;
-  -gtk-icon-effect: none;
-}
-.thunar scrolledwindow.frame.standard-view > widget.view:backdrop, .thunar scrolledwindow.frame.standard-view > widget.view {
-  background-color: #231f1a;
-}
+
 .panel.xfce4-panel {
   background-color: #000000;
   color: #C7C5C5;

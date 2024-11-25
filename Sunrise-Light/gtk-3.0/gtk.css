@@ -2547,6 +2547,12 @@ headerbar.windowhandle viewswitcher > box > button {
 headerbar.windowhandle viewswitcher > box > button > stack > box {
   padding: 0 14px;
 }
+headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
+  font-size: 1em;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
+  font-size: 0.75em;
+}
 headerbar.windowhandle viewswitcher > box > button, headerbar.windowhandle viewswitcher > box > button:hover, headerbar.windowhandle viewswitcher > box > button:active, headerbar.windowhandle viewswitcher > box > button:checked {
   border-bottom: none;
   border-top: none;

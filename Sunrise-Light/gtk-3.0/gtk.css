@@ -2536,6 +2536,94 @@ headerbar entry.search:disabled image {
 headerbar switch {
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 1px solid #bebab6;
+  border-radius: 14px;
+  color: #373737;
+  background-color: #cfccc9;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+headerbar switch:checked {
+  color: #fff;
+  border-color: #af3908;
+  background-color: #f56428;
+  text-shadow: 0 1px rgba(199, 65, 9, 0.5), 0 0 2px rgba(255, 255, 255, 0.6);
+}
+headerbar switch:disabled {
+  color: #b6b5b4;
+  border-color: #bebab6;
+  background-color: #e7e6e4;
+  text-shadow: none;
+}
+headerbar switch:backdrop {
+  color: #929191;
+  border-color: #c7c4c0;
+  background-color: #d7d5d2;
+  text-shadow: none;
+  transition: 200ms ease-out;
+}
+headerbar switch:backdrop:checked {
+  color: #ecebea;
+  border-color: #af3908;
+  background-color: #f56428;
+}
+headerbar switch:backdrop:disabled {
+  color: #c8c5c1;
+  border-color: #c7c4c0;
+  background-color: #e7e6e4;
+}
+headerbar switch slider {
+  margin: -1px;
+  min-width: 24px;
+  min-height: 24px;
+  border: 1px solid;
+  border-radius: 50%;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -gtk-outline-radius: 20px;
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #a7a19b;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.7692307692);
+  background-image: linear-gradient(to bottom, #ecebea 20%, #e0dedc 90%);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+headerbar switch:hover slider {
+  color: #373737;
+  outline-color: rgba(55, 55, 55, 0.3);
+  border-color: #a7a19b;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to bottom, #f6f5f4 10%, #eae8e7 90%);
+}
+headerbar switch:checked > slider {
+  border: 1px solid #af3908;
+}
+headerbar switch:disabled slider {
+  color: #adacab;
+  border-color: #bebab6;
+  background-image: image(#ecebea);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar switch:backdrop slider {
+  transition: 200ms ease-out;
+  color: #8c8b8a;
+  border-color: #c5c1be;
+  background-image: image(#e0dedc);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar switch:backdrop:checked > slider {
+  border-color: #af3908;
+}
+headerbar switch:backdrop:disabled slider {
+  color: #bcb8b3;
+  border-color: #c5c1be;
+  background-image: image(#ecebea);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
 headerbar.windowhandle viewswitcher > box > button {
   margin: 0;

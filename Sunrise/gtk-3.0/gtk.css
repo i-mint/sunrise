@@ -2501,7 +2501,7 @@ headerbar entry:focus,
 headerbar entry.search:focus {
   background-color: black;
   box-shadow: 0 0 2px 0 rgba(245, 100, 40, 0.4);
-  border-color: #f56428;
+  border-color: #1d0901;
   caret-color: currentColor;
 }
 headerbar entry:focus label, headerbar entry:focus image,
@@ -7067,7 +7067,7 @@ event.slanted-end label, event.slanted-end {
 .thunar toolbar toolitem box.horizontal > entry:focus {
   background-color: black;
   box-shadow: 0 0 2px 0 rgba(245, 100, 40, 0.4);
-  border-color: #f56428;
+  border-color: #1d0901;
   caret-color: currentColor;
 }
 .thunar toolbar toolitem box.horizontal > entry:focus label, .thunar toolbar toolitem box.horizontal > entry:focus image {

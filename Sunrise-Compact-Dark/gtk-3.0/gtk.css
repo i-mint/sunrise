@@ -1523,7 +1523,7 @@ stacksidebar row.needs-attention > label:dir(rtl),
   margin-bottom: 2px;
 }
 
-.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button, .budgie-popover .linked button, .linked:not(.vertical) > spinbutton:not(.vertical),
+.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .panel.xfce4-panel button.flat.toggle > window.popup.csd .linked > button, .budgie-popover .linked button, headerbar .linked:not(.vertical) > entry, .linked:not(.vertical) > spinbutton:not(.vertical),
 .linked:not(.vertical) > entry,
 .inline-toolbar button,
 .linked > button, toolbar.inline-toolbar toolbutton > button.flat {
@@ -2520,6 +2520,11 @@ headerbar entry:disabled label, headerbar entry:disabled image,
 headerbar entry.search:disabled label,
 headerbar entry.search:disabled image {
   color: inherit;
+}
+headerbar .linked:not(.vertical) > entry:focus + entry,
+headerbar .linked:not(.vertical) > entry:focus + button,
+headerbar .linked:not(.vertical) > entry:focus + combobox > box > button.combo {
+  border-left-color: #1d0901;
 }
 headerbar switch {
   margin-top: 7px;

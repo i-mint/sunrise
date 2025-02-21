@@ -5315,6 +5315,10 @@ separator {
   min-height: 1px;
 }
 
+hdyleaflet > separator {
+  background-color: #bebab6;
+}
+
 separator.sidebar:dir(ltr), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar:dir(rtl), separator.sidebar.right {
   background-color: #bebab6;
   border: 0;

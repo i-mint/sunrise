@@ -6457,10 +6457,53 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
   padding-top: 4px;
 }
 
-raven,
 .raven-background,
-.raven-frame {
+.raven-header,
+.raven,
+.raven-notifications-view > .raven-background > .frame > list {
+  color: #373737;
   background-color: #e0dedc;
+  border-radius: 0;
+}
+
+.raven-background {
+  padding: 6px;
+}
+
+.right frame.raven-frame {
+  margin-left: 32px;
+}
+.right frame.raven-frame > border {
+  border: none;
+  border-left: 1px solid #bebab6;
+}
+
+.left frame.raven-frame {
+  margin-right: 32px;
+}
+.left frame.raven-frame > border {
+  border: none;
+  border-right: 1px solid #bebab6;
+}
+
+.top frame.raven-frame {
+  margin-bottom: 32px;
+}
+.top frame.raven-frame > border {
+  border: none;
+  border-bottom: 1px solid #bebab6;
+}
+
+.bottom frame.raven-frame {
+  margin-top: 32px;
+}
+.bottom frame.raven-frame > border {
+  border: none;
+  border-top: 1px solid #bebab6;
+}
+
+frame.raven-frame > border {
+  box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.36), 0 6px 6px 2px rgba(0, 0, 0, 0.24), 0 4px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .budgie-panel {

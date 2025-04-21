@@ -6371,8 +6371,8 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
 
 .budgie-menu entry.search {
   box-shadow: inset 0 -2px 0 0 #af3908;
+  border: none;
   border-radius: 0;
-  border-color: transparent;
   background-color: transparent;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -6472,6 +6472,30 @@ headerbar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.max
 
 frame.raven-frame > border {
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.36), 0 6px 6px 2px rgba(0, 0, 0, 0.24), 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.raven-calendar {
+  border-radius: 4px;
+}
+.raven-calendar:indeterminate {
+  color: alpha(currentColor,0.3);
+}
+.raven-calendar:selected {
+  color: #fff;
+  background-color: #af3908;
+}
+.raven-calendar.header {
+  color: #e3ded9;
+  border: none;
+  border-radius: 0;
+}
+.raven-calendar.button, .raven-calendar.button:focus {
+  color: alpha(currentColor,0.5);
+  background-color: transparent;
+}
+.raven-calendar.button:hover, .raven-calendar.button:focus:hover {
+  color: #e3ded9;
+  background-color: transparent;
 }
 
 .budgie-panel {
@@ -6635,10 +6659,10 @@ frame.raven-frame > border {
 }
 
 .budgie-popover {
-  box-shadow: 0 0 0 1px #1a1714;
-  border-color: transparent;
+  border: 1px solid #1a1714;
   border-radius: 8px;
   background-color: #231f1a;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.36), 0 4px 8px 1px rgba(0, 0, 0, 0.04), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .budgie-popover .linked button {
   color: #e3ded9;

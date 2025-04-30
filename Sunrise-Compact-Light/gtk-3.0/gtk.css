@@ -6775,6 +6775,11 @@ frame.raven-frame > border {
   padding: 4px 6px;
 }
 
+.budgie-notification-window button.close {
+  margin-top: 7px;
+  margin-right: 2px;
+}
+
 .nautilus-path-bar > button:not(.popup) {
   margin-right: 0px;
 }

@@ -6365,23 +6365,35 @@ popover.emoji-completion .emoji:hover {
 }
 
 headerbar button.minimize {
-  color: orange;
+  color: #ffa500;
+}
+headerbar button.minimize:hover {
+  color: #373737;
 }
 headerbar button.minimize:active {
+  color: #ffa500;
   background-image: image(#ffffff);
   box-shadow: none;
 }
 headerbar button.maximize {
-  color: green;
+  color: #008000;
+}
+headerbar button.maximize:hover {
+  color: #373737;
 }
 headerbar button.maximize:active {
+  color: #008000;
   background-image: image(#ffffff);
   box-shadow: none;
 }
 headerbar button.close {
-  color: red;
+  color: #ff0000;
+}
+headerbar button.close:hover {
+  color: #373737;
 }
 headerbar button.close:active {
+  color: #ff0000;
   background-image: image(#ffffff);
   box-shadow: none;
 }

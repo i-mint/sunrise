@@ -195,6 +195,7 @@ assistant .sidebar label.highlight {
 }
 .osd .scale-popup:backdrop, .app-notification:backdrop, popover.background.osd:backdrop, popover.background.touch-selection:backdrop, popover.background.magnifier:backdrop,
 .osd:backdrop {
+  background-color: #2e2923;
   text-shadow: none;
   -gtk-icon-shadow: none;
 }

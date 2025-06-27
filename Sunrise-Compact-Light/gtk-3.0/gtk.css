@@ -2045,6 +2045,14 @@ combobox button.combo:active {
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
+combobox button.combo:backdrop {
+  color: #8c8b8a;
+  border-color: #c5c1be;
+  background-image: image(#e0dedc);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
 
 /************
  * Toolbars *

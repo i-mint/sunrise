@@ -773,7 +773,7 @@ button.osd {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(#e0dedc);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -792,9 +792,9 @@ button.osd:hover {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#e0dedc);
+  background-image: image(#b5b0ab);
   background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
   outline-color: rgba(55, 55, 55, 0.3);
   border: none;
@@ -806,14 +806,14 @@ button.osd:hover {
 }
 button.osd:active,
 button.osd:checked {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(black);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
   border: none;
   box-shadow: inset #f56428 0.2px 0px 7px 0.2px;
 }
@@ -825,7 +825,7 @@ button.osd:checked {
 }
 button.osd:disabled:backdrop,
 button.osd:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -836,10 +836,10 @@ button.osd:disabled {
   border: none;
 }
 button.osd:backdrop {
-  color: #373737;
+  color: rgba(100, 100, 100, 0.97);
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(rgba(213, 213, 213, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -852,7 +852,7 @@ button.osd:backdrop {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(#e0dedc);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -870,9 +870,9 @@ button.osd:backdrop {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#e0dedc);
+  background-image: image(#b5b0ab);
   background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
   outline-color: rgba(55, 55, 55, 0.3);
 }
@@ -886,14 +886,14 @@ button.osd:backdrop {
 .osd button:active,
 .osd button:checked:backdrop,
 .osd button:checked {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#d2cfcc);
+  background-image: image(#f56428);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
 }
 .app-notification button:active image, popover.background.touch-selection button:active image, popover.background.magnifier button:active image, .app-notification button:active, popover.background.touch-selection button:active, popover.background.magnifier button:active, .app-notification button:checked image, popover.background.touch-selection button:checked image, popover.background.magnifier button:checked image, .app-notification button:checked, popover.background.touch-selection button:checked, popover.background.magnifier button:checked,
 .osd button:active:backdrop image,
@@ -909,7 +909,7 @@ button.osd:backdrop {
 .app-notification button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled,
 .osd button:disabled:backdrop,
 .osd button:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -920,10 +920,10 @@ button.osd:backdrop {
 }
 .app-notification button:backdrop, popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop,
 .osd button:backdrop {
-  color: #373737;
+  color: rgba(100, 100, 100, 0.97);
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(rgba(213, 213, 213, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -946,9 +946,9 @@ button.osd:backdrop {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#e0dedc);
+  background-image: image(#b5b0ab);
   background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
   outline-color: rgba(55, 55, 55, 0.3);
 }
@@ -959,7 +959,7 @@ button.osd:backdrop {
 }
 .app-notification button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled,
 .osd button.flat:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -983,14 +983,14 @@ button.osd:backdrop {
 .app-notification button.flat:active, popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, .app-notification button.flat:checked, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked,
 .osd button.flat:active,
 .osd button.flat:checked {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#d2cfcc);
+  background-image: image(#f56428);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
 }
 .app-notification button.flat:active image, popover.background.touch-selection button.flat:active image, popover.background.magnifier button.flat:active image, .app-notification button.flat:active, popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, .app-notification button.flat:checked image, popover.background.touch-selection button.flat:checked image, popover.background.magnifier button.flat:checked image, .app-notification button.flat:checked, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked,
 .osd button.flat:active image,
@@ -1124,7 +1124,7 @@ button.suggested-action:disabled:checked {
   background-color: transparent;
   background-image: image(rgba(245, 100, 40, 0.7));
   background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
   outline-color: rgba(55, 55, 55, 0.3);
 }
@@ -1136,14 +1136,14 @@ button.suggested-action:disabled:checked {
 .osd button.suggested-action:active,
 .osd button.suggested-action:checked:backdrop,
 .osd button.suggested-action:checked {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(#f56428);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
 }
 .osd button.suggested-action:active:backdrop image,
 .osd button.suggested-action:active:backdrop,
@@ -1157,7 +1157,7 @@ button.suggested-action:disabled:checked {
 }
 .osd button.suggested-action:disabled:backdrop,
 .osd button.suggested-action:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -1167,7 +1167,7 @@ button.suggested-action:disabled:checked {
   -gtk-icon-shadow: none;
 }
 .osd button.suggested-action:backdrop {
-  color: #373737;
+  color: rgba(100, 100, 100, 0.97);
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(245, 100, 40, 0.5));
@@ -1300,7 +1300,7 @@ button.destructive-action:disabled:checked {
   background-color: transparent;
   background-image: image(rgba(224, 27, 36, 0.7));
   background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
   outline-color: rgba(55, 55, 55, 0.3);
 }
@@ -1312,14 +1312,14 @@ button.destructive-action:disabled:checked {
 .osd button.destructive-action:active,
 .osd button.destructive-action:checked:backdrop,
 .osd button.destructive-action:checked {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(#e01b24);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
 }
 .osd button.destructive-action:active:backdrop image,
 .osd button.destructive-action:active:backdrop,
@@ -1333,7 +1333,7 @@ button.destructive-action:disabled:checked {
 }
 .osd button.destructive-action:disabled:backdrop,
 .osd button.destructive-action:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -1343,7 +1343,7 @@ button.destructive-action:disabled:checked {
   -gtk-icon-shadow: none;
 }
 .osd button.destructive-action:backdrop {
-  color: #373737;
+  color: rgba(100, 100, 100, 0.97);
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(224, 27, 36, 0.5));
@@ -1940,7 +1940,7 @@ spinbutton.vertical button.down {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(#e0dedc);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -1953,9 +1953,9 @@ spinbutton.vertical button.down {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#e0dedc);
+  background-image: image(#b5b0ab);
   background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
   outline-color: rgba(55, 55, 55, 0.3);
 }
@@ -1963,20 +1963,20 @@ spinbutton.vertical button.down {
   -gtk-icon-shadow: 0 1px white;
 }
 .osd spinbutton.vertical button:first-child:active {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#d2cfcc);
+  background-image: image(#f56428);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
 }
 .osd spinbutton.vertical button:first-child:active image, .osd spinbutton.vertical button:first-child:active {
   -gtk-icon-shadow: none;
 }
 .osd spinbutton.vertical button:first-child:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -1986,10 +1986,10 @@ spinbutton.vertical button.down {
   -gtk-icon-shadow: none;
 }
 .osd spinbutton.vertical button:first-child:backdrop {
-  color: #373737;
+  color: rgba(100, 100, 100, 0.97);
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(rgba(213, 213, 213, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -4138,7 +4138,7 @@ row:selected radio {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(#e0dedc);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -4154,7 +4154,7 @@ row:selected radio {
   color: #373737;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(#e0dedc);
   background-clip: padding-box;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
@@ -4167,14 +4167,14 @@ row:selected radio {
 }
 .osd check:active,
 .osd radio:active {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(#d2cfcc);
+  background-image: image(#f56428);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
 }
 .osd check:active image, .osd check:active,
 .osd radio:active image,
@@ -4183,10 +4183,10 @@ row:selected radio {
 }
 .osd check:backdrop,
 .osd radio:backdrop {
-  color: #373737;
+  color: rgba(100, 100, 100, 0.97);
   border-color: #bebab6;
   background-color: transparent;
-  background-image: image(rgba(230, 230, 230, 0.9));
+  background-image: image(rgba(213, 213, 213, 0.5));
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
@@ -4194,7 +4194,7 @@ row:selected radio {
 }
 .osd check:disabled,
 .osd radio:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -4466,7 +4466,7 @@ row:selected scale slider:disabled, row:selected scale slider {
   background-color: transparent;
   background-image: image(rgba(244, 82, 16, 0.7));
   background-clip: padding-box;
-  box-shadow: inset 0 1px rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
   text-shadow: 0 1px black;
   outline-color: rgba(55, 55, 55, 0.3);
   background-color: #e6e6e6;
@@ -4475,21 +4475,21 @@ row:selected scale slider:disabled, row:selected scale slider {
   -gtk-icon-shadow: 0 1px white;
 }
 .osd scale slider:active {
-  color: #373737;
+  color: #fff;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(#f45210);
   background-clip: padding-box;
   box-shadow: none;
   text-shadow: none;
-  outline-color: rgba(55, 55, 55, 0.3);
+  outline-color: rgba(255, 255, 255, 0.3);
   background-color: #e6e6e6;
 }
 .osd scale slider:active image, .osd scale slider:active {
   -gtk-icon-shadow: none;
 }
 .osd scale slider:disabled {
-  color: #8f8f8f;
+  color: #8c8b8a;
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(213, 213, 213, 0.5));
@@ -4500,7 +4500,7 @@ row:selected scale slider:disabled, row:selected scale slider {
   background-color: #e6e6e6;
 }
 .osd scale slider:backdrop {
-  color: #373737;
+  color: rgba(100, 100, 100, 0.97);
   border-color: #bebab6;
   background-color: transparent;
   background-image: image(rgba(244, 82, 16, 0.5));
@@ -7337,30 +7337,30 @@ event.slanted-end label, event.slanted-end {
   background: image(#ffffff);
 }
 
-.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button, .mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
+.mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button, .mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
   background: image(#e7e6e4);
   border-radius: 0;
   border: none;
   box-shadow: none;
   text-shadow: none;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button label, .mate-panel-menu-bar #PanelApplet > button.brisk-button label, .mate-panel-menu-bar #PanelApplet > button label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button image, .mate-panel-menu-bar #PanelApplet > button.brisk-button image, .mate-panel-menu-bar #PanelApplet > button image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button, .mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
+.mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button label, .mate-panel-menu-bar #PanelApplet > button.brisk-button label, .mate-panel-menu-bar #PanelApplet > button label, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button image, .mate-panel-menu-bar #PanelApplet > button.brisk-button image, .mate-panel-menu-bar #PanelApplet > button image, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button, .mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
   color: #373737;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover, .mate-panel-menu-bar #PanelApplet > button:hover {
+.mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:hover, .mate-panel-menu-bar #PanelApplet > button:hover {
   background-color: transparent;
   box-shadow: none;
   border: none;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover label, .mate-panel-menu-bar #PanelApplet > button:hover label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover image, .mate-panel-menu-bar #PanelApplet > button:hover image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:hover, .mate-panel-menu-bar #PanelApplet > button:hover {
+.mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:hover label, .mate-panel-menu-bar #PanelApplet > button:hover label, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:hover image, .mate-panel-menu-bar #PanelApplet > button:hover image, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:hover, .mate-panel-menu-bar #PanelApplet > button:hover {
   color: #6c6c6b;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active, .mate-panel-menu-bar #PanelApplet > button:active, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked, .mate-panel-menu-bar #PanelApplet > button:checked {
+.mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:active, .mate-panel-menu-bar #PanelApplet > button:active, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:checked, .mate-panel-menu-bar #PanelApplet > button:checked {
   box-shadow: inset 0 -2px 0 0 #f45210;
   border-radius: 0;
   border: none;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active label, .mate-panel-menu-bar #PanelApplet > button:active label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active image, .mate-panel-menu-bar #PanelApplet > button:active image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:active, .mate-panel-menu-bar #PanelApplet > button:active, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked label, .mate-panel-menu-bar #PanelApplet > button:checked label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked image, .mate-panel-menu-bar #PanelApplet > button:checked image, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > button#tasklist-button:checked, .mate-panel-menu-bar #PanelApplet > button:checked {
+.mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:active label, .mate-panel-menu-bar #PanelApplet > button:active label, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:active image, .mate-panel-menu-bar #PanelApplet > button:active image, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:active, .mate-panel-menu-bar #PanelApplet > button:active, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:checked label, .mate-panel-menu-bar #PanelApplet > button:checked label, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:checked image, .mate-panel-menu-bar #PanelApplet > button:checked image, .mate-panel-menu-bar #PanelApplet wnck-tasklist button#tasklist-button:checked, .mate-panel-menu-bar #PanelApplet > button:checked {
   color: #494948;
 }
 
@@ -7373,16 +7373,16 @@ event.slanted-end label, event.slanted-end {
 .mate-panel-menu-bar #PanelApplet > button.brisk-button, .mate-panel-menu-bar #PanelApplet > button {
   font-weight: bold;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-pager,
-.mate-panel-menu-bar #PanelApplet > .wnck-pager {
+.mate-panel-menu-bar #PanelApplet wnck-pager,
+.mate-panel-menu-bar #PanelApplet .wnck-pager {
   background-color: #c4c3c1;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-pager:hover,
-.mate-panel-menu-bar #PanelApplet > .wnck-pager:hover {
+.mate-panel-menu-bar #PanelApplet wnck-pager:hover,
+.mate-panel-menu-bar #PanelApplet .wnck-pager:hover {
   background-color: #a7a19b;
 }
-.mate-panel-menu-bar #PanelApplet > wnck-pager:selected,
-.mate-panel-menu-bar #PanelApplet > .wnck-pager:selected {
+.mate-panel-menu-bar #PanelApplet wnck-pager:selected,
+.mate-panel-menu-bar #PanelApplet .wnck-pager:selected {
   background-color: #f56428;
 }
 

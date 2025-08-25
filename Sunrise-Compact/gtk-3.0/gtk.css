@@ -1091,8 +1091,8 @@ button.suggested-action.flat:backdrop:disabled {
 }
 button.suggested-action:disabled {
   color: #adacab;
-  border-color: #110f0d;
-  background-image: image(#4d4944);
+  border-color: #bebab6;
+  background-image: image(#ecebea);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -1267,8 +1267,8 @@ button.destructive-action.flat:backdrop:disabled {
 }
 button.destructive-action:disabled {
   color: #adacab;
-  border-color: #110f0d;
-  background-image: image(#4d4944);
+  border-color: #bebab6;
+  background-image: image(#ecebea);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -2720,6 +2720,304 @@ headerbar button:disabled, headerbar button:backdrop:disabled {
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.suggested-action {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #e0490a;
+  border-bottom-color: #af3908;
+  background-image: linear-gradient(to top, #f45615 2px, #f56428);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5529411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5529411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.07);
+  text-shadow: none;
+}
+headerbar button.suggested-action.flat {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #f56428;
+}
+headerbar button.suggested-action:hover {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #e0490a;
+  border-bottom-color: #af3908;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5049411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5049411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #f56428, #e44a0b 1px);
+  text-shadow: none;
+}
+headerbar button.suggested-action:active, headerbar button.suggested-action:checked {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #af3908;
+  background-image: image(#f56b32);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  text-shadow: none;
+}
+headerbar button.suggested-action:backdrop, headerbar button.suggested-action.flat:backdrop {
+  color: #fddfd3;
+  border-color: #f55f21;
+  background-image: image(#f55f21);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.suggested-action:backdrop:active, headerbar button.suggested-action:backdrop:checked, headerbar button.suggested-action.flat:backdrop:active, headerbar button.suggested-action.flat:backdrop:checked {
+  color: #fddfd3;
+  border-color: #f55f21;
+  background-image: image(#f55f21);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.suggested-action:backdrop:disabled, headerbar button.suggested-action.flat:backdrop:disabled {
+  color: #88837e;
+  border-color: #110f0d;
+  background-image: image(#2c2822);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.suggested-action:backdrop:disabled:active, headerbar button.suggested-action:backdrop:disabled:checked, headerbar button.suggested-action.flat:backdrop:disabled:active, headerbar button.suggested-action.flat:backdrop:disabled:checked {
+  color: #f9976f;
+  border-color: #f55f21;
+  background-image: image(#f55f21);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.suggested-action.flat:backdrop, headerbar button.suggested-action.flat:disabled, headerbar button.suggested-action.flat:backdrop:disabled {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: rgba(245, 100, 40, 0.8);
+}
+headerbar button.suggested-action:disabled {
+  color: #837f7a;
+  border-color: #060504;
+  background-image: image(#231f1a);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.suggested-action:disabled:active, headerbar button.suggested-action:disabled:checked {
+  color: #fbbfa6;
+  border-color: #e0490a;
+  background-image: image(#f55f21);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+.osd headerbar button.suggested-action {
+  color: #e3ded9;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(245, 100, 40, 0.5));
+  background-clip: padding-box;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px black;
+  outline-color: rgba(227, 222, 217, 0.3);
+}
+.osd headerbar button.suggested-action image, .osd headerbar button.suggested-action {
+  -gtk-icon-shadow: 0 1px black;
+}
+.osd headerbar button.suggested-action:hover {
+  color: #e3ded9;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(245, 100, 40, 0.7));
+  background-clip: padding-box;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px black;
+  outline-color: rgba(227, 222, 217, 0.3);
+}
+.osd headerbar button.suggested-action:hover image, .osd headerbar button.suggested-action:hover {
+  -gtk-icon-shadow: 0 1px black;
+}
+.osd headerbar button.suggested-action:active:backdrop, .osd headerbar button.suggested-action:active, .osd headerbar button.suggested-action:checked:backdrop, .osd headerbar button.suggested-action:checked {
+  color: #fff;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(#f56428);
+  background-clip: padding-box;
+  box-shadow: none;
+  text-shadow: none;
+  outline-color: rgba(255, 255, 255, 0.3);
+}
+.osd headerbar button.suggested-action:active:backdrop image, .osd headerbar button.suggested-action:active:backdrop, .osd headerbar button.suggested-action:active image, .osd headerbar button.suggested-action:active, .osd headerbar button.suggested-action:checked:backdrop image, .osd headerbar button.suggested-action:checked:backdrop, .osd headerbar button.suggested-action:checked image, .osd headerbar button.suggested-action:checked {
+  -gtk-icon-shadow: none;
+}
+.osd headerbar button.suggested-action:disabled:backdrop, .osd headerbar button.suggested-action:disabled {
+  color: #89847e;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(20, 20, 20, 0.5));
+  background-clip: padding-box;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.osd headerbar button.suggested-action:backdrop {
+  color: rgba(147, 146, 146, 0.97);
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(245, 100, 40, 0.5));
+  background-clip: padding-box;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+headerbar button.destructive-action {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #b2161d;
+  border-bottom-color: #851015;
+  background-image: linear-gradient(to top, #ce1921 2px, #e01b24);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.6062745098);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.6062745098);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
+  text-shadow: none;
+}
+headerbar button.destructive-action.flat {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: #e01b24;
+}
+headerbar button.destructive-action:hover {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #b2161d;
+  border-bottom-color: #851015;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5582745098);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.5582745098);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #e01b24, #b7161d 1px);
+  text-shadow: none;
+}
+headerbar button.destructive-action:active, headerbar button.destructive-action:checked {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #851015;
+  background-image: image(#e4212a);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  text-shadow: none;
+}
+headerbar button.destructive-action:backdrop, headerbar button.destructive-action.flat:backdrop {
+  color: #f8d2d4;
+  border-color: #dc1d27;
+  background-image: image(#dc1d27);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.destructive-action:backdrop:active, headerbar button.destructive-action:backdrop:checked, headerbar button.destructive-action.flat:backdrop:active, headerbar button.destructive-action.flat:backdrop:checked {
+  color: #f8d2d4;
+  border-color: #dc1d27;
+  background-image: image(#dc1d27);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.destructive-action:backdrop:disabled, headerbar button.destructive-action.flat:backdrop:disabled {
+  color: #88837e;
+  border-color: #110f0d;
+  background-image: image(#2c2822);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.destructive-action:backdrop:disabled:active, headerbar button.destructive-action:backdrop:disabled:checked, headerbar button.destructive-action.flat:backdrop:disabled:active, headerbar button.destructive-action.flat:backdrop:disabled:checked {
+  color: #e86c73;
+  border-color: #dc1d27;
+  background-image: image(#dc1d27);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.destructive-action.flat:backdrop, headerbar button.destructive-action.flat:disabled, headerbar button.destructive-action.flat:backdrop:disabled {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  color: rgba(224, 27, 36, 0.8);
+}
+headerbar button.destructive-action:disabled {
+  color: #837f7a;
+  border-color: #060504;
+  background-image: image(#231f1a);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button.destructive-action:disabled:active, headerbar button.destructive-action:disabled:checked {
+  color: #f1a5a9;
+  border-color: #b2161d;
+  background-image: image(#dc1d27);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+.osd headerbar button.destructive-action {
+  color: #e3ded9;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(224, 27, 36, 0.5));
+  background-clip: padding-box;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px black;
+  outline-color: rgba(227, 222, 217, 0.3);
+}
+.osd headerbar button.destructive-action image, .osd headerbar button.destructive-action {
+  -gtk-icon-shadow: 0 1px black;
+}
+.osd headerbar button.destructive-action:hover {
+  color: #e3ded9;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(224, 27, 36, 0.7));
+  background-clip: padding-box;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px black;
+  outline-color: rgba(227, 222, 217, 0.3);
+}
+.osd headerbar button.destructive-action:hover image, .osd headerbar button.destructive-action:hover {
+  -gtk-icon-shadow: 0 1px black;
+}
+.osd headerbar button.destructive-action:active:backdrop, .osd headerbar button.destructive-action:active, .osd headerbar button.destructive-action:checked:backdrop, .osd headerbar button.destructive-action:checked {
+  color: #fff;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(#e01b24);
+  background-clip: padding-box;
+  box-shadow: none;
+  text-shadow: none;
+  outline-color: rgba(255, 255, 255, 0.3);
+}
+.osd headerbar button.destructive-action:active:backdrop image, .osd headerbar button.destructive-action:active:backdrop, .osd headerbar button.destructive-action:active image, .osd headerbar button.destructive-action:active, .osd headerbar button.destructive-action:checked:backdrop image, .osd headerbar button.destructive-action:checked:backdrop, .osd headerbar button.destructive-action:checked image, .osd headerbar button.destructive-action:checked {
+  -gtk-icon-shadow: none;
+}
+.osd headerbar button.destructive-action:disabled:backdrop, .osd headerbar button.destructive-action:disabled {
+  color: #89847e;
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(20, 20, 20, 0.5));
+  background-clip: padding-box;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.osd headerbar button.destructive-action:backdrop {
+  color: rgba(147, 146, 146, 0.97);
+  border-color: #1a1714;
+  background-color: transparent;
+  background-image: image(rgba(224, 27, 36, 0.5));
+  background-clip: padding-box;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
 }
 
 .background .titlebar:backdrop, .background .titlebar {

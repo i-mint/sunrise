@@ -2632,9 +2632,9 @@ headerbar switch:backdrop:checked > slider {
   border-color: #af3908;
 }
 headerbar switch:backdrop:disabled slider {
-  color: #bcb8b3;
-  border-color: #c7c4c0;
-  background-image: image(#e7e6e4);
+  color: #c3c2c1;
+  border-color: #f1f0ef;
+  background-image: image(#f1f0ef);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -2714,10 +2714,18 @@ headerbar button:backdrop {
   transition: backdrop_transition;
   -gtk-icon-effect: none;
 }
-headerbar button:disabled, headerbar button:backdrop:disabled {
+headerbar button:disabled {
   color: #b6b5b4;
   border-color: #e6e6e6;
   background-image: image(white);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+}
+headerbar button:disabled:backdrop {
+  color: #c3c2c1;
+  border-color: #f1f0ef;
+  background-image: image(#f1f0ef);
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);

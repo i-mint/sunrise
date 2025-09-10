@@ -5694,6 +5694,9 @@ row.activatable:selected:backdrop {
 row.activatable.sidebar-row .sidebar-icon {
   color: #f45615;
 }
+row.activatable.sidebar-row:selected .sidebar-icon {
+  color: #fff;
+}
 row.activatable separator.vertical {
   background-color: transparent;
 }
@@ -5842,13 +5845,6 @@ filechooser #pathbarbox.view.vertical > stack:backdrop, filechooser iconview#pat
 filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent;
-}
-
-filechooser list row.activatable.sidebar-row:selected {
-  background-color: #f56428;
-}
-filechooser list row.activatable.sidebar-row:selected label.sidebar-label, filechooser list row.activatable.sidebar-row:selected image.sidebar-icon {
-  color: #fff;
 }
 
 /***********

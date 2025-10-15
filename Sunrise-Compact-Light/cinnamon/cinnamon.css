@@ -21,21 +21,21 @@ stage {
 
 .notification-icon-button, .notification-button, .keyboard-key, .sound-player StButton {
   color: #373737;
-  background-color: #E0DDD9;
+  background-color: #d6d4d1;
   border: 1px solid #b5b0ab;
 }
 .notification-icon-button:focus, .notification-button:focus, .keyboard-key:focus, .sound-player StButton:focus {
   color: #373737;
-  background-color: #E0DDD9;
+  background-color: #d6d4d1;
   box-shadow: inset 0 0 1px 1px rgba(55, 55, 55, 0.4);
 }
 .notification-icon-button:hover, .notification-button:hover, .keyboard-key:hover, .sound-player StButton:hover {
   color: #373737;
-  background-color: #f2f1ef;
+  background-color: #c1bdb9;
 }
 .notification-icon-button:active, .notification-button:active, .keyboard-key:active, .sound-player StButton:active {
   color: #373737;
-  background-color: #d9d5d1;
+  background-color: #dbd9d7;
 }
 .notification-icon-button:insensitive, .notification-button:insensitive, .keyboard-key:insensitive, .sound-player StButton:insensitive {
   color: rgba(55, 55, 55, 0.5);
@@ -54,7 +54,7 @@ stage {
 }
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover, .polkit-dialog-user-combo:hover, .sound-player StButton:hover:small {
   color: #373737;
-  background-color: #f3f2f2;
+  background-color: #cac7c4;
 }
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive, .sound-player StButton:insensitive:small {
   color: rgba(55, 55, 55, 0.5);
@@ -62,7 +62,7 @@ stage {
 }
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .polkit-dialog-user-combo:selected, .sound-player StButton:selected:small, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active, .polkit-dialog-user-combo:active, .sound-player StButton:active:small {
   color: #373737;
-  background-color: #d9d6d4;
+  background-color: #e5e3e1;
 }
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked, .polkit-dialog-user-combo:checked, .sound-player StButton:checked:small {
   color: #373737;
@@ -70,7 +70,7 @@ stage {
 }
 
 #menu-search-entry, .expo-workspaces-name-entry, .prompt-dialog-password-entry, .run-dialog-entry {
-  background-color: #E0DDD9;
+  background-color: #ffffff;
   color: #373737;
 }
 #menu-search-entry:focus, .expo-workspaces-name-entry:focus, .prompt-dialog-password-entry:focus, .run-dialog-entry:focus {
@@ -98,21 +98,21 @@ stage {
   padding: 12px;
   border-radius: 6px;
   color: #373737;
-  background-color: #E0DDD9;
+  background-color: #d6d4d1;
   border: 1px solid #b5b0ab;
 }
 .dialog .dialog-button:focus {
   color: #373737;
-  background-color: #E0DDD9;
+  background-color: #d6d4d1;
   box-shadow: inset 0 0 1px 1px rgba(55, 55, 55, 0.4);
 }
 .dialog .dialog-button:hover {
   color: #373737;
-  background-color: #f2f1ef;
+  background-color: #c1bdb9;
 }
 .dialog .dialog-button:active {
   color: #373737;
-  background-color: #d9d5d1;
+  background-color: #dbd9d7;
 }
 .dialog .dialog-button:checked {
   color: #373737;
@@ -125,16 +125,16 @@ stage {
 
 .dialog .dialog-button:default {
   color: #373737;
-  background-color: #E0DDD9;
+  background-color: #f45615;
   border: 1px solid #b5b0ab;
 }
 .dialog .dialog-button:hover:default {
   color: #373737;
-  background-color: #f2f1ef;
+  background-color: #d1440a;
 }
 .dialog .dialog-button:active:default {
   color: #373737;
-  background-color: #d9d5d1;
+  background-color: #f55d1e;
 }
 .dialog .dialog-button:checked:default {
   color: #373737;
@@ -147,20 +147,20 @@ stage {
 }
 
 .dialog .dialog-button:destructive-action {
-  color: #373737;
-  background-color: #E0DDD9;
+  color: #ffffff;
+  background-color: #cc0000;
   border: 1px solid #b5b0ab;
 }
 .dialog .dialog-button:hover:destructive-action {
-  color: #373737;
-  background-color: #f2f1ef;
+  color: #ffffff;
+  background-color: #9e0000;
 }
 .dialog .dialog-button:active:destructive-action {
-  color: #373737;
-  background-color: #d9d5d1;
+  color: #ffffff;
+  background-color: #d60000;
 }
 .dialog .dialog-button:checked:destructive-action {
-  color: #373737;
+  color: #ffffff;
   background-color: #f56428;
 }
 .dialog .dialog-button:insensitive:destructive-action {
@@ -1399,7 +1399,7 @@ StScrollBar StButton#hhandle:active {
   padding: 9px;
   border-radius: 4px;
   color: #373737;
-  background-color: #E0DDD9;
+  background-color: #d6d4d1;
   border: 1px solid #b5b0ab;
 }
 .menu-favorites-button {

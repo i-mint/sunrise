@@ -124,20 +124,20 @@ stage {
 }
 
 .dialog .dialog-button:default {
-  color: #373737;
+  color: #ffffff;
   background-color: #f45615;
   border: 1px solid #b5b0ab;
 }
 .dialog .dialog-button:hover:default {
-  color: #373737;
+  color: #ffffff;
   background-color: #d1440a;
 }
 .dialog .dialog-button:active:default {
-  color: #373737;
+  color: #ffffff;
   background-color: #f55d1e;
 }
 .dialog .dialog-button:checked:default {
-  color: #373737;
+  color: #ffffff;
   background-color: #f56428;
 }
 .dialog .dialog-button:insensitive:default {

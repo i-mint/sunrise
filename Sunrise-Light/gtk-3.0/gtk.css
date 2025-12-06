@@ -2174,7 +2174,7 @@ headerbar button.toggle:checked {
 headerbar stackswitcher button:checked:backdrop,
 headerbar button.toggle:checked:backdrop {
   background: image(#d2cfcb);
-  color: #373737;
+  color: #8c8b8a;
   border-color: #c5c1be;
 }
 .selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar),
@@ -2639,37 +2639,6 @@ headerbar switch:backdrop:disabled slider {
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
 }
-headerbar.windowhandle viewswitcher > box > button {
-  margin: 0;
-  padding: 0;
-  min-width: 120px;
-  box-shadow: none;
-  border-radius: 0;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box {
-  padding: 0 14px;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
-  font-size: 1em;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
-  font-size: 0.75em;
-}
-headerbar.windowhandle viewswitcher > box > button, headerbar.windowhandle viewswitcher > box > button:hover, headerbar.windowhandle viewswitcher > box > button:active, headerbar.windowhandle viewswitcher > box > button:checked {
-  border-bottom: none;
-  border-top: none;
-}
-headerbar.windowhandle viewswitcher > box > button:not(:last-child), headerbar.windowhandle viewswitcher > box > button:not(:last-child):hover, headerbar.windowhandle viewswitcher > box > button:not(:last-child):active, headerbar.windowhandle viewswitcher > box > button:not(:last-child):checked {
-  border-right: none;
-}
-headerbar.windowhandle viewswitcher > box > button:active, headerbar.windowhandle viewswitcher > box > button:checked {
-  box-shadow: 0 0 6px 0 rgba(245, 100, 40, 0.8);
-}
-headerbar.windowhandle viewswitcher > box > button:checked:backdrop:backdrop {
-  background: image(#d2cfcb);
-  color: #373737;
-  border-color: #c5c1be;
-}
 headerbar.titlebar headerbar:not(.titlebar) {
   background: none;
   box-shadow: none;
@@ -2711,6 +2680,13 @@ headerbar button:backdrop {
   text-shadow: none;
   -gtk-icon-shadow: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  transition: backdrop_transition;
+  -gtk-icon-effect: none;
+}
+headerbar button:checked:backdrop {
+  background: image(#d2cfcb);
+  color: #8c8b8a;
+  border-color: #c5c1be;
   transition: backdrop_transition;
   -gtk-icon-effect: none;
 }
@@ -7793,6 +7769,85 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration,
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
   border-radius: 8px;
+}
+
+viewswitcher, viewswitcher button {
+  margin: 0;
+  padding: 0;
+}
+viewswitcher button {
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+  box-shadow: none;
+  font-size: 1rem;
+}
+viewswitcher button:not(:checked):not(:hover) {
+  background: transparent;
+}
+viewswitcher button:not(:only-child):not(:last-child) {
+  border-right-width: 0px;
+}
+viewswitcher button:not(only-child):first-child:not(:checked):not(:hover), viewswitcher button:not(:checked):not(:hover) + button:not(:checked):not(:hover) {
+  border-left-color: transparent;
+}
+viewswitcher button:not(only-child):last-child:not(:checked):not(:hover) {
+  border-right-color: transparent;
+}
+viewswitcher button:not(only-child):first-child:not(:checked):hover, viewswitcher button:not(:checked):hover + button:not(:checked):not(:hover), viewswitcher button:not(:checked):not(:hover) + button:not(:checked):hover {
+  border-left-color: shade(#bebab6, 1.15);
+}
+viewswitcher button:not(only-child):last-child:not(:checked):hover {
+  border-right-color: shade(#bebab6, 1.15);
+}
+viewswitcher button > stack > box.narrow {
+  font-size: 0.75rem;
+  padding-top: 7px;
+  padding-bottom: 2px;
+}
+viewswitcher button > stack > box.narrow image,
+viewswitcher button > stack > box.narrow label {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+viewswitcher button > stack > box.wide {
+  padding: 8px 12px;
+}
+viewswitcher button > stack > box.wide image:dir(ltr) {
+  padding-left: 7px;
+}
+viewswitcher button > stack > box.wide image:dir(rtl) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(ltr) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(rtl) {
+  padding-left: 7px;
+}
+viewswitcher button > stack > box label.active {
+  font-weight: bold;
+}
+viewswitcher button.needs-attention:active > stack > box label, viewswitcher button.needs-attention:checked > stack > box label {
+  animation: none;
+  background-image: none;
+}
+viewswitcher button.needs-attention > stack > box label {
+  animation: needs_attention 150ms ease-in;
+  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#f56428), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#fff), to(transparent));
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  background-position: right 0px, right 1px;
+}
+viewswitcher button.needs-attention > stack > box label:backdrop {
+  background-size: 6px 6px, 0 0;
+}
+viewswitcher button.needs-attention > stack > box label:dir(rtl) {
+  background-position: left 0px, left 1px;
+}
+
+viewswitcherbar actionbar > revealer > box {
+  padding: 0;
 }
 
 /* GTK NAMED COLORS

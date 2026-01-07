@@ -7530,16 +7530,6 @@ monthcell.today:hover > overlay > widget {
 .thunar menubar .csd.popup > menu menuitem:last-child {
   margin-bottom: 4px;
 }
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image, .thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:backdrop image,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:backdrop image {
-  opacity: 0.3;
-}
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover image, .thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active image,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover image,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active image {
-  opacity: 1;
-}
 
 .panel.xfce4-panel {
   background-color: #e7e6e4;

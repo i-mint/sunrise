@@ -7386,6 +7386,57 @@ monthcell.today:hover > overlay > widget {
 .thunar toolbar toolbutton > button.flat:not(:disabled):backdrop image, .thunar toolbar toolbutton > button.flat:not(:disabled):backdrop {
   color: #89847e;
 }
+.thunar toolbar toolitem > button.popup.toggle {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #110f0d;
+  border-bottom-color: black;
+  background-image: linear-gradient(to top, #221f1a 2px, #2e2923);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8729411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+.thunar toolbar toolitem > button.popup.toggle:hover {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: #110f0d;
+  border-bottom-color: black;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8249411765);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #2b2621, #312c25 1px);
+  -gtk-icon-effect: highlight;
+}
+.thunar toolbar toolitem > button.popup.toggle:active {
+  color: #e3ded9;
+  outline-color: rgba(227, 222, 217, 0.3);
+  border-color: black;
+  background-image: image(#050505);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+.thunar toolbar toolitem > button.popup.toggle:checked {
+  background: image(#f56428);
+  border-color: #f56428;
+}
+.thunar toolbar toolitem > button.popup.toggle:checked image, .thunar toolbar toolitem > button.popup.toggle:checked {
+  color: #fff;
+}
+.thunar toolbar toolitem > button.popup.toggle:disabled image, .thunar toolbar toolitem > button.popup.toggle:disabled {
+  color: #adacab;
+}
+.thunar toolbar toolitem > button.popup.toggle:disabled:backdrop image, .thunar toolbar toolitem > button.popup.toggle:disabled:backdrop {
+  color: rgba(173, 172, 171, 0.4);
+}
+.thunar toolbar toolitem > button.popup.toggle:not(:disabled):backdrop {
+  background-color: transparent;
+  background-image: none;
+  border-color: transparent;
+}
+.thunar toolbar toolitem > button.popup.toggle:not(:disabled):backdrop image, .thunar toolbar toolitem > button.popup.toggle:not(:disabled):backdrop {
+  color: #89847e;
+}
 .thunar toolbar:backdrop {
   color: #89847e;
   border-color: #1e1b17;
